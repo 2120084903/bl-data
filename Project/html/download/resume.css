@@ -1,0 +1,778 @@
+/* PDF下载 */
+
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+    margin: 0;
+    padding: 0
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+    font-style: normal;
+    font-weight: normal
+}
+
+ul,
+ol {
+    list-style: none
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+select,
+input {
+    vertical-align: middle
+}
+
+select,
+input,
+textarea {
+    font-size: 12px;
+    margin: 0
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    outline-style: none;
+    -webkit-appearance: none
+}
+
+textarea {
+    resize: none
+}
+
+table {
+    border-collapse: collapse
+}
+
+html body {
+    font-family: 'PingFang SC', '微软雅黑', arial, Regular;
+    /* font-family: 'Microsoft YaHei',Arial,sans-serif; */
+    min-width: 1100px;
+}
+
+.main {
+    min-width: 1100px;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.clearfix:after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+/*黄色*/
+.colorOrange {
+    color: #FF9800 !important;
+}
+
+/*绿色*/
+.colorGreen {
+    color: #6ABB46 !important;
+}
+
+/*蓝色*/
+.colorBlue {
+    color: #1DA0EE !important;
+}
+
+/* 避免换行符 */
+@media print {
+   .Trajectory,
+   #Family,
+   #Enterprise,
+   #Management,
+    tr {
+        page-break-inside: avoid;
+    }
+}
+
+/* ==== 官员简历PDF下载 ==== */
+body {
+    background-color: #F3F3F3;
+    /*background-color: #fff;*/
+}
+
+.transverseLine {
+    width: 100%;
+    height: 1px;
+    margin: 2px 0;
+    background-color: #dae7ed;
+}
+
+.pdfContent {
+    margin: 30px 0 30px 0;
+    background-color: #fff;
+}
+
+.addBox {
+    width: 100%;
+    height: 50px;
+    opacity: .9;
+    margin-bottom: 90px;
+    border-bottom: 2px solid #eee;
+    /* background-color: #1D9ED2; */
+}
+
+.addBox img {
+    width: 100%;
+}
+
+/*页脚*/
+.footer {
+    height: 185px;
+    background: url(../../img/resumeBg2.png) no-repeat;
+    background-position: -144px -61px;
+}
+
+.footerCon {
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.footer .footerLeft {
+    float: left;
+}
+
+.footer .footerRight {
+    float: right;
+}
+
+.footer .qr-li {
+    margin-left: 20px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer .qrImg {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ededed;
+    overflow: hidden;
+}
+
+.footer .qrImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer .qr-li p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #4c4c4c;
+}
+
+.footer .footerLeft .f-li {
+    font-size: 16px;
+    font-weight: bolder;
+    color: #5d5d5d;
+    margin: 8px 0;
+}
+
+.footer .footerLeft .nameLabel {
+    letter-spacing: 8px;
+}
+
+/*头部*/
+.header {
+    padding: 30px;
+    background: url("../../img/resumeBg.png") no-repeat;
+    background-position: 420px -700px;
+}
+
+.header .btShow {
+    color: #1D9ED2;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.header .pepInfo {
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.header .pepInfo .pepLeft {
+    float: left;
+    width: 80%;
+}
+
+.header .pepInfo .pepRight {
+    float: left;
+    width: 20%;
+    text-align: right;
+}
+
+.header .userFace {
+    display: inline-block;
+    width: 160px;
+}
+
+.header .userFace img {
+    width: 100%;
+    box-sizing: border-box;
+    border: 3px solid #eee;
+}
+
+.header .nameShow {
+    color: #1D9ED2;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.header .LiBox {
+    width: 33.33%;
+    padding: 6px 0;
+    float: left;
+    overflow: hidden;
+    border-bottom: 1px dashed #E6E6E6;
+}
+
+.header .wAll {
+    width: 100%;
+}
+
+.header .LiBox .LiIcon {
+    float: left;
+    margin-right: 10px;
+    display: none;
+}
+
+.header .LiBox .LiIcon i {
+    color: #1D9ED2;
+    font-size: 20px;
+}
+
+.header .LiBox .TxtBox {
+    color: #555;
+    float: left;
+}
+
+.header .InfoList {
+    overflow: hidden;
+}
+
+.center {
+    padding: 30px;
+}
+
+.boxMain .layuotLabel {
+    overflow: hidden;
+}
+
+.boxMain .layuotLabel .labelIcon {
+    float: left;
+    width: 15px;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    /*border-radius: 6px;*/
+    background-color: #1D9ED2;
+}
+
+.boxMain .layuotLabel .labelIcon i {
+    font-size: 30px;
+}
+
+.boxMain .layuotLabel .labelTxt {
+    float: left;
+    width: 250px;
+    line-height: 40px;
+    color: #354d57;
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 25px;
+}
+
+.boxMain .layuotLabel .lineBox {
+    padding-top: 6px;
+    float: left;
+    margin-left: 0;
+}
+
+.boxMain .layuotLabel .lineLi {
+    /*width: 250px;*/
+    width: 750px;
+    height: 1px;
+    display: inline-block;
+    background-color: #E6E6E6;
+}
+
+.boxMain .layuotLabel .lineLi:last-child {
+    display: none;
+    margin-left: 15px;
+    width: 400px;
+    height: 3px;
+    background-color: #d9d9d9;
+}
+
+.boxMain .layoutBody {
+    margin-top: 30px;
+}
+
+.boxMain .layoutBody ul {
+    overflow: hidden;
+}
+
+.boxMain .layoutBody ul li {
+    color: #555;
+    font-size: 18px;
+    float: left;
+    width: 50%;
+    margin: 6px 0;
+}
+
+.boxMain .layoutLi {
+    margin-bottom: 80px;
+}
+.boxMain .layoutLi:last-child{
+    margin-bottom: 0;
+}
+.boxMain .childLi {
+    margin-bottom: 30px;
+}
+
+.boxMain .childLi .childHeader {
+    color: #1D9ED2;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.boxMain .childLi .childBody {
+    color: #666;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.ntable {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.ntable-odd tr:nth-child(odd) {
+    background: #fff;
+}
+
+.ntable th {
+    text-align: center;
+    background: #F2F9FC;
+    border: #E4EEF6 1px solid;
+    border-collapse: collapse;
+    padding: 10px 12px 10px 12px;
+    font-weight: normal;
+    color: #444;
+    line-height: 19px;
+}
+
+.ntable .tx {
+    text-align: center;
+    width: 20px;
+}
+
+.ntable th:not(:last-child) {
+    border-right: #F2F9FC 1px solid;
+}
+
+.ntable td {
+    padding: 12px 10px 12px 10px;
+    border: #E4EEF6 1px solid;
+    word-break: break-all;
+    font-size: 15px;
+    color: #4c4c4c;
+}
+
+.ntable a {
+    color: #1D9ED2;
+    text-decoration: none;
+}
+
+a.link {
+    color: #1D9ED2 !important;
+}
+
+.boxMain .layoutBody .EducationLi ul li {
+    width: auto;
+}
+
+.boxMain .layoutBody .EducationLi ul li.dateBox {
+    width: 250px;
+}
+
+.boxMain .layoutBody .EducationLi ul li.xxName {
+    width: 380px;
+}
+
+.boxMain .layoutBody .EducationLi ul li.xxType {
+    width: 150px;
+}
+
+/*企业关系*/
+.hasBgColor {
+    position: relative;
+    background: -moz-linear-gradient(top, #ECF1F7 0%, #fff 30%);
+    background: -webkit-linear-gradient(top, #ECF1F7 0%, #fff 30%);
+    background: linear-gradient(to bottom, #ECF1F7 0%, #fff 30%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ECF1F7', endColorstr='#fff', GradientType=1);
+    -webkit-box-shadow: 0 0 2px #e0e0e0;
+    box-shadow: 0 0 2px #e0e0e0;
+}
+
+
+.hasBgImg {
+    background: url("../../img/tupuBg.png") no-repeat;
+    background-position: center center;
+}
+
+.layoutBody .showType {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 2;
+}
+
+.layoutBody .showType .typeLi {
+    color: #333;
+    font-size: 13px;
+    margin: 3px 0;
+}
+
+.layoutBody .showType .typeLi .typeBox {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.layoutBody .showType .typeLi .colorIcon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #1D9ED2;
+    margin-right: 15px;
+}
+/*处罚*/
+.layoutBody .showType .typeLi .colorIcon.c2 {
+    background-color: #F25A29;
+}
+/*调研*/
+.layoutBody .showType .typeLi .colorIcon.c3 {
+    background-color: #4EA2F0;
+}
+/*支持鼓励*/
+.layoutBody .showType .typeLi .colorIcon.c4 {
+    background-color: #5cad6c;
+}
+/*严格监管*/
+.layoutBody .showType .typeLi .colorIcon.c5 {
+    background-color: #ff9417;
+}
+/*中立*/
+.layoutBody .showType .typeLi .colorIcon.c6 {
+    background-color: #76a2ff;
+}
+
+.layoutBody .showType .typeLi .colorIcon.c7 {
+    background-color: #e576ff;
+}
+
+/*家庭成员*/
+#Family {
+    width: 100%;
+    height: 600px;
+}
+
+/*企业关系*/
+#Enterprise {
+    width: 100%;
+    height: 600px;
+}
+
+/*工作管理*/
+#Management {
+    width: 100%;
+    height: 600px;
+}
+
+.tupu-txt {
+    text-align: center;
+    color: #999;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.ResumeLine {
+    margin: 0 50px;
+}
+
+.ResumeLine .lineLi {
+    overflow: hidden;
+}
+
+.ResumeLine .dot {
+    float: left;
+    position: relative;
+    top: 6px;
+    z-index: 2;
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #FE7C1D;
+}
+
+.ResumeLine .lineBody {
+    position: relative;
+    float: left;
+    padding-left: 20px;
+    padding-bottom: 40px;
+    color: #555;
+    font-size: 17px;
+}
+
+.ResumeLine .lineBody:after {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #ddd;
+}
+
+.ResumeLine .lineBody .dateBox {
+    margin-right: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ResumeLine .lineBody .childCon {
+    display: inline-block;
+    vertical-align: top;
+    width: 760px;
+}
+
+/**/
+.lineMain .lineUl {
+    overflow: hidden;
+}
+
+.lineMain .lineLi {
+    float: left;
+    width: 33.33333%;
+    box-sizing: border-box;
+}
+
+.lineMain .lineLi i {
+    position: relative;
+    color: #FE7C1D;
+    font-size: 34px;
+    margin-left: 104px;
+}
+.lineMain .ul:first-child .lineLi:first-child i{
+color: #5CAD6C;
+}
+.lineMain .ul:first-child .lineLi:first-child i:after{
+    border: 2px solid #5CAD6C;
+}
+
+.lineMain .ul:last-child .lineLi:last-child i{
+    color: #1D9ED2;
+}
+.lineMain .ul:last-child .lineLi:last-child i:after{
+    border: 2px solid #1D9ED2;
+}
+
+.lineMain .lineLi i:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    bottom: -18px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #FE7C1D;
+}
+
+.lineMain .lineLi .lineBody {
+    position: relative;
+    height: 100px;
+    padding-top: 30px;
+    margin-top: 10px;
+    padding-right: 60px;
+    padding-bottom: 10px;
+    padding-left: 70px;
+}
+
+.lineMain .lineLi .lineBody:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #eee;
+}
+
+.lineMain .ul:nth-child(2n+1) .lineLi.rightLi .lineBody:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 190px;
+    height: 190px;
+    border: 2px solid #eee;
+    border-radius: 50%;
+    border-left: none;
+    border-bottom: none;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -moz-transform: rotate(45deg); /* Firefox */
+    -webkit-transform: rotate(45deg); /* Safari 和 Chrome */
+    -o-transform: rotate(45deg); /* Opera */
+}
+
+.lineMain .ul:nth-child(2n+2) .lineLi.rightLi .lineBody:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 190px;
+    height: 190px;
+    border: 2px solid #eee;
+    border-radius: 50%;
+    border-left: none;
+    border-bottom: none;
+    transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg); /* IE 9 */
+    -moz-transform: rotate(-135deg); /* Firefox */
+    -webkit-transform: rotate(-135deg); /* Safari 和 Chrome */
+    -o-transform: rotate(-135deg); /* Opera */
+}
+
+.lineMain .ul:nth-child(2n+2) .lineLi {
+    float: right;
+}
+
+.lineMain .ul:nth-child(2n+2) .rightLi .lineBody:after {
+    right: 0;
+    left: auto;
+    width: calc(100% - 85px);
+}
+
+.lineMain .ul:nth-child(2n+2) .leftLi .lineBody:after {
+    left: 0;
+    right: auto;
+    width: calc(100% - 85px);
+}
+
+.lineMain .ul:nth-child(2n+1) .rightLi .lineBody:after {
+    left: 0;
+    right: auto;
+    width: calc(100% - 85px);
+}
+
+.lineMain .ul:nth-child(2n+1) .leftLi .lineBody:after {
+    right: 0;
+    left: auto;
+    width: calc(100% - 85px);
+}
+.lineMain .ul:last-child .lineLi .lineBody:before {
+    display: none;
+}
+
+.lineMain .lineLi .lineBody .date {
+    color: #555;
+    font-size: 15px;
+}
+
+.lineMain .lineLi .lineBody .lineCon {
+    color: #333;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.downloadBtn{
+    left: 50%;
+    top: 50%;
+    margin-left: 560px;
+    position: fixed;
+}
+.downloadBtn a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    border-radius: 4px;
+    padding: 5px 0;
+    font-size: 16px;
+    text-align: center;
+    width: 30px;
+    background-color: #1D9ED2;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+
+.downloadBtn a:hover{
+    background-color: #188fc0;
+}

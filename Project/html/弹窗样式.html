@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="../css/root.css">
+    <style>
+        .layerBtn{
+            margin: 100px 0 50px 200px;
+        }
+        .layerIconBox{
+            margin: 100px 0 50px 200px;
+        }
+        .layerIconBox i{
+            display: inline-block;
+            vertical-align: middle;
+            color: #666;
+            font-size: 26px;
+            margin-right: 10px;
+        }
+        .layerIconBox li{
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="layerBtn">
+   <button class="button01">文字提醒弹窗</button>
+    <button class="button02">带图标msg弹窗</button>
+    <button class="button03">msg弹窗</button>
+    <button class="button04">tips弹窗</button>
+    <button class="button05">prompt弹窗</button>
+    <button class="button06">自定义弹窗</button>
+    <button class="button07">自定义弹窗</button>
+</div>
+
+<div class="layerIconBox">
+    <ul>
+        <li>
+            <p><i class="iconfont icon-l-cg colorGreen"></i>'icon-l-cg'成功图标</p>
+        </li>
+        <li>
+            <p><i class="iconfont icon-l-ts colorOrange"></i>'icon-l-ts'提示图标</p>
+        </li>
+        <li>
+            <p><i class="iconfont icon-l-cw colorRed"></i>'icon-l-cw'错误图标</p>
+        </li>
+        <li>
+            <p><i class="iconfont icon-l-jg colorOrange"></i>'icon-l-jg'警告图标</p>
+        </li>
+    </ul>
+
+    <ul class="mt20">
+        <li>
+            <p class="colorGreen">'colorGreen'绿色</p>
+        </li>
+        <li>
+            <p class="colorOrange">'colorOrange'黄色</p>
+        </li>
+        <li>
+            <p class="colorBlue">'colorBlue'蓝色</p>
+        </li>
+        <li>
+            <p class="colorRed">'colorRed'红色</p>
+        </li>
+    </ul>
+</div>
+
+
+<!--自定义弹窗-->
+<div class="BL-layer">
+    <div class="BL-l-con">
+        <div class="normal-ts">
+            <i class="iconfont icon-gantanhao"></i>
+            <span>该课程为在线课程录播，确定购买？</span>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+<script src="../../Frame/layui/layui.all.js"></script>
+<script type="text/javascript" src="../js/scrollTop.js"></script>
+<script src="../js/custom.js"></script>
+<script src="../js/leftTime.min.js"></script>
+
+<script type="text/javascript">
+    $('.button01').on('click',function () {
+        layer.confirm('该课程为在线课程录播，确定购买？', {
+            title:'提示',
+            resize:false,
+            scrollbar:false,
+            move:false,
+            btn: ['确定','取消'] //按钮
+        }, function(){
+            window.location.href="订单支付.html";
+        });
+        $('.layui-layer').addClass('xw-box');
+        $(".layui-layer-content").prepend('<i class="iconfont icon-l-ts"></i>');
+    });
+
+    $('.button02').on('click',function () {
+        layer.msg('带图标msg弹窗', {icon: 5});
+    });
+
+    $('.button03').on('click',function () {
+        layer.msg('msg弹窗');
+    });
+
+    $('.button04').on('click',function () {
+        layer.tips('tips弹窗', '.button04', {
+            tips: [1, '#3595CC'],
+            time: 4000
+        });
+    });
+
+    $('.button05').on('click',function () {
+        layer.prompt({title: '输入任何口令，并确认', formType: 1}, function(pass, index){
+            layer.close(index);
+            layer.prompt({title: '随便写点啥，并确认', formType: 2}, function(text, index){
+                layer.close(index);
+                layer.msg('演示完毕！您的口令：'+ pass +'<br>您最后写下了：'+text);
+            });
+        });
+    });
+
+    $('.button06').on('click', function() {
+        layer.open({
+            type: 1,
+            title: "弹窗",
+            area: ['auto', 'auto'],
+            btn: ['确 定', '关 闭'],
+            shadeClose: true, //点击遮罩关闭
+            content: $('.BL-layer'),
+            end: function () {
+                // 弹出结束后隐藏demo
+                $(".BL-layer").hide();
+            },
+        });
+    });
+    $('.button07').on('click', function() {
+        layer.open({
+            type: 1,
+            title: "弹窗",
+            area: ['auto', 'auto'],
+            btn: ['确 定', '关 闭'],
+            shadeClose: true, //点击遮罩关闭
+            content: '',
+        });
+    });
+</script>
+</html>

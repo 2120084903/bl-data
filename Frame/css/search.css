@@ -1,0 +1,621 @@
+/*======媒体查询=====*/
+/*思维导图*/
+
+/*@media screen and (max-width: 1800px) {*/
+/*.jsmind-inner{*/
+/*transform: scale(0.7);*/
+/*transition: all 300ms;*/
+/*-webkit-transition: all 300ms;*/
+/*-moz-transition: all 300ms;*/
+/*}*/
+/*}*/
+
+/*适应1366屏幕*/
+@media screen and (max-width: 1400px) and (min-width: 1280px) {
+    .container {
+        width: 1110px;
+    }
+
+    .main {
+        min-width: 1110px;
+    }
+
+    .index .searchBox {
+        margin-left: -555px;
+    }
+
+    .industry .RightItem .pushRightRow .QR-imgBox .imgBox {
+        width: 106px;
+        height: 106px;
+    }
+
+    .rightCon .rightRow .imgBox {
+        width: 92px;
+        height: 92px;
+    }
+
+    .footTop .basicLayout {
+        margin-right: 50px;
+    }
+
+    .content-hexagon {
+        width: 118px;
+    }
+
+    .content-hexagon i.icon-hexagon {
+        font-size: 124px;
+    }
+
+    .content-hexagon strong {
+        width: 122%;
+        padding-top: 26px;
+    }
+
+    .content-hexagon i.product-icons {
+        font-size: 40px;
+    }
+
+    .index .newsBigBox .footLabel ul li.jg {
+        width: 66px;
+    }
+
+    .index .footLabel ul li {
+        margin-right: 0;
+    }
+
+    .index .newsBigBox .footLabel ul li a {
+        padding: 2px 6px;
+    }
+
+    .baikeTool {
+        margin-left: 565px;
+    }
+
+    .industry .dataBox ul li {
+        width: 242px;
+    }
+
+    .industry .dataBox ul li a .LiIconRight {
+        width: 64px;
+    }
+
+    .industry .dataBox ul li {
+        padding: 16px 20px;
+    }
+
+    .industry .RightItem .pushRightRow {
+        min-height: 200px;
+    }
+
+    .industry .tableMain .infoLayout .colBoxLeft {
+        width: 380px;
+    }
+
+    .industry .tableMain .infoLayout .colBoxRight {
+        width: 380px;
+    }
+
+    .baikeTj .tJBox .BookFace {
+        width: 13%;
+    }
+
+    .baikeTj .tJBox .BookInfo {
+        width: 87%;
+    }
+
+    .meetMain .liListsWrap .business img {
+        height: 226px;
+    }
+
+    .meetMain .liListsWrap .liLists {
+        margin-right: 27px;
+        margin-bottom: 27px;
+    }
+
+    .downloadIcon {
+        margin-right: 10px;
+    }
+
+    .rightBox .RecommendBox {
+        width: 262.86px;
+    }
+
+    .newsInfoBox .rightBox .RecommendBox {
+        width: 288.8px;
+    }
+
+    .baike .baikeMain #Chart02 {
+        height: 550px;
+    }
+
+}
+
+/*适应1280屏幕*/
+@media screen and (max-width: 1280px) {
+    .container {
+        width: 1000px;
+    }
+
+    .main {
+        min-width: 1000px;
+    }
+
+    .index .searchBox {
+        margin-left: -500px;
+    }
+
+    .industry .RightItem .pushRightRow .QR-imgBox .imgBox {
+        width: 90px;
+        height: 90px;
+    }
+
+    .rightCon .rightRow .imgBox {
+        width: 80px;
+        height: 80px;
+    }
+
+    .footTop .basicLayout {
+        margin-right: 25px;
+    }
+
+    .newsConInfo .sectionLeft .Stairs {
+        width: 96px;
+    }
+
+    .industry .dataBox ul li {
+        padding: 12px 20px;
+    }
+
+    .newsBigBox .newsLi .liCon {
+        margin-right: 15px;
+    }
+
+    .index .newsBigBox .footLabel ul li.jg {
+        width: 66px;
+    }
+
+    .index .footLabel ul li {
+        margin-right: 0;
+    }
+
+    .index .newsBigBox .footLabel ul li a {
+        padding: 2px;
+    }
+
+    /*div.baikeTool{*/
+    /*margin-left: 510px;*/
+    /*}*/
+    .baikeTool {
+        margin-left: 440px;
+    }
+
+    .baikeMain .ntable td {
+        font-size: 13px;
+    }
+
+    /**/
+    .baikeTj .tJBox .BookFace {
+        width: 15%;
+    }
+
+    .baikeTj .tJBox .BookInfo {
+        width: 85%;
+    }
+
+    .industry .dataBox ul li {
+        width: 215px;
+    }
+
+    .industry .dataBox ul li a .LiIconRight {
+        width: 50px;
+    }
+
+    .industry .dataBox ul li a .Lileft {
+        width: 122px;
+    }
+
+    .industry .dataBox ul li {
+        padding: 12px 20px;
+    }
+
+    .industry .RightItem .pushRightRow {
+        min-height: 180px;
+    }
+
+    .industry .tableMain .infoLayout .colBoxLeft {
+        width: 340px;
+    }
+
+    .industry .tableMain .infoLayout .colBoxRight {
+        width: 340px;
+    }
+
+    .policy .WritingBox .InfoBox ul li .infoTxt {
+        width: 216px;
+    }
+
+    .baikeMain #Chart01,
+    .baikeMain #Chart02,
+    .baikeMain #Chart03,
+    .baikeMain #Chart04 {
+        width: 100%;
+        height: 350px;
+    }
+
+    .meetMain .liListsWrap .business img {
+        height: 210px;
+    }
+
+    .meetMain .liListsWrap .liLists {
+        margin-right: 20px;
+        margin-bottom: 20px;
+        width: 30.4%;
+    }
+
+    .meetMain .liLists:nth-child(3n+1) {
+        margin-left: 20px;
+    }
+
+    .meetMain .busName {
+        font-size: 16px;
+    }
+
+    .meetMain .liLists .bottom {
+        font-size: 13px;
+    }
+
+    .meetMain .liLists .applyWrap {
+        width: 80px;
+    }
+
+    .content-servers {
+        /*width: 425px;*/
+    }
+
+    .content-servers:first-child {
+        margin-left: 10px;
+    }
+
+    .content-servers:nth-child(2) {
+        margin: 110px 0 0 0;
+    }
+
+    .content-servers:last-child {
+        float: right;
+        margin: 0 30px 0 0;
+    }
+
+    .content-servers font {
+        width: 106%;
+    }
+
+    .index .product-Bg {
+        -webkit-transform: scale(0.45);
+        -moz-transform: scale(0.45);
+        -o-transform: scale(0.45);
+        transform: scale(0.45);
+        -ms-transform: scale(0.45);
+    }
+
+    .index .hx-box {
+        top: -8%;
+    }
+
+    .index .bg0 {
+        top: -8%;
+    }
+
+    /*我们的产品*/
+    .content-hexagon i.icon-hexagon {
+        font-size: 110px;
+    }
+
+    .content-hexagon {
+        width: 106px;
+    }
+
+    .content-hexagon i.product-icons {
+        font-size: 40px;
+    }
+
+    .content-hexagon strong {
+        padding-top: 20px;
+        width: 120%;
+    }
+
+    .content-hexagon:first-child, div.content-hexagon:last-child {
+        margin-top: 60px;
+    }
+
+    .content-servers:nth-child(2) div.content-hexagon:nth-child(2) {
+        margin-top: 120px;
+    }
+
+    .content-servers a .pro-explain {
+        width: 191px;
+        left: -34px;
+    }
+
+    .content-servers a:hover .pro-explain {
+        width: 191px;
+    }
+
+    .content-servers a .pro-explain h3 {
+        font-size: 18px;
+        margin: 34px 0 26px 0;
+    }
+
+    .content-servers a .pro-explain h5 {
+        font-size: 13px;
+    }
+
+    .index .product .product-list {
+        bottom: 10px;
+    }
+
+    .index .product-Bg {
+        height: 320px;
+    }
+
+    .IE div.index .product-Bg {
+        transform: scale(0.6);
+        -ms-transform: scale(0.6);
+    }
+
+    .IE div.index .bg0 {
+        top: 3%;
+    }
+
+    .policy .policyMain .layui-tab-title li {
+        font-size: 13px;
+        padding: 0 11px;
+    }
+
+    .downloadIcon {
+        margin-right: 5px;
+    }
+
+    .downloadIcon a i {
+        margin-right: 0;
+    }
+
+    .downloadIcon a {
+        font-size: 13px;
+    }
+
+    .header .searchBox .searchInp .txt {
+        width: 60%;
+    }
+
+    .Advanced-search {
+        font-size: 12px;
+    }
+
+    .Advanced-search > .as-serch:before {
+        width: 6px;
+        height: 6px;
+        right: -14px;
+    }
+
+    .header .nav {
+        margin: 0 20px;
+    }
+
+    /*登录头像*/
+    .header .nav .user-center .unlogin span {
+        display: none;
+    }
+
+    .nav-unlogin {
+        width: 40px;
+        border-radius: 40px;
+        -webkit-transition: all 300ms;
+        -moz-transition: all 300ms;
+        -o-transition: all 300ms;
+        transition: all 300ms;
+    }
+
+    .header .nav .user-center .unlogin i {
+        margin-right: 0;
+    }
+
+    .nav-unlogin:before {
+        border-radius: 40px;
+        -webkit-transition: all 300ms;
+        -moz-transition: all 300ms;
+        -o-transition: all 300ms;
+        transition: all 300ms;
+    }
+
+    .header .nav .logo a {
+        width: 130px;
+        -webkit-transition: all 300ms;
+        -moz-transition: all 300ms;
+        -o-transition: all 300ms;
+        transition: all 300ms;
+    }
+
+    .header .nav .logo {
+        top: 14px;
+        -webkit-transition: all 300ms;
+        -moz-transition: all 300ms;
+        -o-transition: all 300ms;
+        transition: all 300ms;
+    }
+
+    /*下载资料*/
+    .dataDownload .dataBox {
+        width: 700px;
+    }
+
+    .dataDownload .download-material {
+        padding: 10px 0 10px 0;
+    }
+
+    .dataDownload .dataBody {
+        max-height: 440px;
+    }
+
+    .dataDownload .download-material p .btn-buy {
+        width: 120px;
+    }
+
+    .dataDownload .download-material p .price, .dataDownload .download-material p .free {
+        right: 170px;
+    }
+
+    .vipContrast .con-wrap .tr-1 {
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+
+    .vipContrast .con-wrap .tr-2, .vipContrast .con-wrap .tr-3, .vipContrast .con-wrap .tr-4, .vipContrast .con-wrap .tr-5, .vipContrast .con-wrap .tr-6, .vipContrast .con-wrap .tr-7, .vipContrast .con-wrap .tr-8, .vipContrast .con-wrap .tr-9 {
+        height: 40px;
+        line-height: 40px;
+        font-size: 13px;
+    }
+
+    .vipContrast .con-wrap p i {
+        font-size: 22px;
+    }
+
+    .vip-buy-panel {
+        height: 146px;
+    }
+
+    .vip-year-list {
+        margin: 4px auto 16px auto;
+    }
+
+    .MaskBaike {
+        height: 750px;
+    }
+
+    .rightBox .RecommendBox {
+        width: 237.23px;
+    }
+
+    .newsConInfo .rightBox .RecommendBox {
+        width: 258px;
+    }
+
+    .rightBox .tjBox .tjList a {
+        color: #666;
+        font-size: 13px;
+        position: relative;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        width: 100%;
+        display: inline-block;
+        height: auto;
+        transition: all 300ms;
+        -webkit-transition: all 300ms;
+        -moz-transition: all 300ms;
+    }
+
+    .LeftGuideBox .shareChild .item a i {
+        font-size: 20px;
+    }
+
+    .LeftGuideBox .shareChild .item a {
+        height: 20px;
+    }
+
+    .LeftGuideBox .shareChild .item .num {
+        line-height: 30px;
+    }
+
+    .LeftGuideBox .shareChild {
+        width: 66px;
+    }
+
+    .LeftGuideBox .shareChild .item {
+        min-height: 56px;
+    }
+
+    .LeftGuideBox .showBox {
+        right: 82px;
+        padding: 10px 12px;
+    }
+
+    .LeftGuideBox .showBox p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .LeftGuideBox .showBox .pageQrCode {
+        width: 120px;
+        height: 120px;
+    }
+
+    .baiKeSearch .searchBar {
+        padding: 70px 60px;
+    }
+
+    .baiKeSearch .searchBar .searchBarTxt p {
+        margin-bottom: 25px;
+    }
+
+    .baike .baikeMain #Chart02 {
+        height: 500px;
+    }
+
+    .TrainListBox .picBox a img {
+        height: 170px;
+    }
+
+    .TrainListBox .courseInfo .class-icon {
+        margin: 22px auto 0;
+    }
+
+    .TrainListBox .courseInfo .class-address {
+        font-size: 18px;
+        margin-top: 16px;
+    }
+
+    .TrainListBox .courseInfo .class-icon {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .TrainListBox .courseInfo .class-icon i {
+        font-size: 26px;
+    }
+
+    .orderDetails .limit {
+        display: block;
+        width: 330px;
+    }
+
+    .tjcourse .tjLi .info .className {
+        font-size: 12px;
+    }
+
+    .tjcourse .tjLi .pic {
+        height: 62px;
+    }
+
+    .tjcourse .tjLi .info .className {
+        line-height: 18px;
+        height: 36px;
+    }
+
+    .tjcourse .tjLi .info .classDate {
+        margin-top: 10px;
+    }
+
+    .tjcourse .tjLi .tjcourseInfo .info {
+        padding-left: 10px;
+    }
+}
+
+/*全局*/
+@media only screen and (max-width: 1910px) and (min-width: 1280px) {
+    .content-servers a .pro-explain {
+        left: -30px;
+        font-size: 16px;
+    }
+}

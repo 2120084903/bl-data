@@ -1,0 +1,34 @@
+/*=================引入样式=======================*/
+
+/*样式重置*/
+@import url('../../Frame/css/reset.css');
+
+/*框架*/
+@import url('../../Frame/css/layout.css');
+@import url('../../Frame/css/url.css');
+@import url('../../Frame/css/master.css');
+@import url('../../Frame/css/themes.css');
+@import url('../../Frame/css/global.css');
+
+/*IE*/
+@import url('../../Frame/css/IE.css');
+
+/*layui框架*/
+@import url('../../Frame/layui/css/layui.css');
+
+/*媒体查询*/
+@import url('../../Frame/css/search.css');
+
+/*字体*/
+@import url('../../Frame/css/font-awesome.css');
+/*阿里妈妈图标*/
+@import url('http://at.alicdn.com/t/font_630146_kib63sefhu.css');
+
+/*动画*/
+@import url('../../Frame/css/PageAnimate.css');
+@import url('../../Frame/css/animate.min.css');
+
+
+
+
+

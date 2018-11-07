@@ -1,0 +1,132 @@
+[
+  {
+    "data": {
+      "id": "rootE",
+      "name": "王勇"
+    },
+
+    "classes": "root"
+  },
+
+  {
+    "data": {
+      "id": "child01",
+      "name": "滴滴出行"
+    },
+
+    "classes": "childE c3"
+  },
+
+  {
+    "data": {
+      "id": "child02",
+      "name": "曹操专车"
+    },
+
+    "classes": "childE c6"
+  },
+
+  {
+    "data": {
+      "id": "child03",
+      "name": "摩拜单车"
+    },
+
+    "classes": "childE c4"
+  },
+
+  {
+    "data": {
+      "id": "child04",
+      "name": "轨道交通123"
+    },
+    "classes": "childE c2"
+  },
+
+  {
+    "data": {
+      "id": "child05",
+      "name": "人民网"
+    },
+    "classes": "childE c5"
+  },
+
+  {
+    "data": {
+      "id": "child06",
+      "name": "新华网"
+    },
+    "classes": "childE c2"
+  },
+
+  {
+    "data": {
+      "id": "child07",
+      "name": "携程旅行"
+    },
+    "classes": "childE c5"
+  },
+
+
+
+
+
+
+  {
+    "data": {
+      "source": "rootE",
+      "target": "child01",
+      "label":"调研"
+    },
+    "classes": "labelTxt c3"
+  },
+
+  {
+    "data": {
+      "source": "rootE",
+      "target": "child02",
+      "label":"中立"
+    },
+    "classes": "labelTxt c6"
+  },
+  {
+    "data": {
+      "source": "rootE",
+      "target": "child03",
+      "label":"支持鼓励"
+    },
+    "classes": "labelTxt c4"
+  },
+  {
+    "data": {
+      "source": "rootE",
+      "target": "child04",
+      "label":"处罚"
+    },
+    "classes": "labelTxt c2"
+  },
+  {
+    "data": {
+      "source": "rootE",
+      "target": "child05",
+      "label":"严格监管"
+    },
+    "classes": "labelTxt c5"
+  },
+  {
+    "data": {
+      "source": "rootE",
+      "target": "child06",
+      "label":"处罚"
+    },
+    "classes": "labelTxt c2"
+  },
+  {
+    "data": {
+      "source": "rootE",
+      "target": "child07",
+      "label":"严格监管"
+    },
+    "classes": "labelTxt c5"
+  }
+]

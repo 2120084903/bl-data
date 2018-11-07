@@ -1,0 +1,176 @@
+[
+  {
+    "data": {
+      "id": "rootE",
+      "name": "王勇"
+    },
+
+    "classes": "root"
+  },
+
+  {
+    "data": {
+      "id": "child01",
+      "name": "朱程清"
+    },
+
+    "classes": "childE"
+  },
+
+  {
+    "data": {
+      "id": "child02",
+      "name": "李民"
+    },
+
+    "classes": "childE"
+  },
+
+  {
+    "data": {
+      "id": "child03",
+      "name": "张婷"
+    },
+    "classes": "childE RedE"
+  },
+
+  {
+    "data": {
+      "id": "child04",
+      "name": "张淑玲"
+    },
+    "classes": "childE RedE"
+  },
+
+  {
+    "data": {
+      "id": "child05",
+      "name": "李长志"
+    },
+    "classes": "childE"
+  },
+
+  {
+    "data": {
+      "id": "child06",
+      "name": "周凯旋"
+    },
+    "classes": "childE RedE"
+  },
+
+  {
+    "data": {
+      "id": "child07",
+      "name": "刘凯"
+    },
+    "classes": "childE"
+  },
+  {
+    "data": {
+      "id": "child08",
+      "name": "李婷"
+    },
+    "classes": "childE RedE"
+  },
+  {
+    "data": {
+      "id": "child09",
+      "name": "刘顺丰"
+    },
+    "classes": "childE"
+  },
+
+  {
+    "data": {
+      "id": "child10",
+      "name": "马云"
+    },
+    "classes": "childE"
+  },
+
+
+
+
+
+  {
+    "data": {
+      "source": "child01",
+      "target": "rootE",
+      "label":"表兄-50岁"
+    },
+    "classes": "labelTxt"
+  },
+
+  {
+    "data": {
+      "source": "child02",
+      "target": "rootE",
+      "label":"表弟-30岁"
+    },
+    "classes": "labelTxt"
+  },
+  {
+    "data": {
+      "source": "child03",
+      "target": "rootE",
+      "label":"妻子-43岁"
+    },
+    "classes": "labelTxt RedE"
+  },
+  {
+    "data": {
+      "source": "child04",
+      "target": "rootE",
+      "label":"表妹-30岁"
+    },
+    "classes": "labelTxt RedE"
+  },
+  {
+    "data": {
+      "source": "child05",
+      "target": "rootE",
+      "label":"其他-38岁"
+    },
+    "classes": "labelTxt"
+  },
+  {
+    "data": {
+      "source": "child06",
+      "target": "rootE",
+      "label":"母亲-80岁"
+    },
+    "classes": "labelTxt RedE"
+  },
+  {
+    "data": {
+      "source": "child07",
+      "target": "rootE",
+      "label":"同事-36岁"
+    },
+    "classes": "labelTxt"
+  },
+  {
+    "data": {
+      "source": "child08",
+      "target": "rootE",
+      "label":"情人-30岁"
+    },
+    "classes": "labelTxt RedE"
+  },
+  {
+    "data": {
+      "source": "child09",
+      "target": "rootE",
+      "label":"老师-80岁"
+    },
+    "classes": "labelTxt"
+  },
+  {
+    "data": {
+      "source": "child10",
+      "target": "rootE",
+      "label":"朋友-40岁"
+    },
+    "classes": "labelTxt"
+  }
+]

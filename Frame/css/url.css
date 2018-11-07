@@ -1,0 +1,246 @@
+/*该样式表用于存放有链接的样式*/
+
+/*首页政策推荐类型展示图标*/
+.icontype span:hover::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 12px;
+    background: url(../../Project/img/typehover.png);
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+    transition: .4s background ease;
+    -moz-transition: .4s background ease;
+    -webkit-transition: .4s background ease;
+}
+
+.icontype span::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 12px;
+    background: url(../../Project/img/type.png);
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+    transition: .4s background ease;
+    -moz-transition: .4s background ease;
+    -webkit-transition: .4s background ease;
+}
+
+
+/* 意见反馈头部背景图 */
+.HelpHeader {
+    width: 100%;
+    height: 359px;
+    background: url(../../Project/img/help-center-banner.jpg) no-repeat center;
+    position: relative;
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+
+/* 会议详情 */
+.meetInfoMain .layoutType.news {
+    background: url(../../Project/img/meetbg.png);
+    border-top: 1px #f3f3f3 solid;
+    border-bottom: 1px #f3f3f3 solid;
+    overflow: hidden;
+    padding: 20px 0px 30px 0px;
+}
+
+/*思维导图遮罩*/
+.policyLayout .MaskImg {
+    width: 100%;
+    background-image: url('../../Project/img/maskImg.png');
+    background-size: 100%;
+}
+
+/*水印遮罩*/
+.watermark{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    margin-left: -220px;
+    margin-top: -75px;
+    width: 450px;
+    height: 150px;
+    background:url("../../Project/img/watermark.png") no-repeat;
+    background-size: cover;
+}
+
+/*IE提示下载浏览器图标*/
+.BrowserLi .iconBox .imgBoxMain{
+    display: inline-block;
+    width: 76px;
+    height: 76px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -38px;
+    margin-left: -38px;
+    background: url("../../Project/img/Browser.png") no-repeat;
+}
+
+/*首页图片*/
+
+/*///转转特效*/
+.index .bg0 {
+    width: 500px;
+    height: 500px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../../Project/img/product/bg0.png) no-repeat center center;
+    background-size: 150%
+}
+
+.index .bg1 {
+    width: 100%;
+    height: 100%;
+    background: url(../../Project/img/product/bg2.png) no-repeat center center
+}
+
+.index .hx-box ul li span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../../Project/img/product/hx.png) no-repeat center center;
+    background-size: 100% 100%;
+    animation: hx 4s linear infinite
+}
+
+/*///产品六边形*/
+.pro-explain.blue {
+    background: url(../../Project/img/hexagon-blue.png) left top no-repeat;
+    background-size: contain;
+}
+
+.pro-explain.green {
+    background: url(../../Project/img/hexagon-green.png) left top no-repeat;
+    background-size: contain;
+}
+
+.pro-explain.yellow {
+    background: url(../../Project/img/hexagon-yellow.png) left top no-repeat;
+    background-size: contain;
+}
+
+.index .productBox {
+    overflow: hidden;
+    /*background-image: -webkit-linear-gradient(90deg, #395ecb 0%, #3657be 35%, #242161 75%, #1a0531 100%);*/
+    /*background-image: -moz-linear-gradient(90deg, #395ecb 0%, #3657be 35%, #242161 75%, #1a0531 100%);*/
+    /*background-image: -ms-linear-gradient(90deg, #395ecb 0%, #3657be 35%, #242161 75%, #1a0531 100%);*/
+    /*background-image: linear-gradient(0deg, #395ecb 0%, #3657be 35%, #242161 75%, #1a0531 100%);*/
+    /*background-color: #2A6BD5;*/
+    position: relative;
+    background: url(../../Project/img/head_bg_0305.jpg) no-repeat center;
+    background-color: #0065C1;
+}
+
+/*点状地球背景*/
+.wrapper-row.Exceedbox {
+    background: url(../../Project/img/domain-market.jpg) no-repeat #fff center top;
+}
+
+.serviceQy {
+    background: url(../../Project/img/newmail-advantage-bg1.jpg) no-repeat #fff center top;
+}
+
+
+/*百科背景*/
+.baikeBg{
+    background: url(../../Project/img/bkbg.png) top left repeat;
+    background-attachment:fixed;
+    background-color: #F5F5F5;
+}
+
+/*产品服务*/
+.IE .index .bg0{
+    top: 30%;
+    background: url(../../Project/img/cpBg.png) no-repeat center center;
+}
+
+
+
+/*订单支付*/
+.modal-weixin-pay .example {
+    display: none;
+    width: 307px;
+    height: 488px;
+    background: url('../../Project/img/weinxin-pay.png') no-repeat;
+    position: absolute;
+    top: -30px;
+    left: -300px;
+}
+
+/*百科购买*/
+.MaskBaike{
+    background: url('../../Project/img/cbase-mengban.png') no-repeat;
+    height: 940px;
+    position: relative;
+}
+.vip-top {
+    padding-top: 5px;
+    background: url('../../Project/img/vip_modal_bg@2x.png') no-repeat center top;
+    background-size: 750px 290px;
+}
+
+
+/*订阅弹窗*/
+.model-box{
+    z-index: 2;
+    width: 465px;
+    height: 450px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -232px;
+    margin-top: -225px;
+    background: #fff url('../../Project/img/integral-back.png') no-repeat center top;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #666;
+}
+
+/*百科列表*/
+.baiKeListBox .bkListHeader {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    background: url("../../Project/img/sgbk_index_bg_sprite.png") no-repeat;
+}
+
+.baiKeSearch {
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    background: url("../../Project/img/baiKeSearch.png") center;
+}
+
+/*百科详情-雄鸡图背景*/
+.baike .baikeMain #Chart02 {
+    height: 600px;
+    border: 1px solid #ddd;
+    background: url("../../Project/img/yb_bg_rep.jpg") repeat-x 0 0;
+}
+
+/*订单详情*/
+.orderDetails .mbLine{
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 8px;
+    background-image: url('../../Project/img/edm-bottom.png');
+}
+.orderDetails .topImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: url('../../Project/img/edm-top.png');
+}

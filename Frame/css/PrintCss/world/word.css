@@ -1,0 +1,372 @@
+/* word下载 */
+/*=============================全局样式=================*/
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+    margin: 0;
+    padding: 0
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+    font-style: normal;
+    font-weight: normal
+}
+
+ul,
+ol {
+    list-style: none
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+select,
+input {
+    vertical-align: middle
+}
+
+select,
+input,
+textarea {
+    font-size: 12px;
+    margin: 0
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    outline-style: none;
+    -webkit-appearance: none
+}
+
+textarea {
+    resize: none
+}
+
+table {
+    border-collapse: collapse
+}
+
+html body {
+    font-family: 'SimSun', '微软雅黑', arial, Regular;
+    /* font-family: 'Microsoft YaHei',Arial,sans-serif; */
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+/*红色*/
+.colorRed {
+    color: #FE5623 !important;
+}
+
+/*黄色*/
+.colorOrange {
+    color: #FF9800 !important;
+}
+
+/*蓝色*/
+.colorBlue {
+    color: #1DA0EE !important;
+}
+
+/*绿色*/
+.colorGreen {
+    color: #6ABB46 !important;
+}
+
+.clearfix:after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.hasTableBox {
+    margin-top: 20pt;
+}
+
+.hasTableBox th {
+    text-align: center;
+    background: #f8f8f8;
+    border: #ddd 1pt solid;
+    border-collapse: collapse;
+    padding: 6pt 12pt 6pt 12pt;
+    font-weight: normal;
+    color: #444;
+    line-height: 1.5;
+}
+
+.hasTableBox td {
+    padding: 12px 10px 12px 10px;
+    border: #ddd 1pt solid;
+    word-break: break-all;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #222;
+}
+
+.hasTableBox a {
+    color: #1D9ED2;
+}
+
+/*========================自定义样式开始========================*/
+/*行业周报*/
+/*table{*/
+/*width: 100%;*/
+/*}*/
+.wordName {
+    color: #1D9ED2;
+    font-size: 30pt;
+    text-align: center;
+}
+
+.stageNum {
+    text-align: center;
+    color: #333;
+    font-size: 14pt;
+    margin: 20pt 0;
+    font-weight: bolder;
+}
+
+.line .lineLi {
+    width: 100%;
+    height: 1pt;
+    margin: 2pt 0;
+    background-color: #1D9ED2;
+}
+
+.layoutBox .boxLi {
+    margin-top: 50pt;
+}
+
+.layoutBox .headerLabel {
+    color: #1D9ED2;
+    font-size: 20pt;
+    text-align: center;
+}
+
+.layoutBox .conBody .txtBox {
+    font-size: 14pt;
+    line-height: 1.8;
+    margin-top: 20pt;
+    text-align: justify;
+}
+
+.layoutBox .conBody .tableBox {
+    margin-top: 20pt;
+}
+
+.layoutBox .conBody .Secondlabel {
+    font-size: 15pt;
+    margin: 20pt 0;
+    color: #333;
+    font-weight: bolder;
+}
+
+.layoutBox .dataShow {
+    margin-top: 15pt;
+}
+
+.layoutBox .dataShow table {
+    font-weight: normal;
+}
+
+.layoutBox .conBody .SecondBody .imgBox {
+    text-align: center;
+}
+
+.layoutBox .conBody .SecondBody .imgBox img {
+    max-width: 100%;
+}
+
+.layoutBox .dataShow .dataColumnar {
+    width: 30pt;
+    height: 6pt;
+    border-radius: 50pt;
+    background-color: #22C26B;
+}
+
+.layoutBox .dataShow td {
+    color: #555;
+    font-size: 14pt;
+}
+
+.echartTs .dataShow tr td {
+    padding: 4pt 0;
+}
+
+.layoutBox .echartTs {
+    margin-bottom: 50pt;
+}
+
+/*.layoutBox .echartWords .dataShow tr {*/
+/*width: 50%;*/
+/*display: inline-block;*/
+/*}*/
+
+.layoutBox .echartWords .dataShow tr td {
+    display: inline-block;
+    padding: 5pt 0;
+    font-size: 14pt;
+}
+
+.layoutBox .HyData .dataShow td {
+    font-size: 10pt;
+    font-family: 'Microsoft YaHei', Arial, sans-serif;
+}
+
+.layoutBox .HyData .dataShow .dataLiBox {
+    padding: 8pt;
+}
+
+.layoutBox .HyData .dataShow td .type {
+    color: #555;
+}
+
+.layoutBox .HyData .dataShow .numShow {
+    margin-top: 5pt;
+}
+
+.layoutBox .HyData .dataShow .numShow .strongNum {
+    color: #333;
+    font-size: 16pt;
+}
+
+.layoutBox .HyData .oldNumShow {
+    font-size: 10pt;
+    color: #555;
+}
+
+.layoutBox .HyData .oldNumShow .bigTxt {
+    color: #333;
+    font-weight: bolder;
+    margin-left: 5pt;
+}
+
+.layoutBox .HyData .trendImg img {
+    width: 18pt;
+}
+
+.layoutBox .HyName {
+    margin: 30pt 0 15pt 0;
+}
+
+.layoutBox .HyName .name {
+    color: #1D9ED2;
+    font-size: 20pt;
+    margin-right: 6pt;
+}
+
+.layoutBox .HyName .indexNumTxt {
+    color: #444;
+    font-size: 14pt;
+}
+
+.layoutBox .HyName .indexNum {
+    color: #15941a;
+    font-size: 20pt;
+    font-weight: bolder;
+}
+
+/*行业月报*/
+.layoutBox .boxLi .HyBox {
+    margin-top: 20pt;
+}
+
+.layoutBox .boxLi .HyBox .HyLi {
+    font-size: 13pt;
+    display: inline-block;
+    margin: 6pt 15pt 6pt 0;
+    border: 1px solid #ddd;
+    border-radius: 2pt;
+    padding: 5pt 12pt;
+}
+
+.layoutBox .levelShow {
+    width: 170pt;
+    margin-left: 40pt;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.layoutBox .levelShow table {
+    font-weight: normal;
+}
+
+.layoutBox .levelShow td {
+    font-size: 11pt;
+    padding: 4pt 0;
+}
+
+.layoutBox .levelShow .gl.active {
+    color: #fff;
+    border-color: #4caf50;
+    background-color: #4caf50;
+}
+
+.layoutBox .levelShow .qy.active {
+    color: #fff;
+    border-color: #FE7C1D;
+    background-color: #FE7C1D;
+}
+
+.layoutBox .levelShow .qjg.active {
+    color: #fff;
+    border-color: #f44336;
+    background-color: #f44336;
+}
+
+.type{
+    font-size: 14pt;
+}

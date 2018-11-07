@@ -1,0 +1,203 @@
+[
+  {
+    "selector": "node",
+    "style": {
+      "height": 50,
+      "width": 50
+    }
+  },
+  {
+    "selector": "node.root",
+    "style": {
+      "height": 70,
+      "width": 70,
+      "font-size": "12px",
+      "text-valign": "center",
+      "text-halign": "center",
+      "background-color": "#1D9ED2",
+      "background-fit":"cover",
+      "background-image":"https://img02.sogoucdn.com/app/a/10010016/f725e8b871fedebc9166bba89f90e076",
+      "color": "#fff",
+      "z-index": "10",
+      "border-color": "#1D9ED2",
+      "border-width": 3,
+      "border-opacity": 1
+    }
+  },
+
+  {
+    "selector": "node.childE",
+    "style": {
+      "height": 50,
+      "width": 50,
+      "content": "data(name)",
+      "font-size": "12px",
+      "text-valign": "center",
+      "text-halign": "center",
+      "text-max-width":"50px",
+      "text-outline-width": 2,
+      "text-outline-color": "#4EA2F0",
+      "background-color": "#4EA2F0",
+      "color": "#fff",
+      "z-index": "10",
+      "border-color": "#128BED",
+      "border-width": 1,
+      "border-opacity": 0.5
+    }
+  },
+
+
+  {
+    "selector": "edge",
+    "style": {
+      "label": "data(label)",
+      "curve-style":"bezier",
+      "control-point-step-size":20000,
+      "width": 1,
+      "opacity": 1,
+      "target-arrow-shape": "triangle",
+      "target-arrow-color":"#7AB9CE",
+      "line-color": "#7AB9CE"
+    }
+  },
+
+  {
+    "selector": "node.c2",
+    "style": {
+      "text-outline-width": 1,
+      "text-outline-color": "#F25A29",
+      "background-color": "#F25A29",
+      "border-color": "#DC4717"
+    }
+  },
+
+  {
+    "selector": "edge.c2",
+    "style": {
+      "curve-style":"bezier",
+      "target-arrow-color":"#F25A29",
+      "line-color": "#F25A29"
+    }
+  },
+
+
+  {
+    "selector": "node.c3",
+    "style": {
+      "text-outline-width": 1,
+      "text-outline-color": "#4EA2F0",
+      "background-color": "#4EA2F0",
+      "border-color": "#4EA2F0"
+    }
+  },
+
+  {
+    "selector": "edge.c3",
+    "style": {
+      "curve-style":"bezier",
+      "target-arrow-color":"#4EA2F0",
+      "line-color": "#4EA2F0"
+    }
+  },
+
+
+  {
+    "selector": "node.c4",
+    "style": {
+      "text-outline-width": 1,
+      "text-outline-color": "#5cad6c",
+      "background-color": "#5cad6c",
+      "border-color": "#5cad6c"
+    }
+  },
+
+  {
+    "selector": "edge.c4",
+    "style": {
+      "curve-style":"bezier",
+      "target-arrow-color":"#5cad6c",
+      "line-color": "#5cad6c"
+    }
+  },
+
+
+
+
+  {
+    "selector": "node.c5",
+    "style": {
+      "text-outline-width": 1,
+      "text-outline-color": "#ff9417",
+      "background-color": "#ff9417",
+      "border-color": "#ff9417"
+    }
+  },
+
+  {
+    "selector": "edge.c5",
+    "style": {
+      "curve-style":"bezier",
+      "target-arrow-color":"#ff9417",
+      "line-color": "#ff9417"
+    }
+  },
+
+
+  {
+    "selector": "node.c6",
+    "style": {
+      "text-outline-width": 1,
+      "text-outline-color": "#76a2ff",
+      "background-color": "#76a2ff",
+      "border-color": "#76a2ff"
+    }
+  },
+
+  {
+    "selector": "edge.c6",
+    "style": {
+      "curve-style":"bezier",
+      "target-arrow-color":"#76a2ff",
+      "line-color": "#76a2ff"
+    }
+  },
+
+
+  {
+    "selector": "node.c7",
+    "style": {
+      "text-outline-width": 1,
+      "text-outline-color": "#e576ff",
+      "background-color": "#e576ff",
+      "border-color": "#e576ff"
+    }
+  },
+
+  {
+    "selector": "edge.c7",
+    "style": {
+      "curve-style":"bezier",
+      "target-arrow-color":"#e576ff",
+      "line-color": "#e576ff"
+    }
+  },
+
+
+
+
+  {
+    "selector": ".labelTxt",
+    "style": {
+      "color":"#333",
+      "edge-text-rotation": "autorotate",
+      "font-size": "12px",
+      "overlay-opacity":0,
+
+      "text-background-padding":"4px",
+      "text-background-opacity": 1,
+      "text-background-color": "#fff",
+      "text-background-shape": "roundrectangle"
+    }
+  }
+
+]

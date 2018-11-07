@@ -1,0 +1,419 @@
+﻿
+.clearleft {
+    clear: left;
+}
+
+.clearright {
+    clear: right
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+p, ul, li, dl, dd, dt, form, h1, h2, h3, h4, h5, h6 {
+    list-style: none;
+}
+
+img {
+    border: none;
+}
+
+a {
+    outline: none;
+    blr: expression(this.onFocus=this.blur());
+    text-decoration: none;
+    color: Black;
+}
+
+/*本站通用*/
+.Album .footerBox {
+    margin-top: 115px;
+}
+
+.Album .footerBox .footBottom {
+    background-color: #f5f5f5;
+}
+
+.AlbumLeft {
+    float: left;
+}
+
+.AlbumRight {
+    float: right;
+}
+
+.clearborderright {
+    border-right: none !important;
+}
+
+.none {
+    display: none;
+}
+
+.margintop20 {
+    margin-top: 20px;
+}
+
+.color1 {
+    color: White;
+}
+
+.color2 {
+    color: #333333;
+}
+
+/*img:hover {*/
+/*background: white;*/
+/*filter: alpha(opacity=80);*/
+/*-moz-opacity: 0.8;*/
+/*-khtml-opacity: 0.8;*/
+/*opacity: 0.8;*/
+/*}*/
+
+/*图片特效*/
+.piccontext {
+    width: 1020px;
+    margin: 12px auto 0px;
+    background: white;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.piccontext h2 {
+    display: inline-block;
+    vertical-align: text-bottom;
+    font-size: 14px;
+    color: #666;
+    font-weight: bolder;
+}
+
+.source {
+    padding: 0 20px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    font-family: "宋体";
+}
+
+.source_left {
+    float: left;
+    height: 20px;
+    color: #666666;
+}
+
+.source_left a {
+    color: #666666;
+}
+
+.source_left a:hover {
+    color: #ff5d11;
+    text-decoration: underline;
+}
+
+.source_left span {
+    color: #ababab;
+    padding-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.source_right {
+    float: right;
+    height: 20px;
+    color: #666666;
+}
+
+.source_right a {
+    color: #666666;
+}
+
+.source_right span {
+    padding: 0px 10px;
+}
+
+.source_right1 {
+    float: right;
+    height: 20px;
+    color: #666666;
+    display: none;
+}
+
+.support {
+    float: left;
+    height: 20px;
+    overflow: hidden;
+}
+
+.support img {
+    padding: 0px 5px;
+}
+
+.spell {
+    background: url("../images/spel.jpg") 0px -1px no-repeat;
+    padding-left: 23px;
+}
+
+a.spell:hover {
+    background: url("../images/spel_1.jpg") 1px -1px no-repeat;
+}
+
+.list {
+    background: url("../images/list.jpg") 1px 1px no-repeat;
+    padding-left: 23px;
+}
+
+a.list:hover {
+    background: url("../images/list_1.jpg") 0px 0px no-repeat;
+}
+
+/*大图展示*/
+.picshow {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.picshowtop {
+    background-color: #f1f1f1;
+    position: relative;
+    width: 890px;
+    height: 600px;
+    z-index: 4;
+    zoom: 1;
+    line-height: 600px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.picshowtop img {
+    vertical-align: middle;
+    zoom: 1;
+    max-width: 890px;
+    max-height: 600px;
+    cursor: pointer;
+}
+
+#pic1 {
+    max-width: 890px;
+}
+
+#preArrow {
+    left: 0px;
+}
+
+#nextArrow {
+    right: 0px;
+}
+
+.contextDiv {
+    cursor: pointer;
+    height: 100%;
+    width: 12%;
+    position: absolute;
+    top: 0px;
+    z-index: 5;
+}
+
+.contextDiv span {
+    position: absolute;
+    top: 50%;
+    display: block;
+    margin-top: -35px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    background-color: #000;
+    opacity: 0;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+
+.AlbumLeft:hover .contextDiv span {
+    opacity: .1;
+}
+
+.contextDiv span:hover {
+    opacity: .5 !important;
+}
+
+.contextDiv span i {
+    color: #fff;
+    font-size: 50px;
+}
+
+#preArrow_A {
+    left: 0;
+}
+
+#nextArrow_A {
+    right: 0;
+}
+
+.picshowtxt {
+    width: 890px;
+    margin: 15px 0 5px 0;
+    text-align: center;
+}
+
+.Returnbtn {
+    float: left;
+}
+
+.Returnbtn a {
+    color: #1D9ED2;
+    font-size: 15px;
+}
+
+.picshowtxt_left {
+    display: inline-block;
+}
+
+.picshowtxt_left span {
+    color: #e55656;
+    font-size: 16px;
+}
+
+.picshowtxt_left i {
+    color: #666666;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.picshowtxt_right {
+    display: inline-block;
+    margin-left: 10px;
+    color: #666666;
+    font-size: 14px;
+}
+
+.picshowlist {
+    width: 110px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.picshowlist_left {
+    float: left;
+    width: 120px;
+    overflow: hidden;
+    overflow: hidden;
+}
+
+.picleftimg {
+    width: 120px;
+    height: 80px;
+    background: url('../images/photo.jpg') no-repeat;
+    padding-top: 9px;
+    padding-left: 5px;
+    overflow: hidden;
+}
+
+.picleftimg img {
+    width: 106px;
+    height: 66px;
+}
+
+.piclefttxt {
+    width: 120px;
+    line-height: 20px;
+    font-family: "宋体";
+}
+
+.piclefttxt a {
+    color: #444444;
+}
+
+.piclefttxt a:hover {
+    color: #ff5d11;
+    text-decoration: underline;
+}
+
+.picshowlist_mid {
+    float: left;
+    height: 600px;
+    display: inline;
+    overflow: hidden;
+    text-align: center;
+}
+
+.picmidleft {
+    float: left;
+    overflow: hidden;
+}
+
+.picshowlist_mid .changeBtn {
+    width: 100%;
+}
+
+.changeBtn a {
+    display: block;
+    color: #8d8d8d;
+    line-height: 36px;
+    background-color: #eee;
+}
+
+.changeBtn a i {
+    font-size: 20px;
+}
+
+.picmidmid {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.picmidmid ul {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 520px;
+}
+
+.picmidmid ul li {
+    display: block;
+    width: auto !important;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 5px 0;
+}
+
+.picmidmid ul li a {
+    display: block;
+    overflow: hidden;
+    height: 95px;
+    line-height: 95px;
+    text-align: center;
+    border: 2px solid #f1f1f1;
+}
+
+.picmidmid ul li img {
+    width: 100%;
+    /*height: 76px;*/
+}
+
+.selectpic {
+    border-color: #1D9ED2 !important;
+}
+
+.picmidright {
+    float: right;
+    width: 24px;
+    height: 76px;
+    overflow: hidden;
+}
+
+.picshowlist_right {
+    float: left;
+    width: 120px;
+    float: right;
+    overflow: hidden;
+}

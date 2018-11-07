@@ -1,0 +1,80 @@
+[
+  {
+    "data": {
+      "id": "rootE",
+      "name": "王勇"
+    },
+
+    "classes": "root"
+  },
+
+  {
+    "data": {
+      "id": "child01",
+      "name": "网约车"
+    },
+
+    "classes": "childE"
+  },
+
+  {
+    "data": {
+      "id": "child02",
+      "name": "共享单车"
+    },
+
+    "classes": "childE"
+  },
+
+  {
+    "data": {
+      "id": "child03",
+      "name": "抖音短视频"
+    },
+    "classes": "childE GreenE"
+  },
+
+  {
+    "data": {
+      "id": "child04",
+      "name": "快手短视频"
+    },
+    "classes": "childE RedE"
+  },
+
+
+
+  {
+    "data": {
+      "source": "rootE",
+      "target": "child01",
+      "label":"中立"
+    },
+    "classes": "labelTxt"
+  },
+
+  {
+    "data": {
+      "source": "rootE",
+      "target": "child02",
+      "label":"中立"
+    },
+    "classes": "labelTxt"
+  },
+  {
+    "data": {
+      "source": "rootE",
+      "target": "child03",
+      "label":"支持鼓励"
+    },
+    "classes": "labelTxt GreenE"
+  },
+  {
+    "data": {
+      "source": "rootE",
+      "target": "child04",
+      "label":"严格监管"
+    },
+    "classes": "labelTxt RedE"
+  }
+]

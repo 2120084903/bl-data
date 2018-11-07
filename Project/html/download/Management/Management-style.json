@@ -1,0 +1,109 @@
+[
+  {
+    "selector": "node.root",
+    "style": {
+      "height": 70,
+      "width": 70,
+      "font-size": "12px",
+      "text-valign": "center",
+      "text-halign": "center",
+      "background-color": "#1D9ED2",
+      "background-fit":"cover",
+      "background-image":"https://img02.sogoucdn.com/app/a/10010016/f725e8b871fedebc9166bba89f90e076",
+      "color": "#fff",
+      "z-index": "10",
+      "border-color": "#1D9ED2",
+      "border-width": 3,
+      "border-opacity": 1
+    }
+  },
+
+  {
+    "selector": "node.childE",
+    "style": {
+      "height": 50,
+      "width": 50,
+      "content": "data(name)",
+      "font-size": "12px",
+      "text-valign": "center",
+      "text-halign": "center",
+      "text-max-width":"50px",
+      "text-outline-width": 2,
+      "text-outline-color": "#4EA2F0",
+      "background-color": "#4EA2F0",
+      "color": "#fff",
+      "z-index": "10",
+      "border-color": "#128BED",
+      "border-width": 1,
+      "border-opacity": 0.5
+    }
+  },
+
+  {
+    "selector": "node.RedE",
+    "style": {
+      "text-outline-width": 1,
+      "text-outline-color": "#F25A29",
+      "background-color": "#F25A29",
+      "border-color": "#DC4717"
+    }
+  },
+
+  {
+    "selector": "node.GreenE",
+    "style": {
+      "text-outline-width": 1,
+      "text-outline-color": "#5cad6c",
+      "background-color": "#5cad6c",
+      "border-color": "#5cad6c"
+    }
+  },
+
+  {
+    "selector": "edge",
+    "style": {
+      "label": "data(label)",
+      "curve-style":"bezier",
+      "control-point-step-size":20000,
+      "width": 1,
+      "opacity": 1,
+      "target-arrow-shape": "triangle",
+      "target-arrow-color":"#7AB9CE",
+      "line-color": "#7AB9CE"
+    }
+  },
+
+  {
+    "selector": "edge.RedE",
+    "style": {
+      "curve-style":"bezier",
+      "target-arrow-color":"#EB5728",
+      "line-color": "#EB5728"
+    }
+  },
+
+  {
+    "selector": "edge.GreenE",
+    "style": {
+      "curve-style":"bezier",
+      "target-arrow-color":"#C0D48F",
+      "line-color": "#C0D48F"
+    }
+  },
+
+  {
+    "selector": ".labelTxt",
+    "style": {
+      "color":"#333",
+      "edge-text-rotation": "autorotate",
+      "font-size": "12px",
+      "overlay-opacity":0,
+
+      "text-background-padding":"4px",
+      "text-background-opacity": 1,
+      "text-background-color": "#fff",
+      "text-background-shape": "roundrectangle"
+    }
+  }
+
+]

@@ -1,0 +1,103 @@
+/*=====================主题======================*/
+
+/*主题色*/
+.theme {
+    color: #1D9ED2 !important;
+}
+
+.themeBg {
+    background-color: #1D9ED2;
+}
+
+/*----字体颜色----*/
+/* 提示色 */
+.colorTs {
+    color: #FE7C1D !important;
+}
+
+/* 主题色 */
+.colorTs {
+    color: #1D9ED2 !important;
+}
+
+/*红色*/
+.colorRed {
+    color: #FE5623 !important;
+}
+
+/*黄色*/
+.colorOrange {
+    color: #FF9800 !important;
+}
+
+/*蓝色*/
+.colorBlue {
+    color: #1DA0EE !important;
+}
+
+/*绿色*/
+.colorGreen {
+    color: #28B18A !important;
+}
+
+/*----背景颜色----*/
+/*红色*/
+.BgRed {
+    background-color: #FE5623;
+}
+
+/*黄色*/
+.BgOrange {
+    background-color: #FF9800;
+}
+
+/*蓝色*/
+.BgBlue {
+    background-color: #1DA0EE;
+}
+
+/*绿色*/
+.BgGreen {
+    background-color: #6ABB46;
+}
+
+/*随机背景色*/
+.random-bg0 {
+    background-color: #4fd0ee !important;
+}
+
+.random-bg1 {
+    background-color: #FE5623 !important;
+}
+
+.random-bg2 {
+    background-color: #FF9800 !important;
+}
+
+.random-bg3 {
+    background-color: #1DA0EE !important;
+}
+
+.random-bg4 {
+    background-color: #6ABB46 !important;
+}
+
+.random-bg5 {
+    background-color: #e86ba5 !important;
+}
+
+.random-bg6 {
+    background-color: #4a76da !important;
+}
+
+.random-bg7 {
+    background-color: #f04d4d !important;
+}
+
+.random-bg8 {
+    background-color: #ffc107 !important;
+}
+
+.random-bg9 {
+    background-color: #9a64fb !important;
+}

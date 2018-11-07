@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>白鹿数据</title>
+    <link rel='icon' href='../img/favicon.icon' type='image/x-ico' />
+    <!--样式-->
+    <link rel="stylesheet" href="../css/root.css">
+</head>
+
+<body id="scrollTop">
+    <div class="main hasSearch grayBg">
+        <!--nav-->
+        <div class="header header_st2">
+            <div class="nav">
+                <div class="logo"><a href="index.html" z-st="nav_logo"><img src="../img/logo.png"></a>
+                </div>
+                <div class="menu">
+                    <div class="menu-box">
+                        <ul class="menu-list-content">
+                            <li><a class="menu-list-box" href="javascript:;">首页</a></li>
+                            <li class="discover header-menu-withmore "><a class="menu-list-box" href="javascript:;">政策</a>
+                            </li>
+                            <li class="one-city ">
+                                <a class="menu-list-box" href="javascript:;">新闻</a>
+                            </li>
+                            <li class="header-menu-withmore ">
+                                <a class="menu-list-box" href="javascript:;">百科</a>
+                            </li>
+                            <li class="special header-menu-withmore active">
+                                <a class="menu-list-box" href="javascript:;">会议</a>
+                            </li>
+                        </ul>
+                        <div class="searchBox">
+                            <div class="searchInp">
+                                <div class="sea-con">
+                                    <input type="text" placeholder="请输入关键词" class="txt">
+                                    <div class="Advanced-search AdvSearch">
+                                        <span class="as-serch">政策查询</span>
+                                        <div class="as-dropbox">
+                                            <ul class="as-drop clearfix">
+                                                <li><a href="javascript:;">发文字号</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <span class="searchBtn">
+                                        <i class="iconfont icon-sousuo"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-center user-center-unlogin">
+                    <ul class="unlogin">
+                        <li><a href="javascript:;" class="nav-unlogin opbg graHover"><i class="iconfont icon-people1"></i><span>登录注册</span></a></li>
+                    </ul>
+                    <div class="user-info hide">
+                        <div class="info-t">
+                            <div class="avatar">
+                                <a href="#">
+                                    <img src="https://thirdqq.qlogo.cn/qqapp/101433866/599D54B7997B94356CCB7189F795757E/100">
+                                </a>
+                                <i class="iconfont icon-down_arrow icon-bottom"></i>
+                            </div>
+                        </div>
+                        <div class="info-m">
+                            <a href="javascript:;" class="selfinfo infolist clearfix" target="_blank">
+                                <img src="https://thirdqq.qlogo.cn/qqapp/101433866/599D54B7997B94356CCB7189F795757E/100" alt="">
+                                <p class="fl infoname">〆、维生素ゝ</p>
+                                <p class="fl selfpage">
+                                    <i class="iconfont icon-my"></i>
+                                    <span>个人中心</span>
+                                </p>
+                            </a>
+                            <a href="javascript:;" class="tcbtn" rel="nofollow">
+                                <i class="iconfont icon-fanhui1"></i>
+                                <p>退出</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/nav-->
+
+        <!--content-->
+        <div class="contenBox">
+            <!-- 会议活动列表 -->
+            <div class="TrainMain">
+                <div class="TrainBox container">
+                    <div class="TrainContent">
+                        <div class="TrainShowList">
+                            <!-- 筛选 -->
+                            <div class="HeaderScreenBox">
+                                <div class="h1">培训筛选1</div>
+                                <div class="ScreenMainBox">
+                                    <div class="ScreenMainLi clearfix">
+                                        <div class="sxTitle">日期范围</div>
+                                        <div class="ScreenLi">
+                                            <input type="text" placeholder="请选择范围" id="courseDate">
+                                            <strong>-</strong>
+                                            <input type="text" placeholder="请选择范围" id="courseDateEnd">
+                                            <button class="queryBtn">查询</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /筛选 -->
+
+                            <!-- 培训列表 -->
+                            <div class="TrainListBox">
+                                <div class="courseBox">
+                                    <!--未筛选到-->
+                                    <div class="notSearchData clearfix hide">
+                                        <div class="notPic">
+                                            <i class="iconfont icon-wushuju1"></i>
+                                        </div>
+                                        <div class="notTxt">
+                                            <p>暂时没有符合该筛选条件的培训</p>
+                                            <span class="smallTxt">请重新修改筛选条件后再进行搜索</span>
+                                        </div>
+                                    </div>
+                                    <!--/未筛选到-->
+                                    <div class="courseList clearfix">
+                                        <div class="item">
+                                            <div class="itemChild">
+                                                <div class="picBox">
+                                                    <a href="培训详情.html">
+                                                        <img src="http://image.gogoup.com/course/20180822/1534911162503.jpg?x-oss-process=image/resize,w_448,h_248,limit_0,m_fill" alt="白鹿数据-GA培训">
+                                                        <div class="courseInfo">
+                                                            <div class="class-icon"><i class="iconfont icon-xueli"></i></div>
+                                                            <div class="class-name">行业培训</div>
+                                                            <div class="class-address">四川成都</div>
+                                                            <div class="class-time">10月20日</div>
+                                                        </div>
+                                                        <div class="Label-tag item-status">
+                                                            <div class="Label-icon">
+                                                                <span class="item under-kc">线下课程</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="textBox">
+                                                    <div class="itemTitle">
+                                                        <a href="培训详情.html" target="_blank" title="数码摄影后期高手之路视频课程">CEO必修: 一级市场闹钱荒，早期创业者如何提前布局？</a>
+                                                    </div>
+                                                    <div class="itemFooter clearfix">
+                                                        <div class="enterState">
+                                                            <a href="培训详情.html">报名中</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="itemChild">
+                                                <div class="picBox">
+                                                    <a href="培训详情.html">
+                                                        <img src="http://image.gogoup.com/course/20180822/1534910653720.jpg?x-oss-process=image/resize,w_448,h_248,limit_0,m_fill" alt="白鹿数据-GA培训">
+                                                        <div class="courseInfo">
+                                                            <div class="class-icon"><i class="iconfont icon-zhuti"></i></div>
+                                                            <div class="class-name">行业培训</div>
+                                                            <div class="class-address">四川成都</div>
+                                                            <div class="class-time">10月20日</div>
+                                                        </div>
+                                                        <div class="Label-tag item-status">
+                                                            <div class="Label-icon">
+                                                                <span class="item under-kc">线下课程</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="textBox">
+                                                    <div class="itemTitle">
+                                                        <a href="培训详情.html" target="_blank" title="数码摄影后期高手之路视频课程">数码摄影后期高手之路视频课程</a>
+                                                    </div>
+                                                    <div class="itemFooter clearfix">
+                                                        <div class="enterState">
+                                                            <a href="培训详情.html">报名中</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="itemChild">
+                                                <div class="picBox">
+                                                    <a href="培训详情.html">
+                                                        <img src="http://image.gogoup.com/course/20171025/1508919280566.jpg?x-oss-process=image/resize,w_448,h_248,limit_0,m_fill" alt="白鹿数据-GA培训">
+                                                        <div class="courseInfo">
+                                                            <div class="class-icon"><i class="iconfont icon-qi"></i></div>
+                                                            <div class="class-name">行业培训</div>
+                                                            <div class="class-address">四川成都</div>
+                                                            <div class="class-time">10月20日</div>
+                                                        </div>
+                                                        <div class="Label-tag item-status">
+                                                            <div class="Label-icon">
+                                                                <span class="item on-kc">线上课程</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="textBox">
+                                                    <div class="itemTitle">
+                                                        <a href="培训详情.html" target="_blank" title="数码摄影后期高手之路视频课程">第13届小饭桌A轮班首批录取CEO名单公布，最后十个名额等你来！</a>
+                                                    </div>
+                                                    <div class="itemFooter clearfix">
+                                                        <div class="enterState">
+                                                            <a href="培训详情.html">报名中</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="itemChild">
+                                                <div class="picBox">
+                                                    <a href="培训详情.html">
+                                                        <img src="http://image.gogoup.com/course/20180904/1536054089157.jpg?x-oss-process=image/resize,w_448,h_248,limit_0,m_fill" alt="白鹿数据-GA培训">
+                                                        <div class="courseInfo">
+                                                            <div class="class-icon"><i class="iconfont icon-socialfill"></i></div>
+                                                            <div class="class-name">行业培训</div>
+                                                            <div class="class-address">四川成都</div>
+                                                            <div class="class-time">10月20日</div>
+                                                        </div>
+                                                        <div class="Label-tag item-status">
+                                                            <div class="Label-icon">
+                                                                <span class="item under-kc">线下课程</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="textBox">
+                                                    <div class="itemTitle">
+                                                        <a href="培训详情.html" target="_blank" title="数码摄影后期高手之路视频课程">小饭桌创业课堂7月13日深圳开课，昆仲资本姚海波等9位大咖导师带来最实战干货</a>
+                                                    </div>
+                                                    <div class="itemFooter clearfix">
+                                                        <div class="enterState">
+                                                            <a href="培训详情.html">报名中</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="itemChild">
+                                                <div class="picBox">
+                                                    <a href="培训详情.html">
+                                                        <img src="http://image.gogoup.com/course/20180822/1534908944086.jpg?x-oss-process=image/resize,w_448,h_248,limit_0,m_fill" alt="白鹿数据-GA培训">
+                                                        <div class="courseInfo">
+                                                            <div class="class-icon"><i class="iconfont icon-favor_fill_light"></i></div>
+                                                            <div class="class-name">行业培训</div>
+                                                            <div class="class-address">四川成都</div>
+                                                            <div class="class-time">10月20日</div>
+                                                        </div>
+                                                        <div class="Label-tag item-status">
+                                                            <div class="Label-icon">
+                                                                <span class="item under-kc">线下课程</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="textBox">
+                                                    <div class="itemTitle">
+                                                        <a href="培训详情.html" target="_blank" title="数码摄影后期高手之路视频课程">小饭桌创业课堂7月13日深圳开课，昆仲资本姚海波等9位大咖导师带来最实战干货</a>
+                                                    </div>
+                                                    <div class="itemFooter clearfix">
+                                                        <div class="enterState">
+                                                            <a href="培训详情.html">报名中</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="itemChild">
+                                                <div class="picBox">
+                                                    <a href="培训详情.html">
+                                                        <img src="http://image.gogoup.com/course/20180822/1534916129905.jpg?x-oss-process=image/resize,w_448,h_248,limit_0,m_fill" alt="白鹿数据-GA培训">
+                                                        <div class="courseInfo">
+                                                            <div class="class-icon"><i class="iconfont icon-pinzhigongyingshang"></i></div>
+                                                            <div class="class-name">行业培训</div>
+                                                            <div class="class-address">四川成都</div>
+                                                            <div class="class-time">10月20日</div>
+                                                        </div>
+                                                        <div class="Label-tag item-status">
+                                                            <div class="Label-icon">
+                                                                <span class="item under-kc">线下课程</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="textBox">
+                                                    <div class="itemTitle">
+                                                        <a href="培训详情.html" target="_blank" title="数码摄影后期高手之路视频课程">小饭桌创业课堂7月13日深圳开课，昆仲资本姚海波等9位大咖导师带来最实战干货</a>
+                                                    </div>
+                                                    <div class="itemFooter clearfix">
+                                                        <div class="enterState">
+                                                            <a href="培训详情.html">报名中</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="itemChild">
+                                                <div class="picBox">
+                                                    <a href="培训详情.html">
+                                                        <img src="http://image.gogoup.com/course/20180824/1535089522410.jpg?x-oss-process=image/resize,w_448,h_248,limit_0,m_fill" alt="白鹿数据-GA培训">
+                                                        <div class="courseInfo">
+                                                            <div class="class-icon"><i class="iconfont icon-fanhuidingbu"></i></div>
+                                                            <div class="class-name">行业培训</div>
+                                                            <div class="class-address">四川成都</div>
+                                                            <div class="class-time">10月20日</div>
+                                                        </div>
+                                                        <div class="Label-tag item-status">
+                                                            <div class="Label-icon">
+                                                                <span class="item under-kc">线下课程</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="textBox">
+                                                    <div class="itemTitle">
+                                                        <a href="培训详情.html" target="_blank" title="数码摄影后期高手之路视频课程">小饭桌创业课堂7月13日深圳开课，昆仲资本姚海波等9位大咖导师带来最实战干货</a>
+                                                    </div>
+                                                    <div class="itemFooter clearfix">
+                                                        <div class="enterState">
+                                                            <a href="培训详情.html" class="endBtn">已结束</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /培训列表 -->
+
+                            <!-- 更多按钮 -->
+                            <div class="articleLoading">
+                                <a href="javascript:;" title="加载更多">
+                                    <span class="downArrow">加载更多</span>
+                                    <div class="loading ball-pulse">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- /更多按钮 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /会议活动列表 -->
+        </div>
+        <!--/content-->
+
+        <!--footer-->
+        <div class="footerBox">
+            <div class="footTop">
+                <div class="topBox container clearfix">
+                    <div class="basicLayout block01">
+                        <div class="layoutHeader">快速链接</div>
+                        <div class="textList clearfix">
+                            <div class="colBox">
+                                <div class="footLink">
+                                    <a href="javascript:void(0);">企业名录</a>
+                                </div>
+                                <div class="footLink">
+                                    <a href="javascript:void(0);">品牌名录</a>
+                                </div>
+                                <div class="footLink">
+                                    <a href="javascript:void(0);">商务通道</a>
+                                </div>
+                                <div class="footLink">
+                                    <a href="javascript:void(0);">招投标查询</a>
+                                </div>
+                                <div class="footLink">
+                                    <a href="javascript:void(0);">失信人查询</a>
+                                </div>
+                                <div class="footLink">
+                                    <a href="javascript:void(0);">经营异常查询</a>
+                                </div>
+                                <div class="footLink">
+                                    <a href="javascript:void(0);">商标查询</a>
+                                </div>
+                            </div>
+                            <div class="colBox">
+                                <div class="footLink">
+                                    <a href="javascript:void(0);">数据服务</a>
+                                </div>
+                                <div class="footLink">
+                                    <a href="javascript:void(0);">人员名录</a>
+                                </div>
+                                <div class="footLink">
+                                    <a href="javascript:void(0);">500强</a>
+                                </div>
+                                <div class="footLink">
+                                    <a href="javascript:void(0);">名词解释</a>
+                                </div>
+                                <div class="footLink">
+                                    <a href="javascript:void(0);">法律诉讼查询</a>
+                                </div>
+                                <div class="footLink">
+                                    <a href="javascript:void(0);">被执行人查询</a>
+                                </div>
+                                <div class="footLink">
+                                    <a href="javascript:void(0);">招聘查询</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="basicLayout block02">
+                        <div class="layoutHeader">联系我们</div>
+                        <div class="textList">
+                            <div class="colBox">
+                                <div class="showTxtList">
+                                    <span>电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话 : 400-871-6266</span>
+                                </div>
+
+                                <div class="showTxtList">
+                                    <span>商务合作 : bd@tianyancha.com</span>
+                                </div>
+                                <div class="showTxtList">
+                                    <span>地址 : 北京市海淀区中关村文化创意产业园15#B座</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="basicLayout block04">
+                        <div class="layoutHeader">关于我们</div>
+                        <div class="textList flexTop">
+                            <div class="colBox">
+                                <div class="footLink">
+                                    <a href="关于我们.html">关于我们</a>
+                                </div>
+                                <div class="footLink">
+                                    <a href="javascript:void(0);">用户协议</a>
+                                </div>
+                                <div class="footLink">
+                                    <a href="javascript:void(0);">版权政策</a>
+                                </div>
+                                <div class="footLink">
+                                    <a href="javascript:void(0);">免责声明</a>
+                                </div>
+                                <div class="footLink">
+                                    <a href="javascript:void(0);">权利通知</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="basicLayout block05">
+                        <div class="layoutHeader">微信公众号</div>
+                        <div class="textList flexTop sm-code">
+                            <div class="qrcodeBox">
+                                <img src="../img/QR-code-ga.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="basicLayout block06">
+                        <div class="layoutHeader">下载App</div>
+                        <div class="textList flexTop sm-code">
+                            <div class="qrcodeBox">
+                                <img src="../img/QR-code-xcx.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                </div>
+            </div>
+            <div class="footBottom">
+                <div class="BottomBox container">
+                    <div class="basicInfo">
+                        <div>京公网安备 11010802021795号</div>
+                        <div>版权所有:北京金堤科技有限公司©2015 JINDIDATA 京ICP备14061319</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/footer-->
+    </div>
+    <!-- 返回顶部 -->
+    <div class="float-bar">
+        <!--工具1-->
+        <div class="tool-bar">
+            <div class="toolBox">
+                <div class="tool-li graHover Newspaper" onclick="window.location.href='订阅验证.html'">
+                    <span>订阅早报</span>
+                </div>
+            </div>
+        </div>
+        <!--/工具1-->
+        <!--工具2-->
+        <div class="tool-float">
+            <div class="float-bar-item QuickIcon relative top">
+                <div class="float-bar-item-icon float-bar-item-hasArrow">
+                    <i class="iconfont icon-windows1 font22"></i>
+                </div>
+                <div class="float-bar-item-content">
+                    <div class="text-lg">
+                        <p class="headerTxt">下载桌面快捷方式</p>
+                        <a href="javascript:;">
+                            <div class="QuickImg">
+                                <i class="iconfont icon-windows1"></i>
+                                <p>点击下载</p>
+                            </div>
+                        </a>
+                        <div class="codeSm">
+                            <p>下载后可快捷访问该网站</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="float-bar-item QrCodeBox">
+                <div class="float-bar-item-icon float-bar-item-hasArrow">
+                    <i class="iconfont icon-wx font26"></i>
+                </div>
+                <div class="float-bar-item-content">
+                    <div class="text-lg">
+                        <p class="headerTxt">扫码加入微信群</p>
+                        <div class="QrcodeImg">
+                            <img src="../img/shareQRcode.png" alt="">
+                        </div>
+                        <div class="codeSm">
+                            <p>扫一扫，关注我</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="float-bar-item feedBack relative">
+                <div class="float-bar-item-icon float-bar-item-hasArrow">
+                    <i class="iconfont icon-dingyue- font22"></i>
+                </div>
+                <div class="float-bar-item-content">
+                    <div class="text-lg">个性订阅</div>
+                </div>
+            </div>
+            <div class="float-bar-item feedBack relative">
+                <div class="float-bar-item-icon float-bar-item-hasArrow">
+                    <i class="iconfont icon-feedback"></i>
+                </div>
+                <div class="float-bar-item-content">
+                    <div class="text-lg">意见反馈</div>
+                </div>
+            </div>
+            <div class="float-bar-item goTopBox">
+                <div class="float-bar-item-icon float-bar-item-hasArrow" href="#scrollTop">
+                    <i class="iconfont icon-zhiding"></i>
+                </div>
+                <div class="float-bar-item-content" href="#scrollTop">
+                    <div class="text-lg">回到顶部</div>
+                </div>
+            </div>
+        </div>
+        <!--/工具2-->
+    </div>
+    <!-- /返回顶部 -->
+    <!--javascript-->
+    <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+    <script src="../../Frame/layui/layui.all.js"></script>
+    <script type="text/javascript" src="../js/scrollTop.js"></script>
+    <script src="../js/custom.js"></script>
+
+    <script>
+        // 显示无数据
+        $('.queryBtn').click(function () {
+            $('.courseList,.articleLoading').hide();
+            $('.notSearchData').show();
+        });
+
+            layui.use('laydate', function(){
+              var laydate = layui.laydate;
+              //日期范围
+              laydate.render({
+                elem: '#courseDate'
+                ,format: 'yyyy-MM-dd'
+              });
+                laydate.render({
+                    elem: '#courseDateEnd'
+                    ,format: 'yyyy-MM-dd'
+                });
+            });
+
+        // 课程图标背景随机
+        $(document).ready(function() {
+            var tags_a = $(".TrainListBox .courseInfo .class-icon");
+            tags_a.each(function(){
+                var x = 9;
+                var y = 0;
+                var rand = parseInt(Math.random() * (x - y + 1) + y);
+                $(this).addClass("random-bg"+rand);
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+/*404 and 500*/
+.errorBox{
+    margin: 50px 0;
+}
+.errorBox .imgBox{
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+.errorBox .imgBox img{
+    width: 100%;
+}
+
+.errorBox .imgBox button{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #0376f7;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+
+.errorBox .imgBox button:hover{
+    background-color: #026de6;
+}
+
+.errorBox .imgBox button a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 15px;
+}
+
+.errorBox .imgBox button a i{
+    font-size: 19px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+
+.errorBox .imgBox button.page500{
+    background-color: #FE7C1D;
+}
+
+.errorBox .imgBox button.page500:hover{
+    background-color: #f57010;
+}

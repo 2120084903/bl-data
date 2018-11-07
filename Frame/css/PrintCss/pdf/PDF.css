@@ -1,0 +1,1588 @@
+/* PDF下载 */
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+    margin: 0;
+    padding: 0
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+    font-style: normal;
+    font-weight: normal
+}
+
+ul,
+ol {
+    list-style: none
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+select,
+input {
+    vertical-align: middle
+}
+
+select,
+input,
+textarea {
+    font-size: 12px;
+    margin: 0
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    outline-style: none;
+    -webkit-appearance: none
+}
+
+textarea {
+    resize: none
+}
+
+table {
+    border-collapse: collapse
+}
+
+/*html body {*/
+/*font-family: 'PingFang SC', '微软雅黑', arial, Regular;*/
+/*font-family: 'Microsoft YaHei',Arial,sans-serif; */
+/*min-width: 1100px;*/
+/*}*/
+
+/*.main {*/
+/*min-width: 1100px;*/
+/*}*/
+
+/*.container {*/
+/*width: 1100px;*/
+/*margin: 0 auto;*/
+/*}*/
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+/*红色*/
+.colorRed {
+    color: #FE5623 !important;
+}
+
+/*黄色*/
+.colorOrange {
+    color: #FF9800 !important;
+}
+
+/*蓝色*/
+.colorBlue {
+    color: #1DA0EE !important;
+}
+
+/*绿色*/
+.colorGreen {
+    color: #6ABB46 !important;
+}
+
+.clearfix:after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+/* 避免换行符 */
+@media print {
+    #pieType,
+    .WordsBoxMain,
+    #mapType,
+    #Club,
+    #enterprise,
+    #lineTypeLeft,
+    #lineTypeRight,
+    .lineList,
+    .footer,
+    tr {
+        page-break-inside: avoid;
+    }
+}
+
+/* ==== 周报PDF下载 ==== */
+.center {
+    margin: 50px 0;
+}
+
+.reportName {
+    color: #1D9ED2;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: '宋体', '微软雅黑', arial, Regular;
+}
+
+.dateTime {
+    color: #4c4c4c;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.transverseLine {
+    width: 100%;
+    height: 1px;
+    margin: 2px 0;
+    background-color: #dae7ed;
+}
+
+.layoutBox {
+    margin-bottom: 60px;
+}
+
+.labelShow {
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #1D9ED2;
+    font-family: '宋体', '微软雅黑', arial, Regular;
+}
+
+.layoutChild {
+    line-height: 1.8;
+}
+
+.typeImg {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: none;
+}
+
+.typeImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.rightInfo {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.rightInfo h1 {
+    color: #1D9ED2;
+    font-size: 24px;
+}
+
+.rightInfo .listBox {
+    margin-top: 20px;
+}
+
+.listBox li {
+    padding: 0 10px;
+    display: inline-block;
+    border-radius: 0px;
+    color: #4c4c4c;
+    font-size: 13px;
+    line-height: 36px;
+    margin-right: 15px;
+    border: 1px solid #e7e9ef;
+    box-shadow: none;
+    font-weight: 500;
+    position: relative;
+}
+
+.listBox li strong {
+    font-weight: bold;
+    color: #1D9ED2;
+    margin-left: 4px;
+}
+
+.rightInfo .numShow {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+    color: #666;
+    margin-left: 10px;
+}
+
+.rightInfo .numShow strong {
+    color: #15941a;
+    font-size: 24px;
+}
+
+.childLabel {
+    font-size: 23px;
+    color: #1D9ED2;
+    margin-bottom: 15px;
+}
+
+#pieType {
+    height: 300px;
+}
+
+#WordsBox {
+    height: 300px;
+}
+
+#mapType {
+    height: 400px;
+}
+
+#Club {
+    height: 400px;
+}
+
+#enterprise {
+    height: 400px;
+}
+
+.pieDataBox .pieDataLi {
+    margin-bottom: 20px;
+}
+
+.pieDataBox {
+    text-align: center;
+}
+
+.pieDataBox .pieBox {
+    display: inline-block;
+}
+
+.pieDataBox .pieDataLi:last-child {
+    margin-bottom: 0;
+}
+
+.pieDataBox .pieDataLi ul li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pieDataBox .pieDataLi li.dataType {
+    width: 30px;
+    height: 6px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: #22C26B;
+}
+
+.pieDataBox .pieDataLi li.local {
+    background-color: #43A0F8;
+}
+
+.pieDataBox .pieDataLi li.dataJb {
+    color: #7a7a7a;
+    width: 100px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.pieDataBox .pieDataLi li.dataNum {
+    color: #7a7a7a;
+    width: 70px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.pieDataBox .pieDataLi li.dataP {
+    color: #7a7a7a;
+    width: 60px;
+    text-align: right;
+    font-size: 20px;
+}
+
+.layoutChild .sjBox {
+    text-align: center;
+}
+
+.layoutChild .sjBox img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.HasBoxList .layoutChild {
+    margin-bottom: 20px;
+}
+
+.smTxt {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #4c4c4c;
+    margin-left: 26px;
+    margin-bottom: 20px;
+}
+
+.ntable {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.ntable-odd tr:nth-child(odd) {
+    background: #fff;
+}
+
+.ntable th {
+    font-size: 12px;
+    text-align: center;
+    background: #f8f8f8;
+    border: #ddd 1px solid;
+    border-collapse: collapse;
+    padding: 10px 6px 10px 6px;
+    font-weight: normal;
+    color: #444;
+    line-height: 19px;
+}
+
+.ntable .tx {
+    text-align: center;
+    width: 40px;
+}
+
+.ntable th:not(:last-child) {
+    border-right: #F2F9FC 1px solid;
+}
+
+.ntable td {
+    padding: 6px;
+    border: #E4EEF6 1px solid;
+    word-break: break-all;
+    font-size: 13px;
+    color: #4c4c4c;
+}
+
+.ntable a {
+    color: #1D9ED2;
+    text-decoration: none;
+}
+
+.ntable a:hover {
+    color: #1D9ED2;
+}
+
+.evolutionList {
+    padding: 0 0 10px;
+    margin-top: 22px;
+    position: relative;
+}
+
+.evolutionList h2 {
+    margin: 0;
+    line-height: 28px;
+    font-size: 16px;
+    position: relative;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.evolutionList h2 .titleShow {
+    color: #3d464d;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    text-decoration: none;
+}
+
+.evolutionList h2 .titleShow:hover {
+    color: #1D9ED2;
+}
+
+.evolutionList .fastNewsContent p {
+    color: #4c4c4c;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 26px;
+    margin-top: 15px;
+    word-break: break-all;
+}
+
+.evolutionList .evolutionFooter {
+    margin-top: 8px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    line-height: 30px;
+    color: #999;
+}
+
+.evolutionList .evolutionFooter .publishDatetime {
+    font-size: 13px;
+    line-height: 30px;
+    color: #999;
+}
+
+.evolutionList .childBox {
+    border-bottom: 1px solid #efefef;
+}
+
+.flexTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+.lineLeft {
+    /* flex: 1.5; */
+    width: 110px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.lineIcon {
+    /* flex: .5; */
+    width: 43px;
+    text-align: center;
+    position: relative;
+}
+
+.lineIcon .dot {
+    position: relative;
+    z-index: 2;
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    background-color: #1D9ED2;
+    border-radius: 50px;
+    border: 4px solid #d6eaff;
+}
+
+.lineIcon .lineLink {
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    margin-left: -1px;
+    background-color: #ddd;
+    display: inline-block;
+}
+
+.lineTxt {
+    /* flex: 8; */
+    width: 678px;
+    text-align: left;
+    font-size: 13px;
+    padding-bottom: 30px;
+}
+
+.lineTxt h1 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.lineTxt h1 a {
+    color: #1D9ED2;
+    text-decoration: none;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+}
+
+.lineTxt h1 a:hover {
+    color: #1D9ED2;
+}
+
+.labelLiBox .LabelIcon {
+    margin-top: 5px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-right: 4px;
+    color: #1D9ED2;
+    background: #E7F4F9;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.baikePDF .labelLiBox .LabelIcon:hover {
+    color: #fff;
+    background-color: #1D9ED2;
+}
+
+.labelLiBox .LabelIcon.blxz {
+    font-weight: normal;
+    color: #FE7C1D;
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 20px;
+    margin-right: 4px;
+    color: #FE7C1D;
+    background: #ffefec;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.labelLiBox .LabelIcon.blxz:hover {
+    color: #fff;
+    background-color: #FE7C1D;
+}
+
+.layoutChild .txtContent {
+    text-align: justify;
+}
+
+.lineFooter ul li {
+    float: left;
+    margin-right: 20px;
+    color: #4c4c4c;
+    font-size: 14px;
+    line-height: 34px;
+}
+
+.lineFooter {
+    margin-top: 15px;
+}
+
+.addBox {
+    width: 100%;
+    height: 50px;
+    opacity: .9;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #eee;
+}
+
+.addBox img {
+    width: 100%;
+}
+
+.footerCon {
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.footer .footerLeft {
+    float: left;
+}
+
+.footer .footerRight {
+    float: right;
+}
+
+.footer .qr-li {
+    margin-left: 20px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer .qrImg {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ededed;
+    overflow: hidden;
+}
+
+.footer .qrImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer .qr-li p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #4c4c4c;
+}
+
+.footer .footerLeft .f-li {
+    font-size: 16px;
+    font-weight: bolder;
+    color: #5d5d5d;
+    margin: 8px 0;
+}
+
+.footer .footerLeft .nameLabel {
+    letter-spacing: 8px;
+}
+
+.WordsBoxMain ul {
+    overflow: hidden;
+}
+
+.WordsBoxMain ul li {
+    overflow: hidden;
+    float: left;
+    cursor: default;
+    margin: 0;
+    padding: 0 15px;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.WordsBoxMain ul li:hover {
+    background-color: #f9f9f9;
+}
+
+.WordsBoxMain ul li .w-li {
+    float: left;
+    line-height: 36px;
+}
+
+.WordsBoxMain .WordsName {
+    font-size: 15px;
+    width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 10px;
+}
+
+.WordsBoxMain .GraBox {
+    width: 90px;
+    height: 10px;
+    border-radius: 20px;
+    margin: 13px 0;
+    overflow: hidden;
+    background-color: #eceff1;
+}
+
+.WordsBoxMain .GraBox .GraChild {
+    width: 120px;
+    height: 10px;
+    border-radius: 20px;
+    background-color: #43A0F8;
+}
+
+.WordsBoxMain .WordsNum {
+    width: 50px;
+    overflow: hidden;
+    padding-left: 10px;
+    text-align: right;
+}
+
+.industryPostList.txtBox {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.industryPostList.txtBox img {
+    width: 100%;
+}
+
+.dataBox {
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.dataBox ul {
+    overflow: hidden;
+}
+
+.dataBox ul li {
+    float: left;
+    width: 26.2%;
+    /*width: 284px;*/
+    box-sizing: border-box;
+    padding: 10px 20px;
+    margin: 10px 20px 10px 0;
+    border-radius: 4px;
+    border: 1px solid #dedede;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.dataBox ul li:hover {
+    border-color: #1D9ED2;
+}
+
+.dataBox ul li:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.dataBox ul li a {
+    display: block;
+    text-decoration: none;
+}
+
+.dataBox ul li a .Lileft {
+    float: left;
+    width: 78px;
+}
+
+.dataBox ul li a .LiIconRight {
+    float: left;
+    height: 58px;
+    width: 80px;
+    text-align: right;
+}
+
+.dataBox ul li a .LiIconRight i {
+    color: #2196f3;
+    font-size: 34px;
+    text-decoration: none;
+}
+
+.dataBox ul li a .LiIconRight i.color2 {
+    color: #f44336;
+}
+
+.dataBox ul li a .LiIconRight i.color3 {
+    color: #ffc107;
+}
+
+.dataBox ul li a .LiIconRight i.color4 {
+    color: #1D9ED2;
+}
+
+.dataBox ul li a .LiIconRight i.color5 {
+    color: #4caf50;
+}
+
+.dataBox ul li a .LiIconRight i.color6 {
+    color: #FE7C1D;
+}
+
+.dataBox ul li a .Lileft p {
+    color: #666;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.dataBox ul li a .Lileft .showNum {
+    color: #333333;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.dataBox .compare {
+    font-size: 12px;
+    color: #999;
+    display: inline-block;
+}
+
+.dataBox .compare .oldNum {
+    color: #666666;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.dataBox .showNum .iconfont {
+    display: inline-block;
+    vertical-align: top;
+    color: #1D9ED2;
+    font-size: 18px;
+    line-height: 33px;
+}
+
+/* 数据下降 */
+.dataBox .showNum .iconfont.decline {
+    color: #FE5623;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    /* Opera */
+}
+
+/* 数据上升 */
+.dataBox .showNum .iconfont.rise {
+    color: #4caf50
+}
+
+/*无数据*/
+
+.noDataBox {
+    width: 100%;
+    height: 100%;
+    line-height: normal !important;
+}
+
+.noDataBox div.IconBox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -60px;
+    margin-top: -80px;
+    text-align: center;
+}
+
+.noDataBox div.IconBox i {
+    color: #d6d6d6;
+    font-size: 120px;
+}
+
+.noDataBox div.IconBox p {
+    color: #666 !important;
+    font-size: 15px !important;
+    margin-top: -15px !important;
+    line-height: normal !important;
+}
+
+/* ==== 月报PDF下载 ==== */
+
+.levelShow {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.levelShow .HeaderTab ul li {
+    float: left;
+    margin: 0;
+    width: 70px;
+    text-align: center;
+    line-height: 20px;
+    color: rgba(0, 0, 0, .65);
+    transition: all .3s ease;
+    cursor: pointer;
+    border: 1px solid #d9d9d9;
+    border-left: 0;
+    border-top-width: 1.02px;
+    background: #fff;
+    padding: 0 10px;
+    position: relative;
+}
+
+.levelShow .HeaderTab ul {
+    overflow: hidden;
+}
+
+.levelShow .HeaderTab ul li a {
+    color: #666;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: normal;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.levelShow .HeaderTab ul li:first-child {
+    border-radius: 3px 0 0 3px;
+    border-left: 1px solid #d9d9d9;
+}
+
+.levelShow .HeaderTab ul li:last-child {
+    border-radius: 0 3px 3px 0;
+}
+
+.levelShow .HeaderTab ul li.active {
+    background: #fff;
+    border-color: #1D9ED2;
+    color: #1D9ED2;
+    box-shadow: -1px 0 0 0 #1D9ED2;
+    z-index: 1;
+}
+
+.levelShow .HeaderTab ul li.active a {
+    color: #fff;
+}
+
+.levelShow .HeaderTab ul li.active:first-child {
+    border-color: #4caf50;
+    background-color: #4caf50;
+    box-shadow: none !important;
+}
+
+.levelShow .HeaderTab ul li.active:nth-child(2) {
+    border-color: #FE7C1D;
+    background-color: #FE7C1D;
+    box-shadow: none !important;
+}
+
+.levelShow .HeaderTab ul li.active:nth-child(3) {
+    border-color: #f44336;
+    background-color: #f44336;
+    box-shadow: none !important;
+}
+
+.HasBoxList .qyList {
+    text-align: left;
+}
+
+.HasBoxList .qyList li {
+    display: inline-block;
+    color: #333;
+    font-size: 15px;
+    padding: 1px 10px;
+    margin: 5px 10px 5px 0;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid #ededed;
+}
+
+#lineTypeLeft {
+    width: 100%;
+    height: 350px;
+    margin-top: 10px;
+}
+
+#lineTypeRight {
+    width: 100%;
+    height: 350px;
+    margin-top: 10px;
+}
+
+/* ==== 百科PDF下载 ==== */
+.baikePDF a {
+    text-decoration: none;
+    color: #333;
+}
+
+.baikePDF a:hover {
+    color: #1D9ED2;
+}
+
+.row-header h1 {
+    color: #555;
+    font-size: 28px;
+}
+
+.row-header .lineBox {
+    text-align: center;
+}
+
+.row-header .lineBox i {
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #FE7C1D;
+}
+
+.baike .BoxMain .BoxMainLeft {
+    width: 100%;
+    margin-right: 0;
+    box-sizing: border-box;
+    border: 1px solid #ededed;
+    background-color: #FAFAFA;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+}
+
+.baike .BoxMain .BoxMainLeft .baikeMain {
+    width: 72%;
+    float: left;
+    box-sizing: border-box;
+    border-right: 1px solid #ededed;
+}
+
+.baike .BoxMain .BoxMainLeft .baikeRight {
+    float: left;
+    width: 28%;
+    padding-top: 20px;
+}
+
+.baike .BoxMain .BoxMainLeft .bkRightCon {
+    margin-left: 20px;
+}
+
+.baike .baikeMain {
+    background-color: #fff;
+}
+
+.baikeHeader {
+    margin-bottom: 40px;
+}
+
+.baikeHeader .li {
+    float: left;
+}
+
+.baikeHeader .li.left {
+    width: 50%;
+}
+
+.baikeHeader .li.right {
+    width: 50%;
+}
+
+.baikeHeader .lemma-name h1 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #333;
+    margin-right: 10px;
+    line-height: 34px;
+}
+
+.baikeHeader .update {
+    color: #999;
+    margin-top: 6px;
+    font-size: 13px;
+}
+
+.baikeHeader .qushi .txt {
+    color: #666;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.baikeHeader .qushi {
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.baikeHeader .qushi:last-child {
+    margin-bottom: 0;
+}
+
+.baike .row-header h1 {
+    font-size: 20px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.baike .row-header h1 i {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    font-style: normal;
+    margin: 6px 10px 0 0;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    background-color: #828ec9;
+}
+
+.baike .row-header .lineBox {
+    text-align: left;
+}
+
+.baike .row-header .lineBox i {
+    width: 100%;
+    height: 2px;
+    border-radius: 0;
+    background-color: #EEEEEE;
+}
+
+.baike .row-header {
+    margin-bottom: 20px;
+}
+
+.baikeMain .rowBox {
+    margin-bottom: 30px;
+}
+
+.baikeMain .rowBox:last-child {
+    margin-bottom: 0;
+}
+
+.baikeMain .row-body .tabelLi {
+    margin-bottom: 40px;
+}
+
+.baikeMain .row-body .tabelLi:last-child {
+    margin-bottom: 0;
+}
+
+.baikeMain .txt-body {
+    color: #333;
+    font-size: 15px;
+    background-color: #fafafa;
+    padding: 15px;
+    border: 1px solid #e3e3e3;
+}
+
+.baikeMain .txt-body p {
+    text-indent: 2em;
+    line-height: 26px;
+    text-align: justify;
+}
+
+.baikeMain .dataLi {
+    float: left;
+    width: 33.3333%;
+    margin-bottom: 20px;
+}
+
+.baikeMain .dataLi .numShow {
+    color: #FE7C1D;
+    font-size: 26px;
+    margin-right: 5px;
+}
+
+.baikeMain .dataLi .unit {
+    color: #666;
+    font-size: 14px;
+}
+
+.baikeMain .dataLi .con {
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 15px 0;
+    margin-right: 20px;
+}
+
+.baikeMain .dataLi:nth-child(3n+3) .con {
+    margin-right: 0;
+}
+
+.baikeMain .dataLi .con p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.baikeMain .timeLine .left {
+    float: left;
+    width: 120px;
+    color: #333;
+    font-size: 15px;
+}
+
+.baikeMain .timeLine .right {
+    float: left;
+    width: 80%;
+    color: #333;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.baikeMain .timeLine .right:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #eee;
+}
+
+.baikeMain .timeLine .right:after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -3px;
+    width: 7px;
+    height: 7px;
+    border-radius: 20px;
+    background-color: #FE7C1D;
+}
+
+.baikeMain .childTab {
+    text-align: center;
+    position: relative;
+}
+
+.baikeMain .childTab ul {
+    width: 100%;
+    background-color: #ECEDF5;
+}
+
+.baikeMain .childTab ul li {
+    float: left;
+    width: 25%;
+}
+
+.baikeMain .childTab ul li a {
+    display: block;
+    color: #333;
+    border-radius: 2px;
+    font-size: 15px;
+    line-height: 40px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.baikeMain .childTab ul li.active {
+    background-color: #828EC9;
+}
+
+.baikeMain .childTab ul li.active a {
+    color: #fff;
+}
+
+.baikeMain .childTab ul li:last-child {
+    border-radius: 0;
+}
+
+.baikeMain .tabBody .newsLi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: #333;
+    margin-top: 26px;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 20px;
+    -webkit-transition: color .5s;
+    transition: color .5s;
+}
+
+.baikeMain .tabBody .newsLi .title {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.baikeMain .tabBody .newsLi .date {
+    display: block;
+    min-width: 110px;
+    text-align: right;
+    color: #999;
+    color: rgba(0, 0, 0, .55);
+    letter-spacing: 0;
+}
+
+.baikeMain .row-body .tabBody .tabCon .newsList {
+    padding: 15px 0;
+    border-bottom: 1px dashed #ededed;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+
+.baikeMain .row-body .tabBody .tabCon .newsList h3 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.baikeMain .footLabel ul li {
+    line-height: 30px;
+}
+
+.baikeMain .row-body .tabBody .tabCon .newsList h3 a {
+    color: #333;
+    font-size: 15px;
+}
+
+.baikeMain .row-body .tabBody .tabCon .newsList h3 a:hover {
+    color: #1D9ED2;
+}
+
+.baikeMain .row-body .tabBody .tabCon {
+    display: none;
+}
+
+.baikeMain .row-body .tabBody .tabCon:first-child {
+    display: block;
+}
+
+.baikeMain .hasTab .childTab {
+    overflow: hidden;
+}
+
+.baikeMain .hasTab .childTab ul li {
+    float: left;
+    width: 20%;
+}
+
+.baikeMain .hasTab .childTab ul {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.baikeMain .changeBtn {
+    position: absolute;
+    top: 0;
+}
+
+.baikeMain .changeBtn.leftBtn {
+    left: 0;
+}
+
+.baikeMain .changeBtn.rightBtn {
+    right: 0;
+}
+
+.baikeMain .changeBtn a {
+    color: #e8e8e8;
+    display: block;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+
+.baikeMain .changeBtn a:hover {
+    color: #828EC9;
+}
+
+.baikeMain .changeBtn a i {
+    font-size: 20px;
+}
+
+.baikeMain .hasTab .childTab {
+    width: calc(100% - 80px);
+    padding: 0 40px 0 40px;
+}
+
+.baikeMain .secondtitle {
+    color: #333;
+    font-size: 16px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.baikeMain #Chart01,
+.baikeMain #Chart02,
+.baikeMain #Chart03,
+.baikeMain #Chart04 {
+    width: 100%;
+    height: 400px;
+    background-color: #fafafa;
+}
+
+.baikeMain .ChartBox {
+    margin-top: 30px;
+}
+
+.baikeMain .ntable td {
+    font-size: 14px;
+    text-align: center;
+    border-color: #e9e9e9;
+}
+
+.baikeMain .ntable th:not(:last-child) {
+    border-color: #e9e9e9;
+}
+
+.baikeMain .ntable a {
+    color: #333;
+    text-decoration: none;
+}
+
+.baikeMain .labelLiBox .LabelIcon {
+    color: #1D9ED2;
+}
+
+.baikeMain .LabelIcon.blxz {
+    color: #FE7C1D;
+}
+
+.baikeMain .ntable th {
+    background: #F1F1F1;
+}
+
+.baikeMain .ntable a:hover {
+    color: #1D9ED2;
+}
+
+.baikeMain .tbCon .li {
+    position: relative;
+}
+
+.baikeMain .showPie {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -150px;
+}
+
+.baikeMain .showPie ul {
+    display: inline-block;
+}
+
+.baikeMain .showPie ul li {
+    float: left;
+    color: #555;
+    font-size: 14px;
+    margin: 0 15px;
+}
+
+.baikeMain .showPie ul li i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+    margin-right: 8px;
+}
+
+.baikeMain .showPie ul li.cf i {
+    background-color: #F15C80;
+}
+
+.baikeMain .showPie ul li.yt i {
+    background-color: #F7A35C;
+}
+
+.baikeMain .showPie ul li.dt i {
+    background-color: #54A5F1;
+}
+
+.baikeRight .bkRightCon .bkRlayout .titleTxt h3 {
+    color: #333;
+    text-align: left;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.baikeRight .bkRightCon .bkRlayout .titleTxt h3:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 4px;
+    height: 20px;
+    margin-top: -10px;
+    background-color: #1D9ED2;
+}
+
+.bkRightCon .bkRlayout {
+    margin-bottom: 30px;
+}
+
+.bkRlayout .titleTxt {
+    margin-bottom: 10px;
+}
+
+.baikePDF .tabelLi .tabelHeader p {
+    text-align: center;
+    color: #828ec9;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.baikePDF .ntable .tx {
+    width: 40px;
+}
+
+/*封面*/
+.cover {
+    /*padding: 0;*/
+    /*background:url("../../../Project/html/PDF/PDFImg/fengmian.png") no-repeat;*/
+    /*background-size:100% ;*/
+    /*background-color: #fff;*/
+}
+
+.cover .bookface {
+    padding-top: 220px;
+    position: relative;
+}
+
+.cover .bookface img {
+    width: 100%;
+}
+
+.cover img {
+    max-width: 100%;
+}
+
+.cover .logoHeader {
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    left: 0;
+    z-index: 999;
+}
+
+.cover .logoHeader .logoBox {
+    text-align: center;
+}
+
+.cover .logoHeader .logoBox img {
+    width: 33%;
+}
+
+.cover .logoHeader .logoName p {
+    color: #555;
+    font-size: 22px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cover .bookName {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 0;
+    z-index: 999;
+}
+
+.cover .bookName h1 {
+    text-align: center;
+    color: #1D9ED2;
+    font-size: 40px;
+}
+
+.cover .bookName p {
+    color: #666;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'PingFang SC', '微软雅黑', arial, Regular;
+    margin-top: 10px;
+}
+
+.cover .addtxt {
+    display: none;
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    left: 0;
+    z-index: 999;
+    text-align: center;
+    color: #777;
+    font-weight: bolder;
+    font-size: 18px;
+    font-family: 'PingFang SC', '微软雅黑', arial, Regular;
+}

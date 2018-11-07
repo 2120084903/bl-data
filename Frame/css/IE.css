@@ -1,0 +1,364 @@
+﻿/*改样式表用于解决IE浏览器兼容问题*/
+
+/*------IE11------*/
+/*头部logo偏移问题*/
+.ie11 .headerBox .logo .logoFont {
+    margin-top: -14px;
+}
+
+/*首页背景渐变*/
+.IE .index .EffectAnimat {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5a3694', endColorstr='#1D9ED2', GradientType=1);
+}
+
+/*首页背景*/
+.IE .index .productBox{
+    background:none;
+    background-color: #0072CA;
+}
+.IE .hx-box{
+    display: none;
+}
+.IE .index .bg1{
+    display: none;
+}
+.IE .index .product-Bg{
+    transform: scale(1);
+    -ms-transform: scale(1);
+}
+
+/*隐藏关闭特效按钮*/
+.ie9 .closeEffect,
+.ie8 .closeEffect,
+.ie7 .closeEffect,
+.ie6 .closeEffect {
+    display: none;
+}
+
+/*去掉首页类型图片的hover效果*/
+.ie9 .index .pushLeft .newsHeaderImg:hover img,
+.ie8 .index .pushLeft .newsHeaderImg:hover img,
+.ie7 .index .pushLeft .newsHeaderImg:hover img,
+.ie6 .index .pushLeft .newsHeaderImg:hover img {
+    transform: none;
+}
+
+/*首页常用标签边框*/
+.ie9 .index .tableSign .leftIcon,
+.ie8 .index .tableSign .leftIcon,
+.ie7 .index .tableSign .leftIcon,
+.ie6 .index .tableSign .leftIcon {
+    border: 1px solid #fff;
+}
+
+/*去掉首页类型图片的hover效果*/
+.ie8 .index .indexSearch .inputBox .ssBox input,
+.ie7 .index .indexSearch .inputBox .ssBox input,
+.ie6 .index .indexSearch .inputBox .ssBox input {
+    width: 620px;
+    line-height: 44px;
+}
+
+/*页脚二维码塌陷*/
+.footTop .block06 {
+    margin-right: 0;
+}
+
+/*政策详情思维导图背景*/
+.ie9 .mindMain,
+.ie8 .mindMain,
+.ie7 .mindMain,
+.ie6 .mindMain {
+    filter: none;
+}
+
+/*左中右布局塌陷*/
+.IE .newsInfoBox {
+    zoom: 1;
+}
+
+.IE .newsInfoBox:after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.IE .newsInfoBox .sectionLeft {
+    width: 124px;
+    float: left;
+}
+
+.IE .newsInfoBox .sectionCenter {
+    width: 772px;
+    float: left;
+}
+
+.IE .newsInfoBox .rightBox {
+    width: 287px;
+    float: left;
+}
+
+/*悬浮工具hover*/
+.ie8 .float-bar-item-content,
+.ie7 .float-bar-item-content,
+.ie6 .float-bar-item-content {
+    display: none;
+    right: 52px;
+}
+
+.ie8 .float-bar-item:hover .float-bar-item-content,
+.ie7 .float-bar-item:hover .float-bar-item-content,
+.ie6 .float-bar-item:hover .float-bar-item-content {
+    display: block;
+}
+
+/*政策详情分享*/
+.ie9 .LeftGuideBox .showBox,
+.ie8 .LeftGuideBox .showBox,
+.ie7 .LeftGuideBox .showBox,
+.ie6 .LeftGuideBox .showBox {
+    display: none;
+    right: 83px;
+}
+
+.ie9 .LeftGuideBox .boxMianLi:hover .showBox,
+.ie8 .LeftGuideBox .boxMianLi:hover .showBox,
+.ie7 .LeftGuideBox .boxMianLi:hover .showBox,
+.ie6 .LeftGuideBox .boxMianLi:hover .showBox {
+    display: block;
+    box-shadow: 0 0 5px #eee;
+}
+
+/*思维导图*/
+.ie8 .loginBtnBox,
+.ie7 .loginBtnBox,
+.ie6 .loginBtnBox {
+    background-color: #fff;
+}
+
+.ie9 #mindBox,
+.ie8 #mindBox,
+.ie7 #mindBox,
+.ie6 #mindBox {
+    filter: none;
+}
+
+/*登录框阴影*/
+.IE .ModalInner {
+    box-shadow: none;
+}
+
+/*导航栏*/
+.IE .headerBox,
+.IE .industry .tableMain .tabNavigation {
+    z-index: 9999;
+}
+
+/*政策轨迹*/
+
+.ie9 .lineBox .lineList,
+.ie8 .lineBox .lineList,
+.ie7 .lineBox .lineList,
+.ie6 .lineBox .lineList {
+    zoom: 1;
+}
+
+.ie9 .lineBox .lineList:after,
+.ie8 .lineBox .lineList:after,
+.ie7 .lineBox .lineList:after,
+.ie6 .lineBox .lineList:after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.ie9 .lineLeft,
+.ie8 .lineLeft,
+.ie7 .lineLeft,
+.ie6 .lineLeft {
+    width: 100px;
+    float: left;
+}
+
+.ie9 .lineIcon,
+.ie8 .lineIcon,
+.ie7 .lineIcon,
+.ie6 .lineIcon {
+    width: 34px;
+    float: left;
+}
+
+.ie9 .lineTxt,
+.ie8 .lineTxt,
+.ie7 .lineTxt,
+.ie6 .lineTxt {
+    width: 535px;
+    float: left;
+    position: relative;
+}
+
+.ie9 .lineTxt:before,
+.ie8 .lineTxt:before,
+.ie7 .lineTxt:before,
+.ie6 .lineTxt:before {
+    content: '';
+    position: absolute;
+    left: -18px;
+    top: 0;
+    z-index: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #e6e6e6;
+}
+
+.ie9 .newsInfoBox .sectionLeft .Stairs,
+.ie8 .newsInfoBox .sectionLeft .Stairs,
+.ie7 .newsInfoBox .sectionLeft .Stairs,
+.ie6 .newsInfoBox .sectionLeft .Stairs {
+    position: inherit !important;
+}
+
+/*登录框位置*/
+.ie9 .signFlowModal,
+.ie8 .signFlowModal,
+.ie7 .signFlowModal,
+.ie6 .signFlowModal {
+    top: 50%;
+    margin-top: -174px;
+}
+
+
+/*IE低版本升级提示*/
+.BrowserBox{
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+}
+.IEmask{
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    background-color: rgba(0,0,0,.7);
+    filter:Alpha(opacity=70);
+}
+.ie7 .IEmask{
+    filter:Alpha(opacity=90);
+}
+.closeBtn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+.closeBtn i{
+    color: #ddd;
+    font-size: 20px;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+.closeBtn:hover i{
+    color: #666;
+}
+.BrowserMain{
+    position: fixed;
+    z-index: 99999;
+    top: 50%;
+    left: 50%;
+    margin-left: -375px;
+    margin-top: -181px;
+    width: 750px;
+    padding: 40px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+.tsTxtShow h3{
+    color: #1D9ED2;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.tsTxtShow p{
+    color: #333;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.tsTxtShow p .sign{
+    font-weight: bolder;
+    color: #FE7C1D;
+}
+.BrowserDownload{
+    margin-top: 50px;
+}
+.BrowserDownload .BrowserLi{
+    float: left;
+    text-align: center;
+    margin: 0 30px;
+}
+.BrowserName{
+    color: #666;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 15px;
+    text-align: center;
+}
+.BrowserLi .iconBox{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    line-height: 90px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.BrowserLi .iconBox .radius{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 89px dotted;
+    margin: 0 0 1px 1px;
+    border-width: 0vw;
+    margin: 0vw;
+    color: #ededed;
+    background-color: #ededed;
+}
+.ie8 .BrowserLi .iconBox .radius,
+.ie7 .BrowserLi .iconBox .radius,
+.ie6 .BrowserLi .iconBox .radius{
+    background-color: #fff;
+}
+
+.BrowserLi .iconBox .imgBoxMain.Chrome{
+    background-position: -2px 4px;
+}
+.BrowserLi .iconBox .imgBoxMain.FireFox{
+    background-position: -2px -90px;
+}
+.BrowserLi .iconBox .imgBoxMain.Browser360{
+    background-position: -2px -185px;
+}
+.BrowserLi .iconBox .imgBoxMain.sougou{
+    background-position: -2px -280px;
+}
+.BrowserLi .iconBox .imgBoxMain.Opera{
+    background-position: -3px -376px;
+}
+
+

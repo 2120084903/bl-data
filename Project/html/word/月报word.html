@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>白鹿数据</title>
+    <link rel='icon' href='../../img/favicon.icon' type='image/x-ico'/>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_630146_68qjcffzi4h.css">
+    <link rel="stylesheet" href="../../../Frame/css/PrintCss/world/normalize.css">
+    <link rel="stylesheet" href="../../../Frame/css/PrintCss/world/sheets-of-paper.css">
+    <link rel="stylesheet" href="../../../Frame/css/PrintCss/world/sheets-of-paper-a4.css">
+    <style>
+        html,
+        body,
+        ul,
+        li,
+        ol,
+        dl,
+        dd,
+        dt,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        form,
+        fieldset,
+        legend,
+        img {
+            margin: 0;
+            padding: 0;
+        }
+
+        fieldset,
+        img {
+            border: 0;
+        }
+
+        address,
+        caption,
+        cite,
+        code,
+        dfn,
+        th,
+        var {
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        input {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        input::-moz-focus-inner {
+            border: 0;
+            padding: 0;
+        }
+
+        select,
+        input {
+            vertical-align: middle;
+        }
+
+        select,
+        input,
+        textarea {
+            font-size: 12px;
+            margin: 0;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        textarea {
+            outline-style: none;
+            -webkit-appearance: none;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        html body {
+            font-family: 'SimSun', '微软雅黑', arial, Regular;
+            /* font-family: 'Microsoft YaHei',Arial,sans-serif; */
+        }
+
+        .container {
+            width: 1100px;
+            margin: 0 auto;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-left {
+            text-align: left !important;
+        }
+
+        /*红色*/
+        .colorRed {
+            color: #FE5623 !important;
+        }
+
+        /*黄色*/
+        .colorOrange {
+            color: #FF9800 !important;
+        }
+
+        /*蓝色*/
+        .colorBlue {
+            color: #1DA0EE !important;
+        }
+
+        /*绿色*/
+        .colorGreen {
+            color: #6ABB46 !important;
+        }
+
+        .clearfix:after {
+            content: "";
+            height: 0;
+            line-height: 0;
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+
+        .clearfix {
+            zoom: 1;
+        }
+
+        .hasTableBox {
+            margin-top: 20pt;
+        }
+
+        .hasTableBox th {
+            text-align: center;
+            background: #f8f8f8;
+            border: #ddd 1pt solid;
+            border-collapse: collapse;
+            padding: 6pt 12pt 6pt 12pt;
+            font-weight: normal;
+            color: #444;
+            line-height: 1.5;
+        }
+
+        .hasTableBox td {
+            padding: 12px 10px 12px 10px;
+            border: #ddd 1pt solid;
+            word-break: break-all;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: #222;
+        }
+
+        .hasTableBox a {
+            color: #1D9ED2;
+        }
+
+        /*========================自定义样式开始========================*/
+        /*行业周报*/
+        /*table{*/
+        /*width: 100%;*/
+        /*}*/
+        .wordName {
+            color: #1D9ED2;
+            font-size: 30pt;
+            text-align: center;
+        }
+
+        .stageNum {
+            text-align: center;
+            color: #333;
+            font-size: 14pt;
+            margin: 20pt 0;
+            font-weight: bolder;
+        }
+
+        .line .lineLi {
+            width: 100%;
+            height: 1px;
+        }
+
+        .layoutBox .boxLi {
+            margin-top: 50pt;
+        }
+
+        .layoutBox .headerLabel {
+            color: #1D9ED2;
+            font-size: 20pt;
+            text-align: center;
+        }
+
+        .layoutBox .conBody .txtBox {
+            font-size: 14pt;
+            line-height: 1.8;
+            margin-top: 20pt;
+            text-align: justify;
+        }
+
+        .layoutBox .conBody .tableBox {
+            margin-top: 20pt;
+        }
+
+        .layoutBox .conBody .Secondlabel {
+            font-size: 15pt;
+            margin: 20pt 0;
+            color: #333;
+            font-weight: bolder;
+        }
+
+        .layoutBox .dataShow {
+            margin-top: 15pt;
+        }
+
+        .layoutBox .dataShow table {
+            font-weight: normal;
+        }
+
+        .layoutBox .conBody .SecondBody .imgBox {
+            text-align: center;
+        }
+
+        .layoutBox .conBody .SecondBody .imgBox img {
+            max-width: 100%;
+        }
+
+        .layoutBox .dataShow .dataColumnar {
+            width: 30pt;
+            height: 6pt;
+            border-radius: 50pt;
+            background-color: #22C26B;
+        }
+
+        .layoutBox .dataShow .dataColumnar.data02 {
+            background-color: #43A0F8;
+        }
+
+        .layoutBox .dataShow td {
+            color: #555;
+            font-size: 14pt;
+        }
+
+        .echartTs .dataShow tr td {
+            padding: 4pt 0;
+        }
+
+        .layoutBox .boxLi .typeBoxLi {
+            margin-bottom: 50pt;
+        }
+
+        /*.layoutBox .echartWords .dataShow tr {*/
+        /*width: 50%;*/
+        /*display: inline-block;*/
+        /*}*/
+
+        .layoutBox .echartWords .dataShow tr td {
+            display: inline-block;
+            padding: 5pt 0;
+            font-size: 14pt;
+        }
+
+        .layoutBox .HyData .dataShow td {
+            font-size: 10pt;
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+        }
+
+        .layoutBox .HyData .dataShow .dataLiBox {
+            padding: 8pt;
+        }
+
+        /*.layoutBox .HyData .dataShow td table {*/
+        /*padding: 10pt;*/
+        /*display: block;*/
+        /*border-radius: 4pt;*/
+        /*border: 1px solid #ddd;*/
+        /*margin-bottom: 0;*/
+        /*}*/
+
+        .layoutBox .HyData .dataShow td .type {
+            color: #555;
+        }
+
+        .layoutBox .HyData .dataShow .numShow {
+            margin-top: 5pt;
+        }
+
+        .layoutBox .HyData .dataShow .numShow .strongNum {
+            color: #333;
+            font-size: 16pt;
+        }
+
+        .layoutBox .HyData .oldNumShow {
+            font-size: 10pt;
+            color: #555;
+        }
+
+        .layoutBox .HyData .oldNumShow .bigTxt {
+            color: #333;
+            font-weight: bolder;
+            margin-left: 5pt;
+        }
+
+        .layoutBox .HyData .trendImg img {
+            width: 18pt;
+        }
+
+        .layoutBox .HyName {
+            margin: 30pt 0 15pt 0;
+        }
+
+        .layoutBox .HyName .name {
+            color: #1D9ED2;
+            font-size: 20pt;
+            margin-right: 6pt;
+        }
+
+        .layoutBox .HyName .indexNumTxt {
+            color: #444;
+            font-size: 14pt;
+        }
+
+        .layoutBox .HyName .indexNum {
+            color: #15941a;
+            font-size: 20pt;
+            font-weight: bolder;
+        }
+
+        /*行业月报*/
+        .layoutBox .boxLi .HyBox {
+            margin-top: 20pt;
+        }
+
+        .layoutBox .boxLi .HyBox .HyLi {
+            font-size: 13pt;
+            display: inline-block;
+            margin: 6pt 15pt 6pt 0;
+            border: 1px solid #ddd;
+            border-radius: 2pt;
+            padding: 5pt 12pt;
+        }
+
+        .layoutBox .levelShow {
+            width: 170pt;
+            margin-left: 40pt;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .layoutBox .levelShow table {
+            font-weight: normal;
+        }
+
+        .layoutBox .levelShow td {
+            font-size: 11pt;
+            padding: 4pt 0;
+        }
+
+        .layoutBox .levelShow .gl.active {
+            color: #fff;
+            border-color: #4caf50;
+            background-color: #4caf50;
+        }
+
+        .layoutBox .levelShow .qy.active {
+            color: #fff;
+            border-color: #FE7C1D;
+            background-color: #FE7C1D;
+        }
+
+        .layoutBox .levelShow .qjg.active {
+            color: #fff;
+            border-color: #f44336;
+            background-color: #f44336;
+        }
+
+        .type {
+            font-size: 12px;
+        }
+
+        img {
+            border: 0;
+            max-width: 14cm !important;
+            height: auto !important;
+        }
+    </style>
+</head>
+
+<body class="document">
+<div class="page" contenteditable="false" id="pagecontent">
+    <div class="header">
+        <h1 class="wordName">互联网金融行业政策简报</h1>
+        <div class="stageNum">第4期</div>
+        <div class="wordAuthor">
+            <table class="tableLayout" style="width: 100%;
+    color: #333;
+    font-size: 14pt;
+    margin-bottom: 15pt;
+    font-weight: bolder;">
+                <tbody>
+                <tr>
+                    <td><p>白鹿数据政策研究小组编</p></td>
+                    <td align="right"><p>(8.27-9.01)</p></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="line">
+            <div class="lineLi"></div>
+            <div class="lineLi"></div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="layoutBox">
+            <!--行业简述-->
+            <div class="boxLi">
+                <div class="headerLabel">【行业简述】</div>
+                <div class="conBody">
+                    <div class="HyName">
+                        <strong class="name">互联网金融</strong>
+                        <span class="indexNumTxt">政策指数</span>
+                        <span class="indexNum">50</span>
+                        <div class="levelShow">
+                            <table class="tableLayout" border="1" bordercolor="#ddd" cellpadding="0" cellspacing="0" width="100%">
+                                <tbody>
+                                <tr>
+                                    <td width="33.333%" align="center" class="gl active">鼓励</td>
+                                    <td width="33.333%" align="center" class="qy">趋严</td>
+                                    <td width="33.333%" align="center" class="qjg">强监管</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="dataShow HyData">
+                        <table class="tableLayout" width="100%">
+                            <tbody>
+                            <tr>
+                                <td class="dataLiBox" style="font-size: 14pt; color: #555; padding: 8pt; font-family: 'Microsoft YaHei', Arial, sans-serif;">
+                                    <table class="tableLayout" style="padding: 10pt;display: block;border-radius: 4pt;border: 1px solid #ddd;margin-bottom: 0;">
+                                        <tbody>
+                                        <tr>
+                                            <td width="80%">
+                                                <p class="type">相关政策</p>
+                                                <div class="numShow">
+                                                    <span class="strongNum">30</span>
+                                                    <span class="trendImg"><img src="wordImg/jt01.png"></span>
+                                                </div>
+                                            </td>
+                                            <td width="20%">
+                                                <div class="typeImg">
+                                                    <img src="wordImg/icon1.png">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="oldNumShow">
+                                                    <span class="oldweek">上周</span>
+                                                    <span class="bigTxt">25</span>
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="dataLiBox" style="font-size: 14pt; color: #555; padding: 8pt; font-family: 'Microsoft YaHei', Arial, sans-serif;">
+                                    <table class="tableLayout" style="padding: 10pt;display: block;border-radius: 4pt;border: 1px solid #ddd;margin-bottom: 0;">
+                                        <tbody>
+                                        <tr>
+                                            <td width="80%">
+                                                <p class="type">本周风险</p>
+                                                <div class="numShow">
+                                                    <span class="strongNum">50</span>
+                                                    <span class="trendImg"><img src="wordImg/jt02.png"></span>
+                                                </div>
+                                            </td>
+                                            <td width="20%">
+                                                <div class="typeImg">
+                                                    <img src="wordImg/icon2.png">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="oldNumShow">
+                                                    <span class="oldweek">上周</span>
+                                                    <span class="bigTxt">60</span>
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="dataLiBox" style="font-size: 14pt; color: #555; padding: 8pt; font-family: 'Microsoft YaHei', Arial, sans-serif;">
+                                    <table class="tableLayout" style="padding: 10pt;display: block;border-radius: 4pt;border: 1px solid #ddd;margin-bottom: 0;">
+                                        <tbody>
+                                        <tr>
+                                            <td width="80%">
+                                                <p class="type">本周动态</p>
+                                                <div class="numShow">
+                                                    <span class="strongNum">30</span>
+                                                    <span class="trendImg"><img src="wordImg/jt03.png"></span>
+                                                </div>
+                                            </td>
+                                            <td width="20%">
+                                                <div class="typeImg">
+                                                    <img src="wordImg/icon3.png">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="oldNumShow">
+                                                    <span class="oldweek">上周</span>
+                                                    <span class="bigTxt">25</span>
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="dataLiBox" style="font-size: 14pt; color: #555; padding: 8pt; font-family: 'Microsoft YaHei', Arial, sans-serif;">
+                                    <table class="tableLayout" style="padding: 10pt;display: block;border-radius: 4pt;border: 1px solid #ddd;margin-bottom: 0;">
+                                        <tbody>
+                                        <tr>
+                                            <td width="80%">
+                                                <p class="type">相关部委</p>
+                                                <div class="numShow">
+                                                    <span class="strongNum">7</span>
+                                                    <span class="trendImg"><img src="wordImg/jt02.png"></span>
+                                                </div>
+                                            </td>
+                                            <td width="20%">
+                                                <div class="typeImg">
+                                                    <img src="wordImg/icon4.png">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="oldNumShow">
+                                                    <span class="oldweek">上周</span>
+                                                    <span class="bigTxt">25</span>
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="dataLiBox" style="font-size: 14pt; color: #555; padding: 8pt; font-family: 'Microsoft YaHei', Arial, sans-serif;">
+                                    <table class="tableLayout" style="padding: 10pt;display: block;border-radius: 4pt;border: 1px solid #ddd;margin-bottom: 0;">
+                                        <tbody>
+                                        <tr>
+                                            <td width="80%">
+                                                <p class="type">相关城市</p>
+                                                <div class="numShow">
+                                                    <span class="strongNum">16</span>
+                                                    <span class="trendImg"><img src="wordImg/jt01.png"></span>
+                                                </div>
+                                            </td>
+                                            <td width="20%">
+                                                <div class="typeImg">
+                                                    <img src="wordImg/icon5.png">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="oldNumShow">
+                                                    <span class="oldweek">上周</span>
+                                                    <span class="bigTxt">15</span>
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="dataLiBox" style="font-size: 14pt; color: #555; padding: 8pt; font-family: 'Microsoft YaHei', Arial, sans-serif;">
+                                    <table class="tableLayout" style="padding: 10pt;display: block;border-radius: 4pt;border: 1px solid #ddd;margin-bottom: 0;">
+                                        <tbody>
+                                        <tr>
+                                            <td width="80%">
+                                                <p class="type">相关企业</p>
+                                                <div class="numShow">
+                                                    <span class="strongNum">7</span>
+                                                    <span class="trendImg"><img src="wordImg/jt02.png"></span>
+                                                </div>
+                                            </td>
+                                            <td width="20%">
+                                                <div class="typeImg">
+                                                    <img src="wordImg/icon6.png">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="oldNumShow">
+                                                    <span class="oldweek">上周</span>
+                                                    <span class="bigTxt">25</span>
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--/行业简述-->
+            <!--本月高风险企业-->
+            <div class="boxLi">
+                <div class="headerLabel">【本月高风险企业】</div>
+                <div class="conBody">
+                    <div class="HyBox">
+                        <div class="HyLi">深圳市铭彩悦塑胶制品有限公司</div>
+                        <div class="HyLi">巩义市旭源净水材料有限公司</div>
+                        <div class="HyLi">深圳保艺国际拍卖</div>
+                        <div class="HyLi">广州海生科技网络公司</div>
+                        <div class="HyLi">河南闪创网络科技有限公司</div>
+                        <div class="HyLi">北京卡瘦生物科技有限公司</div>
+                        <div class="HyLi">北京志威展览有限公司</div>
+                        <div class="HyLi">北京瑞和信业投资有限公司</div>
+                    </div>
+                </div>
+            </div>
+            <!--/本月高风险企业-->
+            <!--一月综述-->
+            <div class="boxLi">
+                <div class="headerLabel">【一月综述】</div>
+                <div class="conBody">
+                    <!--文字放这个盒子里-->
+                    <div class="txtBox">本周，国内互金行业依旧保持强监管态势，主要表现在四方面：一是相关监管范围进一步扩大，由此前的网络借贷扩至ICO等领域；二是各地相继步入自查自纠阶段，互金协会下发《P2P网络借贷会员机构自查自纠问题清单》后，各地相继跟进；三是封堵金融风险点，租房贷开始进入监管视野，并被严厉打击；四是严厉打击金融领域违法犯罪行为， 大大集团马申科因非法集资被判无期。</div>
+                </div>
+            </div>
+            <!--/一月综述-->
+            <!--最新态势-->
+            <div class="boxLi">
+                <div class="headerLabel">【最新态势】</div>
+                <div class="conBody">
+                    <div class="echartTs">
+                        <div class="Secondlabel">1、中央政策与地方政策对比图</div>
+                        <div class="SecondBody">
+                            <div class="imgBox">
+                                <img src="wordImg/word-img01.png"/>
+                            </div>
+                            <div class="dataShow">
+                                <table class="tableLayout" width="100%">
+                                    <tbody>
+                                    <tr>
+                                        <td align="right">
+                                            <div class="dataColumnar"></div>
+                                        </td>
+                                        <td align="center">中央政策</td>
+                                        <td>120</td>
+                                        <td align="left">27.91%</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right">
+                                            <div class="dataColumnar" style="background-color: #43A0F8;"></div>
+                                        </td>
+                                        <td align="center">地方政策</td>
+                                        <td>530</td>
+                                        <td align="left">72.09%</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="echartWords">
+                        <div class="Secondlabel">2、政策词频图</div>
+                        <div class="SecondBody">
+                            <div class="dataShow">
+                                <table class="tableLayout" width="100%">
+                                    <tbody>
+                                    <tr style="width: 50%;display: inline-block;">
+                                        <td width="65%">生活资源</td>
+                                        <td width="30%">360</td>
+                                    </tr>
+                                    <tr style="width: 50%;display: inline-block;">
+                                        <td width="65%">占道</td>
+                                        <td width="30%">99</td>
+                                    </tr>
+                                    <tr style="width: 50%;display: inline-block;">
+                                        <td width="65%">园林绿化</td>
+                                        <td width="30%">132</td>
+                                    </tr>
+                                    <tr style="width: 50%;display: inline-block;">
+                                        <td width="65%">户籍管理及身份证</td>
+                                        <td width="30%">999</td>
+                                    </tr>
+                                    <tr style="width: 50%;display: inline-block;">
+                                        <td width="65%">公交运输管理</td>
+                                        <td width="30%">423</td>
+                                    </tr>
+                                    <tr style="width: 50%;display: inline-block;">
+                                        <td width="65%">公路（水路）交通</td>
+                                        <td width="30%">230</td>
+                                    </tr>
+                                    <tr style="width: 50%;display: inline-block;">
+                                        <td width="65%">房屋与图纸不符</td>
+                                        <td width="30%">785</td>
+                                    </tr>
+                                    <tr style="width: 50%;display: inline-block;">
+                                        <td width="65%">有线电视</td>
+                                        <td width="30%">963</td>
+                                    </tr>
+                                    <tr style="width: 50%;display: inline-block;">
+                                        <td width="65%">社会治安</td>
+                                        <td width="30%">463</td>
+                                    </tr>
+                                    <tr style="width: 50%;display: inline-block;">
+                                        <td width="65%">林业资源</td>
+                                        <td width="30%">23</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="typeBoxLi">
+                        <div class="Secondlabel">3、城市发布政策关系图</div>
+                        <div class="SecondBody">
+                            <div class="imgBox">
+                                <img src="wordImg/word-img02.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="typeBoxLi">
+                        <div class="Secondlabel">4、部委数量关系图</div>
+                        <div class="SecondBody">
+                            <div class="imgBox">
+                                <img src="wordImg/word-img03.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="typeBoxLi">
+                        <div class="Secondlabel">5、相关企业关系图</div>
+                        <div class="SecondBody">
+                            <div class="imgBox">
+                                <img src="wordImg/word-img04.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/最新态势-->
+            <!--本周政策-->
+            <div class="boxLi">
+                <div class="headerLabel">【本周政策】</div>
+                <div class="conBody">
+                    <!--表格放这个盒子里-->
+                    <div class="hasTableBox">
+                        <table class="ntable">
+                            <tbody>
+                            <tr>
+                                <th>标题</th>
+                                <th>发文机构</th>
+                                <th>发布时间</th>
+                            </tr>
+                            <tr>
+                                <td width="60%">
+                                    <a href="#">关于修订印发2018年度一般企业财务报表格式的通知</a>
+                                </td>
+                                <td align="center" width="20%">财政部</td>
+                                <td align="center" width="20%">2018-07-02</td>
+                            </tr>
+                            <tr>
+                                <td width="60%">
+                                    <a href="#">商务部令2018年第6号关于修改《外商投资企业设立及变更备案管理暂行办法》的决定</a>
+                                </td>
+                                <td align="center" width="20%">国家发展改革委</td>
+                                <td align="center" width="20%">2018-07-02</td>
+                            </tr>
+                            <tr>
+                                <td width="60%">
+                                    <a href="#">商务部令2018年第6号关于修改《外商投资企业设立及变更备案管理暂行办法》的决定</a>
+                                </td>
+                                <td align="center" width="20%">国家发展改革委</td>
+                                <td align="center" width="20%">2018-07-02</td>
+                            </tr>
+                            <tr>
+                                <td width="60%">
+                                    <a href="#">商务部令2018年第6号关于修改《外商投资企业设立及变更备案管理暂行办法》的决定</a>
+                                </td>
+                                <td align="center" width="20%">国家发展改革委</td>
+                                <td align="center" width="20%">2018-07-02</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--/本周政策-->
+            <!--风险预警-->
+            <div class="boxLi">
+                <div class="headerLabel">【风险预警】</div>
+                <div class="conBody">
+                    <!--表格放这个盒子里-->
+                    <div class="hasTableBox">
+                        <table class="ntable">
+                            <tbody>
+                            <tr>
+                                <th>标题</th>
+                                <th>作者</th>
+                                <th>发布时间</th>
+                            </tr>
+                            <tr>
+                                <td width="60%">
+                                    <a href="#">关于修订印发2018年度一般企业财务报表格式的通知</a>
+                                </td>
+                                <td align="center" width="20%">国资委网站</td>
+                                <td align="center" width="20%">2018-07-02</td>
+                            </tr>
+                            <tr>
+                                <td width="60%">
+                                    <a href="#">商务部令2018年第6号关于修改《外商投资企业设立及变更备案管理暂行办法》的决定</a>
+                                </td>
+                                <td align="center" width="20%">新华网</td>
+                                <td align="center" width="20%">2018-07-02</td>
+                            </tr>
+                            <tr>
+                                <td width="60%">
+                                    <a href="#">商务部令2018年第6号关于修改《外商投资企业设立及变更备案管理暂行办法》的决定</a>
+                                </td>
+                                <td align="center" width="20%">凤凰财经</td>
+                                <td align="center" width="20%">2018-07-02</td>
+                            </tr>
+                            <tr>
+                                <td width="60%">
+                                    <a href="#">商务部令2018年第6号关于修改《外商投资企业设立及变更备案管理暂行办法》的决定</a>
+                                </td>
+                                <td align="center" width="20%">国家发展改革委</td>
+                                <td align="center" width="20%">2018-07-02</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--/风险预警-->
+            <!--行业热点-->
+            <div class="boxLi">
+                <div class="headerLabel">【行业热点】</div>
+                <div class="conBody">
+                    <!--表格放这个盒子里-->
+                    <div class="hasTableBox">
+                        <table class="ntable ntable-odd">
+                            <tbody>
+                            <tr>
+                                <th>标题</th>
+                                <th>作者</th>
+                                <th>发布时间</th>
+                            </tr>
+                            <tr>
+                                <td width="60%">
+                                    <a href="#">关于修订印发2018年度一般企业财务报表格式的通知</a>
+                                </td>
+                                <td align="center" width="20%">国资委网站</td>
+                                <td align="center" width="20%">2018-07-02</td>
+                            </tr>
+                            <tr>
+                                <td width="60%">
+                                    <a href="#">商务部令2018年第6号关于修改《外商投资企业设立及变更备案管理暂行办法》的决定</a>
+                                </td>
+                                <td align="center" width="20%">新华网</td>
+                                <td align="center" width="20%">2018-07-02</td>
+                            </tr>
+                            <tr>
+                                <td width="60%">
+                                    <a href="#">商务部令2018年第6号关于修改《外商投资企业设立及变更备案管理暂行办法》的决定</a>
+                                </td>
+                                <td align="center" width="20%">凤凰财经</td>
+                                <td align="center" width="20%">2018-07-02</td>
+                            </tr>
+                            <tr>
+                                <td width="60%">
+                                    <a href="#">商务部令2018年第6号关于修改《外商投资企业设立及变更备案管理暂行办法》的决定</a>
+                                </td>
+                                <td align="center" width="20%">国家发展改革委</td>
+                                <td align="center" width="20%">2018-07-02</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--/行业热点-->
+            <!--政策演化-->
+            <div class="boxLi">
+                <div class="headerLabel">【政策演化】</div>
+                <div class="conBody">
+                    <!--表格放这个盒子里-->
+                    <div class="hasTableBox">
+                        <table class="ntable">
+                            <tbody>
+                            <tr>
+                                <th>时间</th>
+                                <th>标题</th>
+                                <th>发布机构</th>
+                            </tr>
+                            <tr>
+                                <td align="center" width="20%">2018-07-02</td>
+                                <td width="60%">
+                                    <a href="#">关于修订印发2018年度一般企业财务报表格式的通知</a>
+                                </td>
+                                <td align="center" width="20%">国资委网站</td>
+                            </tr>
+                            <tr>
+                                <td align="center" width="20%">2018-07-02</td>
+                                <td width="60%">
+                                    <a href="#">商务部令2018年第6号关于修改《外商投资企业设立及变更备案管理暂行办法》的决定</a>
+                                </td>
+                                <td align="center" width="20%">新华网</td>
+                            </tr>
+                            <tr>
+                                <td align="center" width="20%">2018-07-02</td>
+                                <td width="60%">
+                                    <a href="#">商务部令2018年第6号关于修改《外商投资企业设立及变更备案管理暂行办法》的决定</a>
+                                </td>
+                                <td align="center" width="20%">凤凰财经</td>
+                            </tr>
+                            <tr>
+                                <td align="center" width="20%">2018-07-02</td>
+                                <td width="60%">
+                                    <a href="#">商务部令2018年第6号关于修改《外商投资企业设立及变更备案管理暂行办法》的决定</a>
+                                </td>
+                                <td align="center" width="20%">国家发展改革委</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--/政策演化-->
+            <!--文本简报-->
+            <div class="boxLi">
+                <div class="headerLabel">【文本简报】</div>
+                <div class="conBody">
+                    <!--文字放这个盒子里-->
+                    <div class="txtBox">
+                        机器人是《中国制造2025》大力推动的十大重点领域之一，提出围绕应用需求，积极研发新产品，促进机器人标准化、模块化发展，扩大市场应用，突破关键零部件及系统集成设计制造等技术瓶颈。《国务院关于印发新一代人工智能发展规划的通知》（国发〔2017〕35号）指出，要大力发展人工智能新兴产业，研制智能工业机器人、智能服务机器人，实现大规模应用并进入国际市场。科技部国家重点研发计划“智能机器人”重点专项围绕机器人基础前沿技术、新一代机器人、关键共性技术、工业机器人、服务机器人、特种机器人等六个方向进行了部署，并提出了总体发展目标。
+
+                        为了促进机器人技术与以人工智能为代表的新一代信息技术的深度融合，研讨关键共性技术与产品应用方向，中国航空工业技术装备工程协会将于2018年8月16日-17日组织召开“第二届智能技术与工业机器人应用”论坛。本届论坛将邀请政府部门、学术界、产业界的领导和专家分享学术观点与研究进展，并与参会者现场互动。论坛同时将组织参观2018年世界机器人大会博览会。欢迎相关领域领导、专家、管理人员、科研人员积极参与交流。
+                    </div>
+                </div>
+            </div>
+            <!--/文本简报-->
+        </div>
+    </div>
+</div>
+<script src="../../../Frame/js/jQuery/jquery-1.8.0.min.js"></script>
+
+<script type="text/javascript">
+    // window.print();
+</script>
+</body>
+
+</html>
