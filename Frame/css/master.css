@@ -8336,3 +8336,263 @@ div.main-x {
 #react-body.mac ::-webkit-scrollbar-thumb, #react-body.mac ::-webkit-scrollbar-thumb:hover, #react-body.web ::-webkit-scrollbar-thumb, #react-body.web ::-webkit-scrollbar-thumb:hover {
     background-color: #444;
 }
+/*================================宏观政策态势详情=================================*/
+.wrapper .wrapper-body .row-main{
+    background-color: #fff;
+    box-sizing: border-box;
+    border-right: 1px solid #ededed;
+}
+.wrapper .info-header-title{
+    padding: 40px 20px 20px 20px;
+    margin-bottom: 40px;
+}
+
+.wrapper .info-header-title .title-name h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    color: #333;
+    margin-right: 10px;
+    line-height: 34px;
+}
+.wrapper .info-header-title .update-time{
+    color: #999;
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: center;
+}
+.wrapper .info-header-title .update-time i{
+    color: #1D9ED2;
+    font-size: 18px;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.wrapper .wp-section{
+    margin-bottom: 30px;
+}
+.wrapper .wp-section:last-child{
+    margin-bottom: 0;
+}
+.set-row-header{
+    margin-bottom: 10px;
+    padding: 0 15px;
+}
+.set-row-header .h1-title{
+    font-size: 20px;
+    text-align: left;
+    font-weight: 600;
+    color: #555;
+}
+.set-row-header .h1-title small{
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: -5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.set-row-header .h1-title .em-num{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    font-style: normal;
+    margin: 6px 10px 0 0;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    background-color: #828ec9;
+}
+.set-row-header .set-lineBox i{
+    width: 100%;
+    height: 2px;
+    border-radius: 0;
+    background-color: #EEEEEE;
+    display: inline-block;
+}
+.wp-section .set-row-body{
+    padding: 20px;
+}
+
+.wp-section .set-row-body .txt-body{
+    color: #333;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 15px;
+    border: 1px solid #e3e3e3;
+    background-color: #fafafa;
+    text-align: justify;
+}
+
+.wp-section .set-row-body .set-title-txt{
+    color: #333;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.wp-section .childTab {
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.wp-section.hasTab .childTab {
+    overflow: hidden;
+}
+
+.wp-section.hasTab .childTab {
+    width: calc(100% - 80px);
+    padding: 0 40px 0 40px;
+}
+
+.wp-section .changeBtn {
+    position: absolute;
+    top: 0;
+}
+
+.wp-section .changeBtn.leftBtn {
+    left: 0;
+}
+.wp-section .changeBtn.rightBtn {
+    right: 0;
+}
+.wp-section .changeBtn a {
+    color: #e8e8e8;
+    display: block;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+.wp-section .changeBtn a:hover {
+    color: #828EC9;
+}
+.wp-section .changeBtn a i {
+    font-size: 20px;
+}
+
+.wp-section .childTab ul {
+    width: 100%;
+    background-color: #ECEDF5;
+}
+
+.wp-section.hasTab .childTab ul {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.wp-section.hasTab .childTab ul li {
+    float: left;
+    width: 12.5%;
+}
+.wp-section .childTab ul li.active {
+    background-color: #828EC9;
+}
+.wp-section .childTab ul li.active a {
+    color: #fff;
+}
+
+.wp-section .childTab ul li a {
+    display: block;
+    color: #333;
+    border-radius: 2px;
+    font-size: 15px;
+    line-height: 40px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.wp-section .ChartBox{
+    width: 100%;
+    height: 550px;
+    background-color: #fafafa;
+}
+.wp-section .ChartGroup .ChartBox{
+    height: 430px;
+}
+
+.wp-section .ChartGroup .chart-table{
+    height: 430px;
+    margin-right: 20px;
+}
+.wp-section .ChartGroup .ChartLeft{
+float: left;
+    width: 50%;
+}
+.wp-section .ChartGroup .ChartRight{
+    float: left;
+    width: 50%;
+}
+
+.c-table {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border: 1px solid #e3e6e9;
+    border-radius: 2px;
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.c-table td, .c-table th {
+    border-bottom: 1px solid #e3e6e9;
+    padding: 5px;
+    line-height: 1.4;
+    color: #333;
+    word-break: break-all;
+}
+
+.c-table thead th {
+    background-color: #f2f2f2;
+    font-weight: 700;
+    vertical-align: baseline;
+    word-break: break-all;
+}
+
+.c-table td.tl, .c-table th.tl {
+    text-align: left;
+}
+
+.c-table td.tc, .c-table th.tc {
+    text-align: center;
+}
+
+.c-progress {
+    background: #dcdcdc;
+    height: 5px;
+    font-size: 0;
+    line-height: 0;
+}
+
+.c-progress-inline, .c-progress-inline-2 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.c-progress-inline-2 {
+    width: 100%;
+}
+
+.c-progress-bar {
+    background: #4aa6fc;
+    height: 5px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.c-table tr:nth-child(2n) {
+    background-color: #f2f2f2;
+}
+
+.c-table tbody tr:nth-child(2n):hover, .c-table tr:hover {
+    background-color: #f4f8fc;
+}

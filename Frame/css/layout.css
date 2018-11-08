@@ -285,7 +285,9 @@
 .header .nav .menu .menu-box > ul.menu-list-content li a.menu-list-box:hover {
     color: #ebebeb;
 }
-
+.header .nav .menu .menu-box > ul.menu-list-content li a i{
+    font-size: 34px;
+}
 .header .searchBox {
     width: 30%;
     margin-left: 5%;

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="6bc6cb6d-acad-4b6c-87f7-fe0fd77611cc" name="myTest" url="http://10.5.8.64:8080">
+        <fileTransfer port="0" mountedRoot="D:\网站\bl-data" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

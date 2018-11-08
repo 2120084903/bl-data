@@ -244,3 +244,10 @@
     height: 8px;
     background: url('../../Project/img/edm-top.png');
 }
+
+/*水印背景*/
+.waterMarkBg{
+    background: url(../../Project/img/bkbg.png) top left repeat;
+    background-attachment:fixed;
+    background-color: #F5F5F5;
+}
