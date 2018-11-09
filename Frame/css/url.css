@@ -247,7 +247,22 @@
 
 /*水印背景*/
 .waterMarkBg{
-    background: url(../../Project/img/bkbg.png) top left repeat;
+    /*background: url(../../Project/img/bkbg.png) top left repeat;*/
     background-attachment:fixed;
     background-color: #F5F5F5;
+}
+
+/*宏观政策态势详情-雄鸡图*/
+.map-bg {
+    height: 600px !important;
+    border: 1px solid #ddd;
+    background: url("../../Project/img/yb_bg_rep.jpg") repeat-x 0 0;
+}
+
+
+/*报告列表*/
+.reportListBox .bkListHeader {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    background: url("../../Project/img/sgbk_index_bg_sprite.png") no-repeat;
 }

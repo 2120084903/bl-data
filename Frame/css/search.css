@@ -610,6 +610,10 @@
     .tjcourse .tjLi .tjcourseInfo .info {
         padding-left: 10px;
     }
+
+    .wp-section .ChartBox {
+        height: 430px;
+    }
 }
 
 /*全局*/

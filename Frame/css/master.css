@@ -8336,18 +8336,20 @@ div.main-x {
 #react-body.mac ::-webkit-scrollbar-thumb, #react-body.mac ::-webkit-scrollbar-thumb:hover, #react-body.web ::-webkit-scrollbar-thumb, #react-body.web ::-webkit-scrollbar-thumb:hover {
     background-color: #444;
 }
+
 /*================================宏观政策态势详情=================================*/
-.wrapper .wrapper-body .row-main{
+.wrapper .wrapper-body .row-main {
+    padding: 20px;
     background-color: #fff;
     box-sizing: border-box;
-    border-right: 1px solid #ededed;
 }
-.wrapper .info-header-title{
+
+.wrapper .info-header-title {
     padding: 40px 20px 20px 20px;
     margin-bottom: 40px;
 }
 
-.wrapper .info-header-title .title-name h1{
+.wrapper .info-header-title .title-name h1 {
     text-align: center;
     font-size: 30px;
     font-weight: 400;
@@ -8355,43 +8357,59 @@ div.main-x {
     margin-right: 10px;
     line-height: 34px;
 }
-.wrapper .info-header-title .update-time{
+
+.wrapper .info-header-title .update-time {
     color: #999;
     margin-top: 15px;
     font-size: 18px;
     text-align: center;
 }
-.wrapper .info-header-title .update-time i{
+
+.wrapper .info-header-title .update-time i {
     color: #1D9ED2;
     font-size: 18px;
     margin-right: 5px;
     display: inline-block;
     vertical-align: middle;
 }
-.wrapper .wp-section{
+
+.wrapper .wp-section {
     margin-bottom: 30px;
+    border: 1px solid #e6e6e6;
 }
-.wrapper .wp-section:last-child{
+
+.wrapper .wp-section:last-child {
     margin-bottom: 0;
 }
-.set-row-header{
+
+.set-row-header {
     margin-bottom: 10px;
     padding: 0 15px;
 }
-.set-row-header .h1-title{
-    font-size: 20px;
-    text-align: left;
-    font-weight: 600;
-    color: #555;
+
+.set-row-header {
+    padding: 8px 20px;
+    border-bottom: 1px solid #e6e6e6;
+    background-color: #F8F8F8;
 }
-.set-row-header .h1-title small{
+
+.set-row-header .h1-title {
+    font-size: 18px;
+    text-align: left;
+    color: #666;
+    padding-left: 15px;
+    border-left: 4px solid #FF6200;
+}
+
+.set-row-header .h1-title small {
     font-size: 14px;
     font-weight: normal;
     margin-left: -5px;
     display: inline-block;
     vertical-align: middle;
 }
-.set-row-header .h1-title .em-num{
+
+.set-row-header .h1-title .em-num {
     display: inline-block;
     width: 24px;
     height: 24px;
@@ -8403,28 +8421,27 @@ div.main-x {
     font-size: 16px;
     background-color: #828ec9;
 }
-.set-row-header .set-lineBox i{
+
+.set-row-header .set-lineBox i {
     width: 100%;
     height: 2px;
     border-radius: 0;
     background-color: #EEEEEE;
     display: inline-block;
 }
-.wp-section .set-row-body{
+
+.wp-section .set-row-body {
     padding: 20px;
 }
 
-.wp-section .set-row-body .txt-body{
+.wp-section .set-row-body .txt-body {
     color: #333;
     font-size: 15px;
     line-height: 24px;
-    padding: 15px;
-    border: 1px solid #e3e3e3;
-    background-color: #fafafa;
     text-align: justify;
 }
 
-.wp-section .set-row-body .set-title-txt{
+.wp-section .set-row-body .set-title-txt {
     color: #333;
     font-size: 16px;
     line-height: 24px;
@@ -8455,9 +8472,11 @@ div.main-x {
 .wp-section .changeBtn.leftBtn {
     left: 0;
 }
+
 .wp-section .changeBtn.rightBtn {
     right: 0;
 }
+
 .wp-section .changeBtn a {
     color: #e8e8e8;
     display: block;
@@ -8468,16 +8487,17 @@ div.main-x {
     -webkit-transition: all 300ms;
     -moz-transition: all 300ms;
 }
+
 .wp-section .changeBtn a:hover {
-    color: #828EC9;
+    color: #62B1FF;
 }
+
 .wp-section .changeBtn a i {
     font-size: 20px;
 }
 
 .wp-section .childTab ul {
     width: 100%;
-    background-color: #ECEDF5;
 }
 
 .wp-section.hasTab .childTab ul {
@@ -8488,12 +8508,26 @@ div.main-x {
 .wp-section.hasTab .childTab ul li {
     float: left;
     width: 12.5%;
+    position: relative;
 }
-.wp-section .childTab ul li.active {
-    background-color: #828EC9;
+
+.wp-section.hasTab .childTab ul li:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 50%;
+    height: 3px;
+    margin-left: -25%;
+    background-color: #fff;
 }
+
+.wp-section .childTab ul li.active:after {
+    background-color: #62B1FF;
+}
+
 .wp-section .childTab ul li.active a {
-    color: #fff;
+    color: #62B1FF;
 }
 
 .wp-section .childTab ul li a {
@@ -8507,26 +8541,55 @@ div.main-x {
     overflow: hidden;
 }
 
-.wp-section .ChartBox{
+.wp-section .Chart-sm {
+    text-align: center;
+    color: #555;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.wp-section .ChartBox {
     width: 100%;
     height: 550px;
-    background-color: #fafafa;
+    background-color: #fff;
 }
-.wp-section .ChartGroup .ChartBox{
+
+.wp-section .ChartBox#zc-trend {
+    height: 400px;
+}
+
+.wp-section .ChartGroup .ChartBox {
     height: 430px;
 }
 
-.wp-section .ChartGroup .chart-table{
+.wp-section .ChartGroup .chart-table {
     height: 430px;
-    margin-right: 20px;
 }
-.wp-section .ChartGroup .ChartLeft{
-float: left;
-    width: 50%;
-}
-.wp-section .ChartGroup .ChartRight{
+
+.wp-section .ChartGroup .ChartLeft {
     float: left;
     width: 50%;
+}
+
+.wp-section .ChartGroup .ChartRight {
+    float: left;
+    width: 50%;
+}
+
+.wp-section .ChartGroup .ChartLeft.mind-box {
+    width: 65%;
+}
+
+.wp-section .ChartGroup .ChartRight.words-box {
+    width: 35%;
+}
+
+.wp-section .ChartGroup .ChartLeft.map-box {
+    width: 65%;
+}
+
+.wp-section .ChartGroup .ChartRight.map-bar {
+    width: 35%;
 }
 
 .c-table {
@@ -8595,4 +8658,262 @@ float: left;
 
 .c-table tbody tr:nth-child(2n):hover, .c-table tr:hover {
     background-color: #f4f8fc;
+}
+
+.zc-small-bar {
+    width: 100%;
+    height: 350px;
+}
+
+.wp-section .ntable th {
+    background: #F1F1F1;
+}
+
+.wp-section .ntable th:not(:last-child) {
+    border-color: #e9e9e9;
+}
+
+.wp-section .ntable a {
+    color: #333;
+    text-decoration: none;
+}
+
+.wp-section .ntable a:hover {
+    color: #1D9ED2;
+}
+
+.wp-section .ntable td {
+    font-size: 14px;
+    border-color: #e9e9e9;
+}
+
+/*================================宏观政策态势列表=================================*/
+.hasSearch .contenBox.reportCon {
+    padding-top: 64px;
+}
+
+.reportSearch .searchBar {
+    padding: 100px 60px;
+    text-align: center;
+}
+
+.reportSearch .inputWrapper {
+    width: 65%;
+    display: inline-block;
+}
+
+.reportSearch .searchBar .keywordWrapper {
+    width: 84%;
+    float: left;
+}
+
+.reportSearch .searchBar .searchBarTxt {
+    margin-bottom: 20px;
+}
+
+.reportSearch .searchBar .searchBarTxt p {
+    color: #1D9ED2;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1;
+    font-weight: bolder;
+
+}
+
+.reportSearch .searchBar .keywordWrapper input {
+    width: 100%;
+    height: 46px;
+    margin-top: 0;
+    color: #666;
+    font-size: 16px;
+    line-height: 16px;
+    box-sizing: border-box;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+
+.reportSearch .searchBar .keywordWrapper input[type=text]:focus {
+    border-color: #1D9ED2;
+}
+
+.reportSearch .searchBar .keywordInput {
+    padding: 12px 15px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #E8E8E8;
+    border-right: 0;
+}
+
+.reportSearch .searchBar #submit {
+    width: 16%;
+    float: left;
+    padding: 12px 0;
+    background-color: #1D9ED2;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+
+.reportSearch .searchBar #submit:hover {
+    background-color: #188fc0;
+}
+
+.reportMain .reportListBox {
+    background-color: #fff;
+    padding: 50px 20px 20px 20px;
+}
+
+.reportMain .reportItem a {
+    color: #444;
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'microsoft yahei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: normal;
+    vertical-align: middle;
+    width: 33%;
+    margin: 15px 0;
+    word-spacing: normal;
+    box-sizing: border-box;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+
+.reportMain .reportItem a .reportName {
+    padding: 0 10px 0 20px;
+    position: relative;
+}
+
+.reportMain .reportItem a .reportName:before {
+    content: '';
+    position: absolute;
+    /*top: 0;*/
+    /*left: 0;*/
+    /*width: 4px;*/
+    /*height: 100%;*/
+    /*background: #00b38a;*/
+    top: 50%;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    border-radius: 50%;
+    background: #7EC8E5;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+
+.reportMain .reportItem a .reportName .editName {
+    color: #444;
+    font-size: 16px;
+    max-width: 85%;
+    outline: 0 !important;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    display: inline-block;
+    vertical-align: text-bottom;
+    line-height: 40px;
+
+}
+
+.reportMain .reportItem a .reportName .iconfont {
+    float: right;
+    color: #FE7C1D;
+    font-size: 24px;
+    line-height: 40px;
+    display: none;
+}
+
+.reportMain .reportItem a:hover .reportName:before {
+    background-color: #FE7C1D;
+}
+
+.reportMain .reportItem a:hover .reportName {
+    background: #F8FAFB;
+}
+
+.reportMain .reportItem a:hover .reportName .iconfont {
+    display: block;
+}
+
+.reportListBox .bkListHeader strong {
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    letter-spacing: 2px;
+    padding: 5px 10px;
+}
+
+.reportListBox .reportWrap {
+    color: #777;
+}
+
+.reportListBox .rewardmodbk {
+    margin-bottom: 50px;
+}
+
+#pageDevice {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#pageDevice .layui-laypage span,
+#pageDevice .layui-laypage a {
+    color: #666;
+    font-size: 14px;
+    margin: 0 10px 5px 0;
+    border-radius: 3px;
+    padding: 0 20px;
+    height: 36px;
+    line-height: 36px;
+}
+
+#pageDevice .layui-laypage a:hover {
+    color: #fff;
+    background-color: #1D9ED2;
+    border-color: #1D9ED2;
+}
+
+#pageDevice .layui-laypage .layui-laypage-curr .layui-laypage-em {
+    background-color: #1D9ED2;
+}
+
+#pageDevice .layui-laypage a.layui-disabled:hover {
+    border-color: #e2e2e2;
+    background-color: #fff;
+}
+
+.report-type {
+    margin: 10px 0;
+    background: url(https://bkssl.bdimg.com/static/wiki-lemma/normal/resource/img/paraTitle-line_c5e6d61.png);
+}
+
+.report-type i {
+    color: #51C0F8;
+    font-size: 17px;
+    font-weight: bolder;
+    font-style: normal;
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    border-left: 4px solid #51C0F8;
+    background-color: #fff;
+}
+
+.report-type i.quarter {
+    color: #0CB399;
+    border-left: 4px solid #0CB399;
+}
+
+.report-type i.year {
+    color: #7187DB;
+    border-left: 4px solid #7187DB;
 }
