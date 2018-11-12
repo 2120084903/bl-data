@@ -127,6 +127,9 @@
     .baike .baikeMain #Chart02 {
         height: 550px;
     }
+    .wp-section .line-wap{
+        padding: 0 60px;
+    }
 
 }
 
@@ -613,6 +616,12 @@
 
     .wp-section .ChartBox {
         height: 430px;
+    }
+    .reportMain .reportItem a{
+        width: 22%;
+    }
+    .wp-section .line-wap{
+        padding: 0 10px;
     }
 }
 

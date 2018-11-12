@@ -285,9 +285,11 @@
 .header .nav .menu .menu-box > ul.menu-list-content li a.menu-list-box:hover {
     color: #ebebeb;
 }
-.header .nav .menu .menu-box > ul.menu-list-content li a i{
+
+.header .nav .menu .menu-box > ul.menu-list-content li a i {
     font-size: 34px;
 }
+
 .header .searchBox {
     width: 30%;
     margin-left: 5%;
@@ -2908,7 +2910,6 @@ div.layui-laydate-content td.laydate-selected {
     min-width: 270px;
 }
 
-
 /*tips*/
 
 .tipsTs {
@@ -2916,7 +2917,7 @@ div.layui-laydate-content td.laydate-selected {
     font-size: 13px;
     max-width: 200px;
     opacity: 0;
-    filter: alpha( opacity = 0);
+    filter: alpha(opacity=0);
     z-index: 9;
     padding: 5px 8px;
     border-radius: 3px;
@@ -2925,7 +2926,7 @@ div.layui-laydate-content td.laydate-selected {
 }
 
 .tipsTs .triangle-front,
-.tipsTs .triangle-back{
+.tipsTs .triangle-back {
     width: 0;
     height: 0;
     overflow: hidden;
@@ -2937,11 +2938,13 @@ div.layui-laydate-content td.laydate-selected {
     left: 50%;
     margin-left: -8px;
 }
+
 .tipsColor {
     border-color: #c7c08d;
     background-color: #fffac3;
 }
-.tipsColor .triangle-front{
+
+.tipsColor .triangle-front {
     border-top-color: #c7c08d;
 }
 
@@ -2951,4 +2954,29 @@ div.layui-laydate-content td.laydate-selected {
 
 .tipsColor .triangle-back {
     border-top-color: #fffac3;
+}
+
+/*顶部筛选*/
+.header-list-sx {
+    padding: 10px 0 30px 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.header-list-sx .sx-input {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-list-sx .layui-form-item {
+    margin-bottom: 0;
+}
+
+.header-list-sx .layui-form-label {
+    width: auto;
+    color: #444;
+    font-size: 15px;
+    line-height: 38px;
+    padding: 0;
+    margin-right: 15px;
 }

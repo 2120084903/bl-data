@@ -8377,7 +8377,9 @@ div.main-x {
     margin-bottom: 30px;
     border: 1px solid #e6e6e6;
 }
-
+.wrapper .wp-section:first-child{
+    border: none;
+}
 .wrapper .wp-section:last-child {
     margin-bottom: 0;
 }
@@ -8687,6 +8689,247 @@ div.main-x {
     border-color: #e9e9e9;
 }
 
+.wp-section .line-wap {
+    padding: 0 110px;
+}
+
+.wp-section .normal-box .text-line {
+    float: left;
+    width: 47.5%;
+    height: 190px;
+}
+
+.wp-section .normal-box .center-line {
+    float: left;
+    width: 5%;
+    position: relative;
+}
+
+.wp-section .normal-box .center-line .child-l {
+    position: relative;
+    z-index: 1;
+    width: 40px;
+}
+
+.wp-section .normal-box .icon-line {
+    float: left;
+    width: 47.5%;
+}
+
+.wp-section .line-row-b {
+    color: #555;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.6;
+    padding: 0 20px;
+    margin-top: 35px;
+}
+
+.wp-section .line-row-b .line-txt-field {
+    height: 90px;
+    overflow: hidden;
+}
+
+.wp-section .line-row-b .time-show {
+    color: #F6A451;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.wp-section .left-box {
+    float: left;
+    width: 20px;
+    height: 190px;
+    border-radius: 10px 0 0 10px;
+    background-color: #eee;
+    position: relative;
+}
+
+.wp-section .right-box {
+    float: left;
+    width: 20px;
+    height: 190px;
+    border-radius: 0 10px 10px 0;
+    background-color: #F6A451;
+    position: relative;
+}
+
+.wp-section .center-line .dot-i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 7px;
+    height: 7px;
+    margin-top: -4px;
+    margin-left: -6px;
+    border-radius: 100%;
+    border: 3px solid #fff;
+}
+
+.wp-section .child-t .icon-t {
+    float: left;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 100%;
+    background-color: #F6A451;
+}
+
+.wp-section .child-t .icon-t i {
+    color: #fff;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.wp-section .child-t .time-year {
+    float: left;
+    padding-left: 20px;
+}
+
+.wp-section .child-t .time-year strong {
+    color: #7D7D7C;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.wp-section .child-t {
+    width: 190px;
+    margin-top: 65px;
+    padding-left: 100px;
+}
+
+.wp-section .line-dot {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    width: 108px;
+    margin-top: -4px;
+}
+
+.wp-section .line-dot .link-line {
+    float: left;
+    width: 96px;
+    height: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #F6A451;
+    margin-top: 5px;
+}
+
+.wp-section .line-dot .circle {
+    float: left;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 100%;
+    background-color: #F6A451;
+}
+
+/*左右控制*/
+.wp-section .l-left .left-box {
+    background-color: #fff;
+    opacity: 0;
+}
+
+.wp-section .l-right .right-box {
+    background-color: #fff;
+    opacity: 0;
+}
+
+.wp-section .l-right .text-line {
+    float: right;
+}
+
+.wp-section .normal-box .l-right .center-line {
+    float: right;
+}
+
+.wp-section .l-right .icon-t {
+    float: right;
+}
+
+.wp-section .l-right .line-dot {
+    right: 20px;
+    left: auto;
+}
+
+.wp-section .l-right .line-dot .link-line {
+    float: right;
+}
+
+.wp-section .l-right .child-t .time-year {
+    padding-left: 16px;
+}
+
+.wp-section .l-right .child-t {
+    padding-left: 130px;
+}
+
+/*颜色控制*/
+/*l-c02*/
+.wp-section .l-c02 .left-box,
+.wp-section .l-c02 .child-t .icon-t,
+.wp-section .l-c02 .line-dot .link-line,
+.wp-section .l-c02 .line-dot .circle {
+    background-color: #F27078;
+}
+
+.wp-section .l-c02 .line-row-b .time-show {
+    color: #F27078;
+}
+/*l-c03*/
+.wp-section .l-c03 .right-box,
+.wp-section .l-c03 .left-box,
+.wp-section .l-c03 .child-t .icon-t,
+.wp-section .l-c03 .line-dot .link-line,
+.wp-section .l-c03 .line-dot .circle {
+    background-color: #48AEB7;
+}
+
+.wp-section .l-c03 .line-row-b .time-show {
+    color: #48AEB7;
+}
+/*l-c04*/
+.wp-section .l-c04 .right-box,
+.wp-section .l-c04 .left-box,
+.wp-section .l-c04 .child-t .icon-t,
+.wp-section .l-c04 .line-dot .link-line,
+.wp-section .l-c04 .line-dot .circle {
+    background-color: #A2B973;
+}
+
+.wp-section .l-c04 .line-row-b .time-show {
+    color: #A2B973;
+}
+/*l-c05*/
+.wp-section .l-c05 .right-box,
+.wp-section .l-c05 .left-box,
+.wp-section .l-c05 .child-t .icon-t,
+.wp-section .l-c05 .line-dot .link-line,
+.wp-section .l-c05 .line-dot .circle {
+    background-color: #938197;
+}
+
+.wp-section .l-c05 .line-row-b .time-show {
+    color: #938197;
+}
+
+/*l-c06*/
+.wp-section .l-c06 .right-box,
+.wp-section .l-c06 .left-box,
+.wp-section .l-c06 .child-t .icon-t,
+.wp-section .l-c06 .line-dot .link-line,
+.wp-section .l-c06 .line-dot .circle {
+    background-color: #6a99d6;
+}
+
+.wp-section .l-c06 .line-row-b .time-show {
+    color: #6a99d6;
+}
+
 /*================================宏观政策态势列表=================================*/
 .hasSearch .contenBox.reportCon {
     padding-top: 64px;
@@ -8765,7 +9008,11 @@ div.main-x {
 
 .reportMain .reportListBox {
     background-color: #fff;
-    padding: 50px 20px 20px 20px;
+    padding: 20px;
+}
+
+.reportMain .reportItem .report-li {
+    margin-left: -8px;
 }
 
 .reportMain .reportItem a {
@@ -8775,43 +9022,20 @@ div.main-x {
     font-family: 'microsoft yahei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     letter-spacing: normal;
     vertical-align: middle;
-    width: 33%;
-    margin: 15px 0;
+    width: 18%;
+    margin: 8px;
     word-spacing: normal;
     box-sizing: border-box;
-    transition: all 300ms;
-    -webkit-transition: all 300ms;
-    -moz-transition: all 300ms;
+    border: 1px solid #ebebeb;
 }
 
 .reportMain .reportItem a .reportName {
-    padding: 0 10px 0 20px;
+    padding: 0 10px 0 10px;
     position: relative;
 }
 
-.reportMain .reportItem a .reportName:before {
-    content: '';
-    position: absolute;
-    /*top: 0;*/
-    /*left: 0;*/
-    /*width: 4px;*/
-    /*height: 100%;*/
-    /*background: #00b38a;*/
-    top: 50%;
-    left: 3px;
-    width: 10px;
-    height: 10px;
-    margin-top: -5px;
-    border-radius: 50%;
-    background: #7EC8E5;
-    transition: all 300ms;
-    -webkit-transition: all 300ms;
-    -moz-transition: all 300ms;
-}
-
 .reportMain .reportItem a .reportName .editName {
-    color: #444;
-    font-size: 16px;
+    font-size: 15px;
     max-width: 85%;
     outline: 0 !important;
     overflow: hidden;
@@ -8820,29 +9044,30 @@ div.main-x {
     white-space: nowrap;
     word-wrap: normal;
     display: inline-block;
-    vertical-align: text-bottom;
+    vertical-align: middle;
     line-height: 40px;
-
 }
 
-.reportMain .reportItem a .reportName .iconfont {
-    float: right;
-    color: #FE7C1D;
-    font-size: 24px;
+.reportMain .reportItem a .reportName i {
+    display: inline-block;
+    vertical-align: middle;
+    color: #85ADE7;
+    font-size: 18px;
     line-height: 40px;
-    display: none;
+    margin-right: 5px;
 }
 
-.reportMain .reportItem a:hover .reportName:before {
-    background-color: #FE7C1D;
+.reportMain .reportItem a:hover {
+    color: #1D9ED2;
+    border-color: #1D9ED2;
 }
 
 .reportMain .reportItem a:hover .reportName {
     background: #F8FAFB;
 }
 
-.reportMain .reportItem a:hover .reportName .iconfont {
-    display: block;
+.reportMain .reportItem a:hover .reportName i {
+    color: #1D9ED2;
 }
 
 .reportListBox .bkListHeader strong {
@@ -8855,6 +9080,14 @@ div.main-x {
 
 .reportListBox .reportWrap {
     color: #777;
+}
+
+.reportListBox .reportWrap .reportItem {
+    margin-bottom: 20px;
+}
+
+.reportListBox .reportWrap .reportItem:last-child {
+    margin-bottom: 0;
 }
 
 .reportListBox .rewardmodbk {
@@ -8894,7 +9127,7 @@ div.main-x {
 
 .report-type {
     margin: 10px 0;
-    background: url(https://bkssl.bdimg.com/static/wiki-lemma/normal/resource/img/paraTitle-line_c5e6d61.png);
+    /*background: url(https://bkssl.bdimg.com/static/wiki-lemma/normal/resource/img/paraTitle-line_c5e6d61.png);*/
 }
 
 .report-type i {
