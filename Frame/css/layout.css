@@ -2980,3 +2980,29 @@ div.layui-laydate-content td.laydate-selected {
     padding: 0;
     margin-right: 15px;
 }
+
+/*标签*/
+.ntag {
+    font-weight: normal;
+    display: inline-block;
+    line-height: 16px;
+    font-size: 14px;
+    padding: 4px 8px 4px 8px;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+
+.ntag.text-Green {
+    color: #009944;
+    background: #E4FFF0;
+}
+
+.ntag.text-Blue {
+    color: #1DA0EE;
+    background: #def3ff;
+}
+
+.ntag.text-Orange {
+    color: #EC9662;
+    background: #FFF4ED;
+}

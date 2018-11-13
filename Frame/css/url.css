@@ -29,7 +29,6 @@
     -webkit-transition: .4s background ease;
 }
 
-
 /* 意见反馈头部背景图 */
 .HelpHeader {
     width: 100%;
@@ -39,7 +38,6 @@
     overflow: hidden;
     margin-top: 60px;
 }
-
 
 /* 会议详情 */
 .meetInfoMain .layoutType.news {
@@ -58,7 +56,7 @@
 }
 
 /*水印遮罩*/
-.watermark{
+.watermark {
     position: absolute;
     z-index: 1;
     left: 50%;
@@ -67,12 +65,12 @@
     margin-top: -75px;
     width: 450px;
     height: 150px;
-    background:url("../../Project/img/watermark.png") no-repeat;
+    background: url("../../Project/img/watermark.png") no-repeat;
     background-size: cover;
 }
 
 /*IE提示下载浏览器图标*/
-.BrowserLi .iconBox .imgBoxMain{
+.BrowserLi .iconBox .imgBoxMain {
     display: inline-block;
     width: 76px;
     height: 76px;
@@ -149,21 +147,18 @@
     background: url(../../Project/img/newmail-advantage-bg1.jpg) no-repeat #fff center top;
 }
 
-
 /*百科背景*/
-.baikeBg{
+.baikeBg {
     background: url(../../Project/img/bkbg.png) top left repeat;
-    background-attachment:fixed;
+    background-attachment: fixed;
     background-color: #F5F5F5;
 }
 
 /*产品服务*/
-.IE .index .bg0{
+.IE .index .bg0 {
     top: 30%;
     background: url(../../Project/img/cpBg.png) no-repeat center center;
 }
-
-
 
 /*订单支付*/
 .modal-weixin-pay .example {
@@ -177,20 +172,20 @@
 }
 
 /*百科购买*/
-.MaskBaike{
+.MaskBaike {
     background: url('../../Project/img/cbase-mengban.png') no-repeat;
     height: 940px;
     position: relative;
 }
+
 .vip-top {
     padding-top: 5px;
     background: url('../../Project/img/vip_modal_bg@2x.png') no-repeat center top;
     background-size: 750px 290px;
 }
 
-
 /*订阅弹窗*/
-.model-box{
+.model-box {
     z-index: 2;
     width: 465px;
     height: 450px;
@@ -228,7 +223,7 @@
 }
 
 /*订单详情*/
-.orderDetails .mbLine{
+.orderDetails .mbLine {
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -236,7 +231,8 @@
     height: 8px;
     background-image: url('../../Project/img/edm-bottom.png');
 }
-.orderDetails .topImg{
+
+.orderDetails .topImg {
     position: absolute;
     top: 0;
     left: 0;
@@ -246,9 +242,9 @@
 }
 
 /*水印背景*/
-.waterMarkBg{
-    /*background: url(../../Project/img/bkbg.png) top left repeat;*/
-    background-attachment:fixed;
+.waterMarkBg {
+    background: url(../../Project/img/bkbg.png) top left repeat;
+    background-attachment: fixed;
     background-color: #F5F5F5;
 }
 
@@ -258,7 +254,6 @@
     border: 1px solid #ddd;
     background: url("../../Project/img/yb_bg_rep.jpg") repeat-x 0 0;
 }
-
 
 /*报告列表*/
 .reportListBox .bkListHeader {
