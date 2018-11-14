@@ -1419,11 +1419,11 @@
     };
 
     app.config = {
-        rotate: 90,
-        align: 'left',
+        rotate: 0,
+        align: 'center',
         verticalAlign: 'middle',
         position: 'insideBottom',
-        distance: 15,
+        distance: 18,
         onChange: function () {
             var labelOption = {
                 normal: {
@@ -1452,15 +1452,20 @@
     var labelOption = {
         normal: {
             show: true,
-            position: app.config.position,
+            position: 'top',
             distance: app.config.distance,
             align: app.config.align,
             verticalAlign: app.config.verticalAlign,
             rotate: app.config.rotate,
-            formatter: '{c}  {name|{a}}',
-            fontSize: 16,
+            // formatter: '{c}/{name|{a}}',
+            formatter: '{c}',
+
+            fontSize: 13,
+            color:'#444',
             rich: {
                 name: {
+                    color:'#444',
+                    fontSize: 12,
                     textBorderColor: '#fff'
                 }
             }
@@ -1562,7 +1567,7 @@
                 barGap: '30%',
                 label: labelOption,
                 data: [150, 232, 201, 154, 190]
-            }
+            },
 
         ]
     };
