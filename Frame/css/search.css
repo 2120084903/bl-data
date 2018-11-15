@@ -127,8 +127,14 @@
     .baike .baikeMain #Chart02 {
         height: 550px;
     }
-    .wp-section .line-wap{
+
+    .wp-section .line-wap {
         padding: 0 60px;
+    }
+
+    .header .nav {
+        width: 1280px;
+        margin: 0 auto;
     }
 
 }
@@ -617,11 +623,22 @@
     .wp-section .ChartBox {
         height: 430px;
     }
-    .reportMain .reportItem a{
+
+    .reportMain .reportItem a {
         width: 22%;
     }
-    .wp-section .line-wap{
+
+    .wp-section .line-wap {
         padding: 0 10px;
+    }
+
+    .sample.zy-policy {
+        height: 430px;
+    }
+
+    .header .nav {
+        width: 1232px;
+        margin: 0 auto;
     }
 }
 

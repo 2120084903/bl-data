@@ -8384,10 +8384,11 @@ div.main-x {
 
 .wrapper .info-header-title .title-name h1 {
     text-align: center;
-    font-size: 30px;
-    font-weight: 400;
-    color: #333;
+    font-size: 38px;
+    font-weight: bold;
+    color: #f24a45;
     line-height: 34px;
+    /*font-family: '宋体';*/
 }
 
 .wrapper .info-header-title .update-time {
@@ -9028,6 +9029,10 @@ div.main-x {
 
 .Macro-policy .mx-tab-header .mx-tab-li.active:after {
     background-color: #1D9ED2;
+}
+
+.sample.zy-policy {
+    height: 550px;
 }
 
 /*================================宏观政策态势列表=================================*/

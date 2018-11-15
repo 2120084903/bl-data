@@ -3006,3 +3006,20 @@ div.layui-laydate-content td.laydate-selected {
     color: #EC9662;
     background: #FFF4ED;
 }
+
+/*思维导图*/
+.sample {
+    width: 100%;
+    height: 430px;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+}
+
+.mind-map {
+    width: 100%;
+    height: 100%;
+}
+
+.sample .mind-map div {
+    overflow: hidden !important;
+}
