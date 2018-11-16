@@ -236,6 +236,14 @@
                                 <div class="tabBody">
                                     <div class="tabCon">
                                         <div id="zc-trend" class="ChartBox"></div>
+                                        <div class="chart-line">
+                                            <div class="line-box"></div>
+                                        </div>
+                                        <div class="x-pos">
+                                            <div class="pos-li zc">支持</div>
+                                            <div class="pos-li zl">中立</div>
+                                            <div class="pos-li yg">严格</div>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -2702,7 +2710,7 @@
     var dom = document.getElementById("zc-trend");
     var myChartZcTrend = echarts.init(dom);
     var app = {};
-    var symbolSize = 10;
+    var symbolSize = 8;
     option = null;
     option = {
         tooltip: {
@@ -2718,18 +2726,19 @@
                 color: '#666'
             }
         },
-        color: ['#28B18A', '#51C0F8', '#E99E3C'],
+        color: ['#1D9ED2'],
         legend: {
             top: 15,
-            data: ['支持', '中立', '严厉']
+            data: ['走势', '中立线']
         },
         grid: {
-            left: '2%',
-            right: '2%',
+            left: '30px',
+            right: '40px',
             top: '12%',
             bottom: '4%',
             containLabel: true
         },
+
         xAxis: {
             type: 'category',
             axisTick: {show: false},
@@ -2740,27 +2749,39 @@
                     width: '1'
                 }
             },
+
             axisLabel: {
-                interval: 0,
+                // 横坐标间距
+                // interval: 2,
                 textStyle: {
                     color: '#666'
                 }
             },
-            boundaryGap: false,
-            data: ['2018.01', '2018.02', '2018.03', '2018.04', '2018.05', '2018.06', '2018.07'],
+            boundaryGap : false,
+            data: ['2018.01', '2018.02', '2018.03', '2018.04', '2018.05', '2018.06', '2018.07', '2018.08', '2018.09', '2018.10', '2018.11', '2018.12', '2018.13', '2018.14', '2018.15', '2018.16', '2018.17', '2018.18', '2018.19', '2018.20', '2018.21', '2018.22', '2018.23', '2018.24', '2018.25'],
         },
         yAxis: {
             type: 'value',
+            min: -600,
+            max: 600,
             axisTick: {show: false},
+            axisLabel: {
+                show: true,
+                textStyle: {
+                    color: '#fff'
+                }
+            },
             axisLine: {
-                show: false,
+                show: true,
                 lineStyle: {
                     type: 'solid',
-                    color: '#333',
+                    color: '#eee',
                     width: '1'
                 }
             },
+
             splitLine: {
+                show: false,
                 lineStyle: {
                     // 设置背景辅助线样式
                     type: 'solid',
@@ -2769,27 +2790,65 @@
                 }
             },
         },
+        visualMap: {
+            show: false,
+            type: 'piecewise',
+            pieces: [{
+                gt: 0,
+                lte: 600,
+                color: '#1D9ED2'
+            }, {
+                value: 0,
+                color: '#29b0ae'
+            }, {
+                lt: 0,
+                color: '#FF847F'
+            }]
+        },
+        dataZoom: [{
+            show:false,
+            start: 0,
+            end: 100,
+        }, {
+
+            type: 'inside',
+            zoomOnMouseWheel:'ctrl' //按住ctrl+鼠标滚轮缩放
+        }],
         series: [
             {
-                name: '支持',
+                name: '走势',
                 type: 'line',
+                // 是否光滑
                 smooth: true,
+                label: {
+                    show: false,
+                    color:'#ED811C',
+                    fontSize: 13,
+                },
                 symbolSize: symbolSize,
-                data: [120, 132, 101, 134, 90, 230, 210]
+                data: [-400, 200, 125, 269, 0, -100, 100,500,200,-200,100,200,0,-200,30,100,500,200,-200,100,200,0,-200,30,100]
+
             },
             {
-                name: '中立',
-                type: 'line',
-                smooth: true,
-                symbolSize: symbolSize,
-                data: [220, 182, 191, 234, 290, 330, 310]
-            },
-            {
-                name: '严厉',
-                type: 'line',
-                smooth: true,
-                symbolSize: symbolSize,
-                data: [150, 232, 201, 154, 190, 330, 410]
+                type: 'scatter',
+                name: '中立线',
+                itemStyle: {
+                    color: '#29b0ae'
+                },
+                markLine: {
+                    label: {
+                        show: true,
+                    },
+                    data: [{
+                        yAxis: '0',
+                        name: '中立分割线',
+                        itemStyle: {
+                            normal: {
+                                color: "#29b0ae",
+                            }
+                        }
+                    }]
+                },
             }
         ]
     };

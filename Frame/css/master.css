@@ -9035,6 +9035,51 @@ div.main-x {
     height: 550px;
 }
 
+.wp-section .tabCon {
+    position: relative;
+}
+
+.wp-section .tabCon .chart-line {
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    width: 100%;
+
+}
+
+.wp-section .tabCon .chart-line .line-box {
+    height: 1px;
+    margin: 0 23px 0 64px;
+    background-color: #eee;
+}
+
+.x-pos {
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.x-pos .pos-li {
+    position: absolute;
+    right: 5px;
+    color: #666;
+    font-size: 14px;
+}
+
+.x-pos .pos-li.zc {
+    top: 30%;
+}
+
+.x-pos .pos-li.zl {
+    top: 49%;
+}
+
+.x-pos .pos-li.yg {
+    bottom: 27%;
+}
+
 /*================================宏观政策态势列表=================================*/
 .hasSearch .contenBox.reportCon {
     padding-top: 64px;
