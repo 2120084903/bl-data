@@ -5,26 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bffebdd-627a-4452-9b72-5aab52f578aa" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/Project/js/GoJS/HyperlinkText.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frame/css/PrintCss/pdf/PDF.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frame/css/PrintCss/pdf/PDF.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frame/css/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frame/css/layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frame/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frame/css/master.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frame/css/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frame/css/search.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/html/PDF/周报PDF.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/html/PDF/周报PDF.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/html/PDF/宏观政策态势PDF.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/html/PDF/宏观政策态势PDF.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/html/PDF/月报PDF.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/html/PDF/月报PDF.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/html/宏观政策态势详情.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/html/宏观政策态势详情.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/html/行业报告.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/html/行业报告.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/html/行业月报.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/html/行业月报.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/js/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/js/echarts/chartJs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/js/echarts/dataTool.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/js/echarts/echartBlack.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/js/echarts/echartBlackQy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/js/echarts/echartWhite.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/js/go.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project/js/GoJS/go.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/js/worldcloud.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project/js/echarts/worldcloud.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frame/css/aaa.css" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -68,28 +50,28 @@
     <session id="1762399923">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="2" />
-          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.20" value="2" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="62" />
+          <entry key="css" value="63" />
           <entry key="html" value="51" />
           <entry key="js" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="62" />
+          <entry key="CSS" value="63" />
           <entry key="HTML" value="51" />
           <entry key="JavaScript" value="8" />
         </counts>
@@ -98,14 +80,14 @@
         <counts>
           <entry key="css" value="3184" />
           <entry key="html" value="4693" />
-          <entry key="txt" value="115" />
+          <entry key="txt" value="175" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="3184" />
           <entry key="HTML" value="4693" />
-          <entry key="PLAIN_TEXT" value="115" />
+          <entry key="PLAIN_TEXT" value="175" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -113,43 +95,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Project/html/PDF/宏观政策态势PDF.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#3;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#4;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#5;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#6;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#6;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#8;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#9;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#10;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#5;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#6;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#7;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#8;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#3;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#4;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#5;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#6;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#7;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#8;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#9;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#10;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#11;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -216,6 +162,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,57 +181,10 @@
               <item name="Frame" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="bl-data" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bl-data" type="462c0819:PsiDirectoryNode" />
-              <item name="Frame" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="PrintCss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bl-data" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bl-data" type="462c0819:PsiDirectoryNode" />
-              <item name="Frame" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="PrintCss" type="462c0819:PsiDirectoryNode" />
-              <item name="pdf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bl-data" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bl-data" type="462c0819:PsiDirectoryNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bl-data" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bl-data" type="462c0819:PsiDirectoryNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bl-data" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bl-data" type="462c0819:PsiDirectoryNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="PDF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bl-data" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bl-data" type="462c0819:PsiDirectoryNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bl-data" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bl-data" type="462c0819:PsiDirectoryNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="GoJS" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -340,7 +240,8 @@
       <workItem from="1542162062739" duration="6294000" />
       <workItem from="1542248606380" duration="12486000" />
       <workItem from="1542275907400" duration="809000" />
-      <workItem from="1542276730234" duration="8083000" />
+      <workItem from="1542276730234" duration="8823000" />
+      <workItem from="1542334747822" duration="636000" />
     </task>
     <task id="LOCAL-00001" summary="添加白鹿数据项目">
       <created>1541582504214</created>
@@ -398,11 +299,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542200097165</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="添加思维导图版块；新增HyperlinkText.js文件；修改态势PDF样式；删除无用的js文件">
+      <created>1542286554193</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1542286554193</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115789000" />
+    <option name="totallyTimeSpent" value="117165000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -415,7 +323,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15226555" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -428,9 +335,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.07196563" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49894625" weight="0.32867885" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49841937" weight="0.32867885" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.2094522" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50105375" side_tool="true" weight="0.32867885" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015806" side_tool="true" weight="0.32867885" />
       <window_info anchor="bottom" id="调试" order="11" />
       <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.5198711" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -489,7 +396,8 @@
     <MESSAGE value="新增宏观政策态势列表页面，layout、global、master、url样式表修改" />
     <MESSAGE value="新增宏观政策态势PDF，新增go.js插件；完成态势详情基本图表样式" />
     <MESSAGE value="调整柱状图数据显示方式和位置" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整柱状图数据显示方式和位置" />
+    <MESSAGE value="添加思维导图版块；新增HyperlinkText.js文件；修改态势PDF样式；删除无用的js文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加思维导图版块；新增HyperlinkText.js文件；修改态势PDF样式；删除无用的js文件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -578,13 +486,6 @@
         <state relative-caret-position="-12013" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frame/css/aaa.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="123" column="20" lean-forward="true" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Frame/css/search.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="507">
@@ -606,14 +507,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/js/echarts/chartJs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3175" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/js/echarts/echartBlack.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/js/echarts/chartJs.js" />
+    <entry file="file://$PROJECT_DIR$/Project/js/echarts/echartBlack.js" />
     <entry file="file://$PROJECT_DIR$/Project/html/行业报告.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="754">
@@ -621,20 +516,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/js/data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1584" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/js/data.js" />
     <entry file="file://$PROJECT_DIR$/Project/js/vague.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/js/leftTime.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/js/echarts/dataTool.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/js/echarts/dataTool.js" />
     <entry file="file://$PROJECT_DIR$/Project/html/培训详情.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-120">
@@ -730,32 +619,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#5;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#6;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#6;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#8;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#9;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#10;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#5;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#6;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#7;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#8;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#4;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#5;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#6;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#7;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#8;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#9;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#10;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#11;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frame/css/aaa.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="123" column="20" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="20" />
         </state>
       </provider>
     </entry>
