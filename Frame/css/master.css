@@ -9231,6 +9231,13 @@ div.main-x {
     height: 550px;
 }
 
+.Macro-policy .footTitle .li-footer {
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .wp-section .tabCon {
     position: relative;
 }
