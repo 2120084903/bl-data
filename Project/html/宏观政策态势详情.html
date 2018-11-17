@@ -1950,6 +1950,8 @@
         mindMapXJP.model = go.Model.fromJson(modelAsTextXJP);
         //				重新布局
         layoutAllXJP();
+        mindMapXJP.scale = 1;
+        mindMapXJP.scrollToRect(mindMapXJP.findNodeForKey(0).actualBounds);
     };
 </script>
 <!--李克强-->
@@ -2132,6 +2134,8 @@
         };
         mindMapLKQ.model = go.Model.fromJson(modelAsTextLKQ);
         layoutAllLKQ();
+        mindMapLKQ.scale = 1;
+        mindMapLKQ.scrollToRect(mindMapLKQ.findNodeForKey(0).actualBounds);
     };
 </script>
 <!--重大政策-->
@@ -2314,6 +2318,8 @@
         };
         mindMapPolicy.model = go.Model.fromJson(modelAsTextPolicy);
         layoutAllPolicy();
+        mindMapPolicy.scale = 1;
+        mindMapPolicy.scrollToRect(mindMapPolicy.findNodeForKey(0).actualBounds);
     };
 </script>
 <!--=================词频图================-->
