@@ -633,7 +633,7 @@
                             </div>
                             <div class="set-row-body">
                                 <div class="normal-box line-wap">
-                                    <div class="line-item clearfix l-left l-c01">
+                                    <div class="line-item clearfix">
                                         <div class="text-line">
                                             <div class="line-row-b">
                                                 <div class="time-show"><strong>2018年10月1日</strong></div>
@@ -666,7 +666,7 @@
                                         </div>
                                     </div>
                                     <!---->
-                                    <div class="line-item clearfix l-right l-c02">
+                                    <div class="line-item clearfix">
                                         <div class="text-line">
                                             <div class="line-row-b">
                                                 <div class="time-show"><strong>2018年10月1日</strong></div>
@@ -699,7 +699,7 @@
                                         </div>
                                     </div>
                                     <!---->
-                                    <div class="line-item clearfix l-left l-c03">
+                                    <div class="line-item clearfix">
                                         <div class="text-line">
                                             <div class="line-row-b">
                                                 <div class="time-show"><strong>2018年10月1日</strong></div>
@@ -732,7 +732,7 @@
                                         </div>
                                     </div>
                                     <!---->
-                                    <div class="line-item clearfix l-right l-c04">
+                                    <div class="line-item clearfix">
                                         <div class="text-line">
                                             <div class="line-row-b">
                                                 <div class="time-show"><strong>2018年10月1日</strong></div>
@@ -765,7 +765,7 @@
                                         </div>
                                     </div>
                                     <!---->
-                                    <div class="line-item clearfix l-left l-c05">
+                                    <div class="line-item clearfix">
                                         <div class="text-line">
                                             <div class="line-row-b">
                                                 <div class="time-show"><strong>2018年10月1日</strong></div>
@@ -798,7 +798,7 @@
                                         </div>
                                     </div>
                                     <!---->
-                                    <div class="line-item clearfix l-right l-c06">
+                                    <div class="line-item clearfix">
                                         <div class="text-line">
                                             <div class="line-row-b">
                                                 <div class="time-show"><strong>2018年10月1日</strong></div>
@@ -1142,6 +1142,25 @@
 <script type="text/javascript">
     $('.childTab ul li,.Macro-policy .mx-tab-header .mx-tab-li').click(function () {
         $(this).addClass('active').siblings().removeClass('active');
+    });
+    $(document).ready(function () {
+        $('.line-wap .line-item:nth-child(2n+1)').addClass('l-left');
+        $('.line-wap .line-item:nth-child(2n)').addClass('l-right');
+        // 随机数赋值class
+        var tags_a = $(".line-wap .line-item");
+        tags_a.each(function () {
+            var num = Math.random();//Math.random()：得到一个0到1之间的随机数
+            num = Math.ceil(num * 20);//num*80的取值范围在0~20之间,使用向上取整就可以得到一个1~80的随机数
+            //num就是你要的随机数,如果你希望个位数前加0,那么这样:
+            var str;
+            if (num < 10) {
+                str = "0" + num
+            } else {
+                str = num.toString();
+            }
+            console.log(str);
+            $(this).addClass("l-c" + str);
+        });
     });
 </script>
 <!--=================思维导图================-->
