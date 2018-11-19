@@ -3013,6 +3013,11 @@ div.layui-laydate-content td.laydate-selected {
     height: 430px;
     border: 1px solid #eee;
     box-sizing: border-box;
+    position: relative;
+    background: -moz-linear-gradient(top, #ECF1F7 0%, #fff 30%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ECF1F7 0%, #fff 30%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ECF1F7 0%, #fff 30%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ECF1F7', endColorstr='#fff', GradientType=1); /* IE6-9 */
 }
 
 .mind-map {
@@ -3022,4 +3027,160 @@ div.layui-laydate-content td.laydate-selected {
 
 .sample .mind-map div {
     overflow: hidden !important;
+}
+
+.mindBtn a {
+    display: inline-block;
+    border-radius: 2px;
+    font-size: 15px;
+    font-family: "Microsoft YaHei", Arial;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    z-index: 3;
+    top: 16px;
+    right: 14px;
+    padding: 0 8px;
+    cursor: pointer;
+    color: #1D9ED2;
+    border: 1px solid #1D9ED2;
+    background-color: #fff;
+
+}
+
+.mindBtn a i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+.mindBtn a:hover {
+    color: #fff;
+    background-color: #1D9ED2;
+}
+
+/*图谱工具*/
+.tupu-toolbar {
+    position: absolute;
+    width: 46px;
+    right: 20px;
+    bottom: 80px;
+    font-size: 18px;
+    z-index: 20;
+}
+
+.tupu-toolbar .tool-box {
+    width: 48px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    border: 1px solid #DEDEDE;
+    /* box-shadow: 0 0 5px #DEDEDE; */
+    background: #fff;
+}
+
+.tupu-toolbar .tool-box .tool-list {
+    width: 46px;
+    height: 64px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #888;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.tupu-toolbar .tool-box .tool-list i {
+    display: block;
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+    margin: 0 auto;
+}
+
+.tupu-toolbar .tool-box .tool-list:hover {
+    color: #fff;
+    background-color: #1D9ED2;
+}
+
+/*弹窗分享二维码*/
+/*.Mask{*/
+    /*display: block;*/
+/*}*/
+.tc-main{
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    margin-left: -100px;
+    z-index: 1000;
+    transform: translateY(-120%);
+    transition: transform .5s ease-out;
+}
+
+.tc-main .tc-modal{
+    position: relative;
+}
+.tc-main.in{
+    transform: translateY(0);
+}
+.tc-main .tc-modal .tc-content{
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 4px;
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    background-clip: padding-box;
+    outline: 0;
+}
+
+.tc-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+}
+.tc-header .tc-title{
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+}
+.tc-main a.close-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #bbbaba;
+font-size: 22px;
+    font-weight: bolder;
+}
+
+.tc-main a.close-icon:hover{
+    color: #444;
+}
+.tc-body {
+    position: relative;
+    padding: 15px;
+}
+
+.tc-body .qr-code-box{
+    width: 190px;
+    height: 190px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.tc-body .qr-code-box img{
+    width: 100%;
+    height: 100%;
+}
+.tc-body .tc-ts{
+    color: #43464f;
+    font-size: 15px;
+    line-height: 1.5;
 }

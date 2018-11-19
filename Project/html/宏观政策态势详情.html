@@ -103,6 +103,7 @@
                         </div>
                         <div class="cz-btn">
                             <a href="PDF/宏观政策态势PDF.html" title="下载此报告"><i class="iconfont icon-xiazai2"></i><span>下载报告</span></a>
+                            <a href="javascript:;" title="分享此报告" class="share-btn"><i class="iconfont icon-fenxiang2"></i><span>分享报告</span></a>
                         </div>
                     </div>
                     <!--/头部标题-->
@@ -144,6 +145,9 @@
                                                 <div class="ChartBox">
                                                     <div class="sample">
                                                         <div id="mind-map-XJP" class="mind-map"></div>
+                                                        <div class="mindBtn">
+                                                            <a href="javascript:;" class="showMind" onclick="openMind()"><i class="iconfont icon-icwindowzoom48px"></i>查看全屏</a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -159,6 +163,9 @@
                                                 <div class="ChartBox">
                                                     <div class="sample">
                                                         <div id="mind-map-LKQ" class="mind-map"></div>
+                                                        <div class="mindBtn">
+                                                            <a href="javascript:;" class="showMind" onclick="openMind()"><i class="iconfont icon-icwindowzoom48px"></i>查看全屏</a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -175,12 +182,12 @@
                         </div>
                     </div>
                     <!--/高层动态-->
-                    <!--政策热词-->
+                    <!--政策关键词-->
                     <div class="wp-section hasTab">
                         <div class="section-content">
                             <div class="set-row-header">
                                 <div class="h1-title">
-                                    <span>政策热词</span>
+                                    <span>政策关键词</span>
                                     <small>（可点击查看明细）</small>
                                 </div>
                             </div>
@@ -220,13 +227,13 @@
                             </div>
                         </div>
                     </div>
-                    <!--/政策热词-->
-                    <!--政策走势-->
+                    <!--/政策关键词-->
+                    <!--政策取向-->
                     <div class="wp-section">
                         <div class="section-content">
                             <div class="set-row-header">
                                 <div class="h1-title">
-                                    <span>政策走势</span>
+                                    <span>政策取向</span>
                                 </div>
                             </div>
                             <div class="set-row-body">
@@ -250,7 +257,7 @@
                             </div>
                         </div>
                     </div>
-                    <!--/政策走势-->
+                    <!--/政策取向-->
                     <!--重大政策-->
                     <div class="wp-section">
                         <div class="section-content">
@@ -268,6 +275,9 @@
                                         <div class="ChartBox">
                                             <div class="sample zy-policy">
                                                 <div id="mind-policy" class="mind-map"></div>
+                                                <div class="mindBtn">
+                                                    <a href="javascript:;" class="showMind" onclick="openMind()"><i class="iconfont icon-icwindowzoom48px"></i>查看全屏</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1045,6 +1055,55 @@
 </div>
 <!--/政策明细-->
 
+<!--全屏mind-->
+<div class="full-screen">
+    <div class="mind-map">
+        <div id="full-screen-mind" class="big-mind animated bounceIn"></div>
+    </div>
+    <!--工具栏-->
+    <div class="full-s-tool tupu-toolbar">
+        <div class="tool-box">
+            <div class="tool-list" onclick="enlargeMind()">
+                <i class="iconfont icon-ziyuan enlarge"></i>
+                <span>放大</span>
+            </div>
+            <div class="tool-list" onclick="narrowMind()">
+                <i class="iconfont icon-suoxiao"></i>
+                <span>缩小</span>
+            </div>
+            <div class="tool-list" onclick="loadQp();">
+                <i class="iconfont icon-webtubiaoku06"></i>
+                <span>复原</span>
+            </div>
+            <div class="tool-list" onclick="closeMind()">
+                <i class="iconfont icon-fanhui"></i>
+                <span>返回</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/全屏mind-->
+
+<!--分享二维码-->
+<div class="tc-main">
+    <div class="tc-modal w300">
+        <div class="tc-content">
+            <div class="tc-header">
+                <h4 class="tc-title text-center">分享此报告</h4>
+                <a href="javascript:;" class="close-icon" title="关闭"><span>×</span></a>
+            </div>
+            <div class="tc-body">
+                <div class="qr-code-box">
+                    <img src="../img/shareQRcode.png"/>
+                </div>
+                <div class="tc-ts">打开微信，点击底部的“发现”，使用“扫一扫”即可将网页分享至朋友</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="Mask"></div>
+<!--/分享二维码-->
+
 <!-- 返回顶部 -->
 <div class="float-bar">
     <!--工具1-->
@@ -1162,6 +1221,39 @@
             $(this).addClass("l-c" + str);
         });
     });
+
+    // 打开思维导图
+    function openMind() {
+        $('body').addClass('scrollbar');
+        $('.full-screen').show();
+        loadQp()
+    };
+
+    // 关闭思维导图
+    function closeMind() {
+        $('.full-screen').hide();
+        $('body').removeClass('scrollbar');
+    };
+
+    // 缩放思维导图
+    function enlargeMind() {
+        mindMapQp.scale += 0.1;
+    };
+
+    function narrowMind() {
+        mindMapQp.scale -= 0.1;
+    };
+
+    // 分享
+    $('.share-btn').click(function () {
+        $('.tc-main,.Mask').fadeIn(500).addClass('in');
+        $('body').addClass('scrollbar');
+    });
+    $('.Mask,.close-icon').click(function () {
+        $('.tc-main').removeClass('in').fadeOut(500);
+        $('.Mask').fadeOut(500);
+        $('body').removeClass('scrollbar');
+    });
 </script>
 <!--=================思维导图================-->
 <!--思维导图预设-->
@@ -1179,14 +1271,14 @@
                 "commandHandler.copiesTree": true,
                 "commandHandler.deletesTree": true,
                 "draggingTool.dragsTree": true,
+                "animationManager.isEnabled": false,
                 //        是否可编辑
                 "allowTextEdit": false,
                 //        是否可选择对象
                 "allowSelect": false,
                 "undoManager.isEnabled": true,
                 // mimd居中显示
-                initialDocumentSpot: go.Spot.TopCenter,
-                initialViewportSpot: go.Spot.TopCenter,
+                initialAutoScale: go.Diagram.Uniform
             });
         mindMapXJP.addDiagramListener("Modified", function (e) {
             var button = document.getElementById("SaveButton");
@@ -1212,17 +1304,17 @@
                     {
                         name: "version",
                         minSize: new go.Size(30, 15),
-                        margin: 0,
+                        margin: 3,
                         // 溢出裁剪
                         overflow: go.TextBlock.OverflowEllipsis,
                         // 显示行数
-                        maxLines: 1,
+                        maxLines: 2,
                         // 文字颜色
                         // stroke:'red',
                         // 显示宽度
                         // width: 200,
                         // 最大宽度300
-                        maxSize: new go.Size(300, 15)
+                        maxSize: new go.Size(300, 40)
                     }
                 ),
                 $(go.TextBlock, {
@@ -1238,7 +1330,7 @@
                         // 溢出裁剪
                         overflow: go.TextBlock.OverflowEllipsis,
                         // 显示行数
-                        maxLines: 1,
+                        maxLines: 2,
                         // 显示宽度
                         // width: 200,
                         // 最大宽度300
@@ -1348,7 +1440,6 @@
         });
         loadXJP();
 
-
         // =======================李克强=======================================
         mindMapLKQ =
             $(go.Diagram, "mind-map-LKQ", {
@@ -1357,14 +1448,15 @@
                 "commandHandler.copiesTree": true,
                 "commandHandler.deletesTree": true,
                 "draggingTool.dragsTree": true,
+                // 关闭动画
+                "animationManager.isEnabled": false,
                 //        是否可编辑
                 "allowTextEdit": false,
                 //        是否可选择对象
                 "allowSelect": false,
                 "undoManager.isEnabled": true,
                 // mimd居中显示
-                initialDocumentSpot: go.Spot.TopCenter,
-                initialViewportSpot: go.Spot.TopCenter,
+                initialAutoScale: go.Diagram.Uniform,
             });
         mindMapLKQ.addDiagramListener("Modified", function (e) {
             var button = document.getElementById("SaveButton");
@@ -1390,17 +1482,17 @@
                     {
                         name: "version",
                         minSize: new go.Size(30, 15),
-                        margin: 0,
+                        margin: 3,
                         // 溢出裁剪
                         overflow: go.TextBlock.OverflowEllipsis,
                         // 显示行数
-                        maxLines: 1,
+                        maxLines: 2,
                         // 文字颜色
                         // stroke:'red',
                         // 显示宽度
                         // width: 200,
                         // 最大宽度300
-                        maxSize: new go.Size(300, 15)
+                        maxSize: new go.Size(300, 40)
                     }
                 ),
                 $(go.TextBlock, {
@@ -1536,14 +1628,14 @@
                 "commandHandler.copiesTree": true,
                 "commandHandler.deletesTree": true,
                 "draggingTool.dragsTree": true,
+                "animationManager.isEnabled": false,
                 //        是否可编辑
                 "allowTextEdit": false,
                 //        是否可选择对象
                 "allowSelect": false,
                 "undoManager.isEnabled": true,
                 // mimd居中显示
-                initialDocumentSpot: go.Spot.TopCenter,
-                initialViewportSpot: go.Spot.TopCenter,
+                initialAutoScale: go.Diagram.Uniform
             });
         mindMapPolicy.addDiagramListener("Modified", function (e) {
             var button = document.getElementById("SaveButton");
@@ -1569,17 +1661,17 @@
                     {
                         name: "version",
                         minSize: new go.Size(30, 15),
-                        margin: 0,
+                        margin: 3,
                         // 溢出裁剪
                         overflow: go.TextBlock.OverflowEllipsis,
                         // 显示行数
-                        maxLines: 1,
+                        maxLines: 2,
                         // 文字颜色
                         // stroke:'red',
                         // 显示宽度
                         // width: 200,
                         // 最大宽度300
-                        maxSize: new go.Size(300, 15)
+                        maxSize: new go.Size(300, 40)
                     }
                 ),
                 $(go.TextBlock, {
@@ -1706,6 +1798,184 @@
             });
         });
         loadPolicy();
+
+
+        // =======================全屏思维导图=======================================
+        mindMapQp =
+            $(go.Diagram, "full-screen-mind", {
+                //        鼠标放大缩小
+                "toolManager.mouseWheelBehavior": go.ToolManager.WheelZoom,
+                "commandHandler.copiesTree": true,
+                "commandHandler.deletesTree": true,
+                "draggingTool.dragsTree": true,
+                "animationManager.isEnabled": false,
+                //        是否可编辑
+                "allowTextEdit": false,
+                //        是否可选择对象
+                "allowSelect": false,
+                "undoManager.isEnabled": true,
+                // mimd居中显示
+                initialAutoScale: go.Diagram.Uniform
+            });
+        mindMapQp.addDiagramListener("Modified", function (e) {
+            var button = document.getElementById("SaveButton");
+            if (button) button.disabled = !mindMapQp.isModified;
+            var idx = document.title.indexOf("*");
+            if (mindMapQp.isModified) {
+                if (idx < 0) document.title += "*";
+            } else {
+                if (idx >= 0) document.title = document.title.substr(0, idx);
+            }
+        });
+        mindMapQp.nodeTemplate =
+            $(go.Node, "Vertical", {
+                    selectionObjectName: "TEXT"
+                },
+                $("HyperlinkText",
+                    function (node) {
+                        return node.data.link;
+                    },
+                    function (node) {
+                        return node.data.version;
+                    },
+                    {
+                        name: "version",
+                        minSize: new go.Size(30, 15),
+                        margin: 3,
+                        // 溢出裁剪
+                        overflow: go.TextBlock.OverflowEllipsis,
+                        // 显示行数
+                        maxLines: 2,
+                        // 文字颜色
+                        // stroke:'red',
+                        // 显示宽度
+                        // width: 200,
+                        // 最大宽度300
+                        maxSize: new go.Size(300, 40)
+                    }
+                ),
+                $(go.TextBlock, {
+                        name: "TEXT",
+                        minSize: new go.Size(30, 0),
+                        // 是否可编辑
+                        editable: false,
+                        margin: 3,
+                        // 文字背景色
+                        // background: "lightblue",
+                        // 文字颜色
+                        // stroke:'red',
+                        // 溢出裁剪
+                        overflow: go.TextBlock.OverflowEllipsis,
+                        // 显示行数
+                        maxLines: 2,
+                        // 显示宽度
+                        // width: 200,
+                        // 最大宽度300
+                        maxSize: new go.Size(300, 0)
+                    },
+                    new go.Binding("text", "text").makeTwoWay(),
+                    new go.Binding("scale", "scale").makeTwoWay(),
+                    new go.Binding("font", "font").makeTwoWay()),
+                $(go.Shape, "LineH", {
+                        stretch: go.GraphObject.Horizontal,
+                        strokeWidth: 3,
+                        height: 3,
+                        portId: "",
+                        fromSpot: go.Spot.LeftRightSides,
+                        toSpot: go.Spot.LeftRightSides
+                    },
+                    new go.Binding("stroke", "brush"),
+                    new go.Binding("fromSpot", "dir", function (d) {
+                        return spotConverter(d, true);
+                    }),
+                    new go.Binding("toSpot", "dir", function (d) {
+                        return spotConverter(d, false);
+                    })),
+                new go.Binding("location", "loc", go.Point.parse).makeTwoWay(go.Point.stringify),
+                new go.Binding("locationSpot", "dir", function (d) {
+                    return spotConverter(d, false);
+                })
+            );
+        mindMapQp.nodeTemplate.selectionAdornmentTemplate =
+            $(go.Adornment, "Spot",
+                $(go.Panel, "Auto",
+                    $(go.Shape, {
+                        fill: null,
+                        stroke: "dodgerblue",
+                        strokeWidth: 3
+                    }),
+                    $(go.Placeholder, {
+                        margin: new go.Margin(4, 4, 0, 4)
+                    })
+                ),
+                $("Button", {
+                        alignment: go.Spot.Right,
+                        alignmentFocus: go.Spot.Left,
+                        click: addNodeAndLink // define click behavior for this Button in the Adornment
+                    },
+                    $(go.TextBlock, "+", // the Button content
+                        {
+                            font: "bold 8pt sans-serif"
+                        })
+                )
+            );
+        mindMapQp.linkTemplate =
+            $(go.Link, {
+                    curve: go.Link.Bezier,
+                    fromShortLength: -2,
+                    toShortLength: -2,
+                    selectable: false,
+                },
+                $(go.Shape, {
+                        strokeWidth: 3,
+                    },
+                    new go.Binding("stroke", "toNode", function (n) {
+                        if (n.data.brush) return n.data.brush;
+                        return "black";
+                    }).ofObject())
+            );
+        mindMapQp.contextMenu =
+            $("ContextMenu",
+                $("ContextMenuButton",
+                    $(go.TextBlock, "Undo"), {
+                        click: function (e, obj) {
+                            e.diagram.commandHandler.undo();
+                        }
+                    },
+                    new go.Binding("visible", "", function (o) {
+                        return o.diagram && o.diagram.commandHandler.canUndo();
+                    }).ofObject()),
+                $("ContextMenuButton",
+                    $(go.TextBlock, "Redo"), {
+                        click: function (e, obj) {
+                            e.diagram.commandHandler.redo();
+                        }
+                    },
+                    new go.Binding("visible", "", function (o) {
+                        return o.diagram && o.diagram.commandHandler.canRedo();
+                    }).ofObject()),
+
+                $("ContextMenuButton",
+                    $(go.TextBlock, "复原"), {
+                        click: function (e, obj) {
+                            loadQp();
+                        }
+                    })
+            );
+        mindMapQp.addDiagramListener("SelectionMoved", function (e) {
+            var rootX = mindMapQp.findNodeForKey(0).location.x;
+            mindMapQp.selection.each(function (node) {
+                if (node.data.parent !== 0) return; // Only consider nodes connected to the root
+                var nodeX = node.location.x;
+                if (rootX < nodeX && node.data.dir !== "right") {
+                    updateNodeDirection(node, "right");
+                } else if (rootX > nodeX && node.data.dir !== "left") {
+                    updateNodeDirection(node, "left");
+                }
+                layoutTree(node);
+            });
+        });
+        // loadQp();
     };
 
     function spotConverter(dir, from) {
@@ -1795,6 +2065,7 @@
         layoutAngle(leftward, 180);
         mindMapXJP.commitTransaction("Layout");
     }
+
     function loadXJP() {
 
         var modelAsTextXJP = {
@@ -1815,7 +2086,7 @@
                 "key": 11,
                 "parent": 1,
                 "link": "http://www.bailuzhiku.com",
-                "version": "李克强在第十二届亚欧首脑会议上的发言",
+                "version": "李克强在第十二届亚欧首脑会议上的发言李克强在第十二届亚欧首脑会议上的发言李克强在第十二届亚欧首脑会议上的发言",
                 "brush": "skyblue",
                 "dir": "right"
             }, {
@@ -1856,7 +2127,7 @@
                     "version": "李克强参观新加坡特沙生物医疗科技公司",
                     "brush": "darkseagreen",
                     "dir": "right"
-                },  {
+                }, {
                     "key": 212,
                     "parent": 21,
                     "link": "http://www.bailuzhiku.com",
@@ -1924,7 +2195,7 @@
                     "version": "首批106项涉企审",
                     "brush": "coral",
                     "dir": "left"
-                },{
+                }, {
                     "key": 41,
                     "parent": 4,
                     "link": "http://www.bailuzhiku.com",
@@ -1980,6 +2251,7 @@
         layoutAngle(leftward, 180);
         mindMapLKQ.commitTransaction("Layout");
     }
+
     function loadLKQ() {
 
         var modelAsTextLKQ = {
@@ -2041,7 +2313,7 @@
                     "version": "李克强参观新加坡特沙生物医疗科技公司",
                     "brush": "darkseagreen",
                     "dir": "right"
-                },  {
+                }, {
                     "key": 212,
                     "parent": 21,
                     "link": "http://www.bailuzhiku.com",
@@ -2109,7 +2381,7 @@
                     "version": "首批106项涉企审",
                     "brush": "coral",
                     "dir": "left"
-                },{
+                }, {
                     "key": 41,
                     "parent": 4,
                     "link": "http://www.bailuzhiku.com",
@@ -2164,6 +2436,7 @@
         layoutAngle(leftward, 180);
         mindMapPolicy.commitTransaction("Layout");
     }
+
     function loadPolicy() {
 
         var modelAsTextPolicy = {
@@ -2225,7 +2498,7 @@
                     "version": "李克强参观新加坡特沙生物医疗科技公司",
                     "brush": "darkseagreen",
                     "dir": "right"
-                },  {
+                }, {
                     "key": 212,
                     "parent": 21,
                     "link": "http://www.bailuzhiku.com",
@@ -2293,7 +2566,7 @@
                     "version": "首批106项涉企审",
                     "brush": "coral",
                     "dir": "left"
-                },{
+                }, {
                     "key": 41,
                     "parent": 4,
                     "link": "http://www.bailuzhiku.com",
@@ -2320,6 +2593,192 @@
         layoutAllPolicy();
         mindMapPolicy.scale = 1;
         mindMapPolicy.scrollToRect(mindMapPolicy.findNodeForKey(0).actualBounds);
+    };
+</script>
+<!--全屏思维导图-->
+<script type="text/javascript">
+    function layoutAllQp() {
+        var root = mindMapQp.findNodeForKey(0);
+        if (root === null) return;
+        mindMapQp.startTransaction("Layout");
+        // split the nodes and links into two collections
+        var rightward = new go.Set(/*go.Part*/);
+        var leftward = new go.Set(/*go.Part*/);
+        root.findLinksConnected().each(function (link) {
+            var child = link.toNode;
+            if (child.data.dir === "left") {
+                leftward.add(root); // the root node is in both collections
+                leftward.add(link);
+                leftward.addAll(child.findTreeParts());
+            } else {
+                rightward.add(root); // the root node is in both collections
+                rightward.add(link);
+                rightward.addAll(child.findTreeParts());
+            }
+        });
+        // do one layout and then the other without moving the shared root node
+        layoutAngle(rightward, 0);
+        layoutAngle(leftward, 180);
+        mindMapQp.commitTransaction("Layout");
+    }
+
+    function loadQp() {
+
+        var modelAsTextQp = {
+            "class": "go.TreeModel",
+            "nodeDataArray": [{
+                "key": 0,
+                "link": "",
+                "version": "重要政策",
+                "brush": "#1D9ED2"
+            }, {
+                "key": 1,
+                "parent": 0,
+                "link": "http://www.bailuzhiku.com",
+                "version": "新规目的是规范网约车",
+                "brush": "skyblue",
+                "dir": "right"
+            }, {
+                "key": 11,
+                "parent": 1,
+                "link": "http://www.bailuzhiku.com",
+                "version": "李克强在第十二届亚欧首脑会议上的发言",
+                "brush": "skyblue",
+                "dir": "right"
+            }, {
+                "key": 12,
+                "parent": 1,
+                "link": "http://www.bailuzhiku.com",
+                "version": "李克强在中国－荷兰经贸论坛上的主旨演讲",
+                "brush": "skyblue",
+                "dir": "right"
+            }, {
+                "key": 13,
+                "parent": 1,
+                "link": "http://www.bailuzhiku.com",
+                "version": "李克强在第十二届夏季达沃斯论坛开幕式上的致辞",
+                "brush": "skyblue",
+                "dir": "right"
+            },
+
+
+                {
+                    "key": 2,
+                    "parent": 0,
+                    "link": "http://www.bailuzhiku.com",
+                    "version": "李克强出席新加坡",
+                    "brush": "darkseagreen",
+                    "dir": "right"
+                }, {
+                    "key": 21,
+                    "parent": 2,
+                    "link": "http://www.bailuzhiku.com",
+                    "version": "共同促进区域合作迈上新台阶。",
+                    "brush": "darkseagreen",
+                    "dir": "right"
+                }, {
+                    "key": 211,
+                    "parent": 21,
+                    "link": "http://www.bailuzhiku.com",
+                    "version": "李克强参观新加坡特沙生物医疗科技公司",
+                    "brush": "darkseagreen",
+                    "dir": "right"
+                }, {
+                    "key": 212,
+                    "parent": 21,
+                    "link": "http://www.bailuzhiku.com",
+                    "version": "韩正会见新开发银行行长卡马特",
+                    "brush": "darkseagreen",
+                    "dir": "right"
+                }, {
+                    "key": 22,
+                    "parent": 2,
+                    "link": "http://www.bailuzhiku.com",
+                    "version": "中华优秀传统文化传承基地名单",
+                    "brush": "darkseagreen",
+                    "dir": "right"
+                },
+
+
+                {
+                    "key": 3,
+                    "parent": 0,
+                    "link": "http://www.bailuzhiku.com",
+                    "version": "水利部召开河湖执法",
+                    "brush": "palevioletred",
+                    "dir": "left"
+                }, {
+                    "key": 31,
+                    "parent": 3,
+                    "link": "http://www.bailuzhiku.com",
+                    "version": "今年以来，各地深入推进供给侧结构性改革",
+                    "brush": "palevioletred",
+                    "dir": "left"
+                }, {
+                    "key": 331,
+                    "parent": 31,
+                    "link": "http://www.bailuzhiku.com",
+                    "version": "京津冀及周边地区和汾渭平原将出现大气重污染",
+                    "brush": "palevioletred",
+                    "dir": "left"
+                }, {
+                    "key": 332,
+                    "parent": 31,
+                    "link": "http://www.bailuzhiku.com",
+                    "version": "三季度农产品抽检总体合格率为97.6%",
+                    "brush": "palevioletred",
+                    "dir": "left"
+                }, {
+                    "key": 32,
+                    "parent": 3,
+                    "link": "http://www.bailuzhiku.com",
+                    "version": "海关总署打好巡视整改“攻坚战”“持久战”",
+                    "brush": "palevioletred",
+                    "dir": "left"
+                }, {
+                    "key": 33,
+                    "parent": 3,
+                    "link": "http://www.bailuzhiku.com",
+                    "version": "靠前服务精准施策 大力支持民营企业发展壮大",
+                    "brush": "palevioletred",
+                    "dir": "left"
+                },
+
+                {
+                    "key": 4,
+                    "parent": 0,
+                    "link": "http://www.bailuzhiku.com",
+                    "version": "首批106项涉企审",
+                    "brush": "coral",
+                    "dir": "left"
+                }, {
+                    "key": 41,
+                    "parent": 4,
+                    "link": "http://www.bailuzhiku.com",
+                    "version": "吉林省交通投资集团有限公司原党委书记、董事长邱壮被开除党籍",
+                    "brush": "coral",
+                    "dir": "left"
+                }, {
+                    "key": 42,
+                    "parent": 4,
+                    "link": "http://www.bailuzhiku.com",
+                    "version": "四川广安市委原副书记严春风被开除党籍和公职 ",
+                    "brush": "coral",
+                    "dir": "left"
+                }, {
+                    "key": 43,
+                    "parent": 4,
+                    "link": "http://www.bailuzhiku.com",
+                    "version": "进一步扩大和升级信息消费",
+                    "brush": "coral",
+                    "dir": "left"
+                }]
+        };
+        mindMapQp.model = go.Model.fromJson(modelAsTextQp);
+        layoutAllQp();
+        mindMapQp.scale = 1;
+        mindMapQp.minScale = 0.4;
+        mindMapQp.maxScale = 2;
     };
 </script>
 <!--=================词频图================-->
@@ -2576,7 +3035,7 @@
     worldCloudcharts.setOption(worldCloudoption);
 </script>
 <!--=================图表================-->
-<!--政策热词-->
+<!--政策关键词-->
 <script type="text/javascript">
     var dom = document.getElementById("hot-words");
     var myChartHotWords = echarts.init(dom);
@@ -2782,7 +3241,7 @@
                     color: '#666'
                 }
             },
-            boundaryGap : false,
+            boundaryGap: false,
             data: ['2018.01', '2018.02', '2018.03', '2018.04', '2018.05', '2018.06', '2018.07', '2018.08', '2018.09', '2018.10', '2018.11', '2018.12', '2018.13', '2018.14', '2018.15', '2018.16', '2018.17', '2018.18', '2018.19', '2018.20', '2018.21', '2018.22', '2018.23', '2018.24', '2018.25'],
         },
         yAxis: {
@@ -2831,13 +3290,13 @@
             }]
         },
         dataZoom: [{
-            show:false,
+            show: false,
             start: 0,
             end: 100,
         }, {
 
             type: 'inside',
-            zoomOnMouseWheel:'ctrl' //按住ctrl+鼠标滚轮缩放
+            zoomOnMouseWheel: 'ctrl' //按住ctrl+鼠标滚轮缩放
         }],
         series: [
             {
@@ -2847,11 +3306,11 @@
                 smooth: true,
                 label: {
                     show: false,
-                    color:'#ED811C',
+                    color: '#ED811C',
                     fontSize: 13,
                 },
                 symbolSize: symbolSize,
-                data: [-400, 200, 125, 269, 0, -100, 100,500,200,-200,100,200,0,-200,30,100,500,200,-200,100,200,0,-200,30,100]
+                data: [-400, 200, 125, 269, 0, -100, 100, 500, 200, -200, 100, 200, 0, -200, 30, 100, 500, 200, -200, 100, 200, 0, -200, 30, 100]
 
             },
             {

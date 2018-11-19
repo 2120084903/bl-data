@@ -1593,12 +1593,13 @@ table {
     padding: 20px;
 }
 
-.situation .row-header h1{
+.situation .row-header h1 {
     line-height: 24px;
     padding-left: 15px;
     border-left: 8px solid #1D9ED2;
 }
-.situation .reportName{
+
+.situation .reportName {
     color: #f24a45;
 }
 
@@ -1623,6 +1624,7 @@ table {
     width: 100%;
     height: 360px;
     background-color: #fff;
+    position: relative;
 }
 
 .words-ul .Chart-sm {
@@ -1814,4 +1816,56 @@ table {
 
 .sample .mind-map div {
     overflow: hidden !important;
+}
+
+.tabCon .chart-line {
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    width: 100%;
+
+}
+
+.chart-line .line-box {
+    height: 1px;
+    margin: 0 23px 0 64px;
+    background-color: #eee;
+}
+
+.x-pos {
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.x-pos .pos-li {
+    position: absolute;
+    right: 5px;
+    color: #666;
+    font-size: 14px;
+}
+
+.x-pos .pos-li.zc {
+    top: 30%;
+}
+
+.x-pos .pos-li.zl {
+    top: 49%;
+}
+
+.x-pos .pos-li.yg {
+    bottom: 27%;
+}
+
+.tab-box {
+    position: relative;
+}
+
+.tab-box .chart-line {
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    width: 100%;
 }
