@@ -8,7 +8,6 @@
     <!--样式-->
     <link rel="stylesheet" href="../css/root.css">
 </head>
-
 <body>
     <div class="main hasSearch grayBg">
         <!--nav-->
@@ -346,7 +345,51 @@
                             </div>
                         </div>
                         <!--/筛选-->
-                        <div class="relevantNews">
+                        <div class="con-sign-in">
+                            <div class="con-sign-box">
+                                <div class="c-s-header">登录后可使用政策查询功能</div>
+                                <div class="c-s-body">
+                                    <div class="foreItem">
+                                        <div class="inputTitle">
+                                            <span>电话号码：</span>
+                                        </div>
+                                        <div class="c-s-input">
+                                            <input type="text" class="txt-input" placeholder="手机号">
+                                        </div>
+                                    </div>
+                                    <div class="foreItem">
+                                        <div class="inputTitle">
+                                            <span></span>
+                                        </div>
+                                        <div class="c-s-input clearfix">
+                                            <input type="button" value="获取验证码" class="txt-input getCode" onclick="sendemail()">
+                                            <div class="code-success">
+                                                <i class="iconfont icon-duihao"></i><span>验证码已发送</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="foreItem">
+                                        <div class="inputTitle">
+                                            <span>验证码：</span>
+                                        </div>
+                                        <div class="c-s-input">
+                                            <input type="text" class="txt-input" placeholder="验证码" autocomplete="off">
+                                        </div>
+                                    </div>
+                                    <div class="foreItem">
+                                        <div class="inputTitle">
+                                            <span></span>
+                                        </div>
+                                        <div class="c-s-input btnMain">
+                                            <button class="model-btn-li">返回</button>
+                                            <button class="model-btn-li SubscribeBtn">登录</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--搜索列表-->
+                        <div class="relevantNews hide">
                             <div class="tsTxt">
                                 <span>亲，注册登录可以定制个人专属政策头条哦！！
                                     <a href="登录注册2.html">马上登录</a>吧~~</span>
@@ -622,6 +665,7 @@
                                 <!-- /无搜索结果 -->
                             </div>
                         </div>
+                        <!--/搜索列表-->
                         <!--加载更多-->
                         <div class="articleLoading hide">
                             <a href="javascript:;" title="加载更多">
@@ -634,7 +678,7 @@
                             </a>
                         </div>
                         <!--分页器-->
-                        <div id="pageDevice"></div>
+                        <div id="pageDevice" class="hide"></div>
                         <!--/分页器-->
                     </div>
                     <!--/中间-->
@@ -927,6 +971,43 @@
             });
 
         });
+
+
+        // 倒计时
+        var countdown = 60;
+        function sendemail() {
+            var obj = $(".getCode");
+            settime(obj);
+
+        }
+        function settime(obj) { //发送验证码倒计时
+            if (countdown == 0) {
+                obj.attr('disabled', false);
+                //obj.removeattr("disabled");
+                obj.val("获取验证码");
+                countdown = 60;
+                $('.getCode').removeClass('lockBtn');
+                $('.code-success').hide();
+                return;
+            } else {
+                obj.attr('disabled', true);
+                obj.val("重新发送(" + countdown + ")");
+                $('.getCode').addClass('lockBtn');
+                $('.code-success').show();
+                countdown--;
+            }
+            setTimeout(function () {
+                    settime(obj)
+                }
+                , 1000)
+        };
+        $('.SubscribeBtn').click(function () {
+            $('.con-sign-in').hide();
+            $('.relevantNews,#pageDevice').removeClass('hide');
+
+        });
+
+
 
     </script>
 </body>
