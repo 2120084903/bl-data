@@ -9369,7 +9369,10 @@ div.main-x {
 
 .qg-box .mask-qg-top {
     position: absolute;
-    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    border-radius: 0 20px 20px 0;
 }
 
 .qg-box .content-qg {
@@ -9413,6 +9416,40 @@ div.main-x {
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
 
+}
+
+.color-sm ul {
+    display: inline-block;
+}
+
+.color-sm .c-item {
+    float: left;
+    margin: 0 15px;
+    color: #666;
+    font-size: 13px;
+}
+
+.color-sm .c-item em {
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: #F69461;
+}
+
+.color-sm .c-item:first-child em {
+    background-color: #44CF9A;
+}
+
+.color-sm .c-item:last-child em {
+    background-color: #E33B3A;
+}
+
+.color-sm .c-item span {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /*================================宏观政策态势列表=================================*/
