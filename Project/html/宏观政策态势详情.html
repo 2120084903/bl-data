@@ -126,6 +126,101 @@
                         </div>
                     </div>
                     <!--/报告综述-->
+                    <!--基础数据统计-->
+                    <div class="wp-section">
+                        <div class="section-content">
+                            <div class="set-row-header">
+                                <div class="h1-title">
+                                    <span>基础数据统计</span>
+                                </div>
+                            </div>
+                            <div class="set-row-body">
+                                <div class="emotion-box">
+                                    <div class="emotion-content clearfix">
+                                        <div class="e-item">
+                                            <div class="e-body">
+                                                <div class="name-data clearfix">
+                                                    <div class="tj-name">中共中央发布政策</div>
+                                                    <div class="tj-data">520<small>条</small></div>
+                                                </div>
+                                                <div class="qg-box">
+                                                    <!--<div class="mask-qg-top"></div>-->
+                                                    <div class="qg-tip" style="left: 20%">鼓励</div>
+                                                    <div class="content-qg"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="e-item">
+                                            <div class="e-body">
+                                                <div class="name-data clearfix">
+                                                    <div class="tj-name">国务院发布政策</div>
+                                                    <div class="tj-data">856<small>条</small></div>
+                                                </div>
+                                                <div class="qg-box">
+                                                    <!--<div class="mask-qg-top"></div>-->
+                                                    <div class="qg-tip" style="left: 50%">趋严</div>
+                                                    <div class="content-qg"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="e-item">
+                                            <div class="e-body">
+                                                <div class="name-data clearfix">
+                                                    <div class="tj-name">部委发布政策</div>
+                                                    <div class="tj-data">156<small>条</small></div>
+                                                </div>
+                                                <div class="qg-box">
+                                                    <!--<div class="mask-qg-top"></div>-->
+                                                    <div class="qg-tip" style="left: 80%">强监管</div>
+                                                    <div class="content-qg"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="e-item">
+                                            <div class="e-body">
+                                                <div class="name-data clearfix">
+                                                    <div class="tj-name">全国省委发布政策</div>
+                                                    <div class="tj-data">93<small>条</small></div>
+                                                </div>
+                                                <div class="qg-box">
+                                                    <!--<div class="mask-qg-top"></div>-->
+                                                    <div class="qg-tip" style="left: 80%">强监管</div>
+                                                    <div class="content-qg"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="e-item">
+                                            <div class="e-body">
+                                                <div class="name-data clearfix">
+                                                    <div class="tj-name">全国省政府发布政策</div>
+                                                    <div class="tj-data">1260<small>条</small></div>
+                                                </div>
+                                                <div class="qg-box">
+                                                    <!--<div class="mask-qg-top"></div>-->
+                                                    <div class="qg-tip" style="left: 36%">趋严</div>
+                                                    <div class="content-qg"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="e-item">
+                                            <div class="e-body">
+                                                <div class="name-data clearfix">
+                                                    <div class="tj-name">全国省人大发布政策</div>
+                                                    <div class="tj-data">2365<small>条</small></div>
+                                                </div>
+                                                <div class="qg-box">
+                                                    <!--<div class="mask-qg-top"></div>-->
+                                                    <div class="qg-tip" style="left: 10%">鼓励</div>
+                                                    <div class="content-qg"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/基础数据统计-->
                     <!--高层动态-->
                     <div class="wp-section">
                         <div class="section-content">
@@ -1071,6 +1166,14 @@
                 <i class="iconfont icon-suoxiao"></i>
                 <span>缩小</span>
             </div>
+            <div class="tool-list fullScreenBtn" onclick="fullScreen()">
+                <i class="iconfont icon-quanping3"></i>
+                <span>全屏</span>
+            </div>
+            <div class="tool-list exitFullScreenBtn hide" onclick="exitFullScreen()">
+                <i class="iconfont icon-tuichuquanping"></i>
+                <span>退出</span>
+            </div>
             <div class="tool-list" onclick="loadQp();">
                 <i class="iconfont icon-webtubiaoku06"></i>
                 <span>复原</span>
@@ -1199,9 +1302,11 @@
 
 
 <script type="text/javascript">
+    // tab
     $('.childTab ul li,.Macro-policy .mx-tab-header .mx-tab-li').click(function () {
         $(this).addClass('active').siblings().removeClass('active');
     });
+    // 时间轴随机颜色
     $(document).ready(function () {
         $('.line-wap .line-item:nth-child(2n+1)').addClass('l-left');
         $('.line-wap .line-item:nth-child(2n)').addClass('l-right');
@@ -1221,29 +1326,25 @@
             $(this).addClass("l-c" + str);
         });
     });
-
     // 打开思维导图
     function openMind() {
         $('body').addClass('scrollbar');
         $('.full-screen').show();
         loadQp()
     };
-
     // 关闭思维导图
     function closeMind() {
         $('.full-screen').hide();
         $('body').removeClass('scrollbar');
+        exitFullScreen();
     };
-
     // 缩放思维导图
     function enlargeMind() {
         mindMapQp.scale += 0.1;
     };
-
     function narrowMind() {
         mindMapQp.scale -= 0.1;
     };
-
     // 分享
     $('.share-btn').click(function () {
         $('.tc-main,.Mask').fadeIn(500).addClass('in');
@@ -1254,6 +1355,51 @@
         $('.Mask').fadeOut(500);
         $('body').removeClass('scrollbar');
     });
+    // 全屏
+    function fullScreen() {
+        var elem = document.body;
+        if (elem.webkitRequestFullScreen) {
+            elem.webkitRequestFullScreen();
+        } else if (elem.mozRequestFullScreen) {
+            elem.mozRequestFullScreen();
+        } else if (elem.requestFullScreen) {
+            elem.requestFullscreen();
+        } else if (typeof window.ActiveXObject != "undefined") {
+            var wscript = new ActiveXObject("WScript.Shell");
+            if (wscript != null) {
+                wscript.SendKeys("{F11}");
+            }
+        } else if (elem.msRequestFullscreen) {
+            elem.msRequestFullscreen();
+        }
+        ;
+        $('.fullScreenBtn').hide();
+        $('.exitFullScreenBtn').show();
+    };
+    // 退出全屏
+    function exitFullScreen() {
+        var elem = document;
+        if (elem.webkitCancelFullScreen) {
+            elem.webkitCancelFullScreen();
+        } else if (elem.mozCancelFullScreen) {
+            elem.mozCancelFullScreen();
+        } else if (elem.cancelFullScreen) {
+            elem.cancelFullScreen();
+        } else if (elem.exitFullscreen) {
+            elem.exitFullscreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
+        else if (typeof window.ActiveXObject !== "undefined") {//for Internet Explorer
+            var wscript = new ActiveXObject("WScript.Shell");
+            if (wscript !== null) {
+                wscript.SendKeys("{F11}");
+            }
+        }
+        ;
+        $('.exitFullScreenBtn').hide();
+        $('.fullScreenBtn').show();
+    };
 </script>
 <!--=================思维导图================-->
 <!--思维导图预设-->

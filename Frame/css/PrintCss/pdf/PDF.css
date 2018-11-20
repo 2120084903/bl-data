@@ -1589,8 +1589,14 @@ table {
 }
 
 /* ==== 宏观政策态势PDF下载 ==== */
-.page .main {
+.page div.situation {
     padding: 20px;
+    background: url(../../../../Project/img/watermark2.png) top left repeat;
+    background-size: 40%;
+}
+
+.situation .baikeMain {
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .situation .row-header h1 {
@@ -1623,8 +1629,11 @@ table {
 .situation .rowBox .ChartBox {
     width: 100%;
     height: 360px;
-    background-color: #fff;
     position: relative;
+}
+
+.situation .baikeMain .txt-body {
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .words-ul .Chart-sm {

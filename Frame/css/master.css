@@ -9282,7 +9282,8 @@ div.main-x {
 .x-pos .pos-li.yg {
     bottom: 27%;
 }
-.full-screen{
+
+.full-screen {
     display: none;
     position: fixed;
     z-index: 19891017;
@@ -9298,7 +9299,7 @@ div.main-x {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ECF1F7', endColorstr='#fff', GradientType=1);
 }
 
-.full-screen .big-mind{
+.full-screen .big-mind {
     width: 100%;
     height: 100% !important;
 }
@@ -9306,6 +9307,114 @@ div.main-x {
 .full-screen .big-mind div {
     overflow: hidden !important;
 }
+
+.emotion-box .e-item {
+    float: left;
+    width: 33.33333%;
+    box-sizing: border-box;
+}
+
+.emotion-box .e-item .e-body {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 20px 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.emotion-box .e-item:nth-child(3n+3) .e-body {
+    margin-right: 0;
+}
+
+.emotion-box .name-data .tj-name {
+    float: left;
+    color: #333;
+    font-size: 16px;
+    line-height: 36px;
+    max-width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.emotion-box .name-data .tj-data {
+    float: right;
+    color: #FE7C1D;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bolder;
+}
+
+.emotion-box .name-data .tj-data small {
+    color: #666;
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 3px;
+}
+
+.qg-box {
+    position: relative;
+    height: 44px;
+    margin-top: 20px;
+}
+
+.qg-box .mask-qg-top,
+.qg-box .content-qg {
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+    height: 6px;
+    background-color: #eee;
+}
+
+.qg-box .mask-qg-top {
+    position: absolute;
+    left: 0;
+}
+
+.qg-box .content-qg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 20px;
+    background: -moz-linear-gradient(left, #44CF9A 0%, #F69461 50%, #E33B3A 100%);
+    background: -webkit-linear-gradient(left, #44CF9A 0%, #F69461 50%, #E33B3A 100%);
+    background: linear-gradient(to right, #44CF9A 0%, #F69461 50%, #E33B3A 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#44CF9A ', endColorstr='#E33B3A ', GradientType=1);
+}
+
+.qg-box .qg-tip {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: -33px;
+    width: 66px;
+    color: #333;
+    text-align: center;
+    font-size: 13px;
+    line-height: 26px;
+    border: 1px solid #ddd;
+    border-radius: 80px;
+}
+
+.qg-box .qg-tip:after {
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    margin-left: -5px;
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+
+}
+
 /*================================宏观政策态势列表=================================*/
 .hasSearch .contenBox.reportCon {
     padding-top: 64px;

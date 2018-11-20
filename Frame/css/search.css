@@ -640,6 +640,24 @@
         width: 1232px;
         margin: 0 auto;
     }
+
+    .emotion-box .name-data .tj-name {
+        font-size: 14px;
+        max-width: 140px;
+    }
+
+    .emotion-box .name-data .tj-data {
+        font-size: 22px;
+    }
+
+    .emotion-box .e-item .e-body {
+        padding: 20px 28px;
+    }
+
+    .qg-box .qg-tip {
+        width: 56px;
+        margin-left: -28px;
+    }
 }
 
 /*全局*/
