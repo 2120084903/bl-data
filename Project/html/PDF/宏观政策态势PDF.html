@@ -50,6 +50,108 @@
                         </div>
                     </div>
                     <!--/报告综述-->
+                    <!--基础数据统计-->
+                    <div class="rowBox">
+                        <div class="row-header">
+                            <h1>基础数据统计</h1>
+                            <div class="lineBox">
+                                <i></i>
+                            </div>
+                        </div>
+                        <div class="row-body">
+                            <div class="emotion-box">
+                                <div class="emotion-content clearfix">
+                                    <div class="e-item">
+                                        <div class="e-body">
+                                            <div class="name-data clearfix">
+                                                <div class="tj-name">中共中央发布政策</div>
+                                                <div class="tj-data">520<small>条</small></div>
+                                            </div>
+                                            <div class="qg-box">
+                                                <div class="mask-qg-top" style="width: 80%"></div>
+                                                <div class="qg-tip" style="left: 20%">鼓励</div>
+                                                <div class="content-qg"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-item">
+                                        <div class="e-body">
+                                            <div class="name-data clearfix">
+                                                <div class="tj-name">国务院发布政策</div>
+                                                <div class="tj-data">856<small>条</small></div>
+                                            </div>
+                                            <div class="qg-box">
+                                                <div class="mask-qg-top" style="width: 50%"></div>
+                                                <div class="qg-tip" style="left: 50%">趋严</div>
+                                                <div class="content-qg"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-item">
+                                        <div class="e-body">
+                                            <div class="name-data clearfix">
+                                                <div class="tj-name">部委发布政策</div>
+                                                <div class="tj-data">156<small>条</small></div>
+                                            </div>
+                                            <div class="qg-box">
+                                                <div class="mask-qg-top" style="width: 20%"></div>
+                                                <div class="qg-tip" style="left: 80%">强监管</div>
+                                                <div class="content-qg"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-item">
+                                        <div class="e-body">
+                                            <div class="name-data clearfix">
+                                                <div class="tj-name">全国省委发布政策</div>
+                                                <div class="tj-data">93<small>条</small></div>
+                                            </div>
+                                            <div class="qg-box">
+                                                <div class="mask-qg-top" style="width: 20%"></div>
+                                                <div class="qg-tip" style="left: 80%">强监管</div>
+                                                <div class="content-qg"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-item">
+                                        <div class="e-body">
+                                            <div class="name-data clearfix">
+                                                <div class="tj-name">全国省政府发布政策</div>
+                                                <div class="tj-data">1260<small>条</small></div>
+                                            </div>
+                                            <div class="qg-box">
+                                                <div class="mask-qg-top" style="width: 64%"></div>
+                                                <div class="qg-tip" style="left: 36%">趋严</div>
+                                                <div class="content-qg"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-item">
+                                        <div class="e-body">
+                                            <div class="name-data clearfix">
+                                                <div class="tj-name">全国省人大发布政策</div>
+                                                <div class="tj-data">2365<small>条</small></div>
+                                            </div>
+                                            <div class="qg-box">
+                                                <div class="mask-qg-top" style="width: 90%"></div>
+                                                <div class="qg-tip" style="left: 10%">鼓励</div>
+                                                <div class="content-qg"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--颜色说明-->
+                                <div class="color-sm text-center mt10">
+                                    <ul class="clearfix">
+                                        <li class="c-item"><em></em><span>鼓励</span></li>
+                                        <li class="c-item"><em></em><span>趋严</span></li>
+                                        <li class="c-item"><em></em><span>强监管</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/基础数据统计-->
                     <!--高层动态-->
                     <div class="rowBox">
                         <div class="row-header">
@@ -2096,6 +2198,7 @@
     };
 
     option = {
+        animation:false,
         color: ['#51C0F8', '#62B1FF', '#7187DB'],
         tooltip: {
             trigger: 'axis',
@@ -2229,6 +2332,7 @@
     };
 
     option = {
+        animation:false,
         color: ['#51C0F8', '#62B1FF', '#7187DB'],
         tooltip: {
             trigger: 'axis',
@@ -2362,6 +2466,7 @@
     };
 
     option = {
+        animation:false,
         color: ['#51C0F8', '#62B1FF', '#7187DB'],
         tooltip: {
             trigger: 'axis',
@@ -2496,6 +2601,7 @@
     };
 
     option = {
+        animation:false,
         color: ['#e87874', '#F9AAA9', '#FAC46E'],
         tooltip: {
             trigger: 'axis',
@@ -2630,6 +2736,7 @@
     };
 
     option = {
+        animation:false,
         color: ['#50C0EA', '#48CFAF', '#65BCC3'],
         tooltip: {
             trigger: 'axis',
@@ -2741,6 +2848,7 @@
     var symbolSize = 8;
     option = null;
     option = {
+        animation:false,
         tooltip: {
             trigger: 'axis',
             axisPointer: {            // 坐标轴指示器，坐标轴触发有效
@@ -2893,6 +3001,7 @@
     var app = {};
     option = null;
     option = {
+        animation:false,
         tooltip: {
             trigger: 'item',
             // formatter: function (param) {
@@ -2982,6 +3091,7 @@
     var dom = document.getElementById("zc-local-list");
     var myChartZcLocalList = echarts.init(dom);
     option = {
+        animation:false,
         tooltip: {
             backgroundColor: 'rgba(245, 245, 245, 0.8)',
             borderWidth: 1,
@@ -3201,6 +3311,7 @@
     app.title = 'Top 10';
 
     option = {
+        animation:false,
         //color: ['#3398DB'],
         tooltip: {
             trigger: 'item',
